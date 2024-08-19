@@ -1,0 +1,1603 @@
+\hypertarget{ewk__frame_8h}{\section{ewk\+\_\+frame.\+h File Reference}
+\label{ewk__frame_8h}\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+}
+
+
+Web\+Kit frame smart object.  
+
+
+{\ttfamily \#include \char`\"{}ewk\+\_\+security\+\_\+origin.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$Evas.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__Ewk__Frame__Load__Error}{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}
+\begin{DoxyCompactList}\small\item\em Structure used to report load errors. \end{DoxyCompactList}\item 
+struct \hyperlink{struct__Ewk__Frame__Resource__Request}{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request}
+\begin{DoxyCompactList}\small\item\em Structure containing details about a resource request. \end{DoxyCompactList}\item 
+struct \hyperlink{struct__Ewk__Frame__Resource__Response}{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Response}
+\begin{DoxyCompactList}\small\item\em Structure containing details about a response to a resource request. \end{DoxyCompactList}\item 
+struct \hyperlink{struct__Ewk__Frame__Resource__Messages}{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Messages}
+\item 
+struct \hyperlink{struct__Ewk__Text__With__Direction}{\+\_\+\+Ewk\+\_\+\+Text\+\_\+\+With\+\_\+\+Direction}
+\item 
+struct \hyperlink{struct__Ewk__Frame__Xss__Notification}{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Xss\+\_\+\+Notification}
+\begin{DoxyCompactList}\small\item\em Structure used to report reflected X\+S\+S is encountered in the page. \end{DoxyCompactList}\item 
+struct \hyperlink{struct__Ewk__Hit__Test}{\+\_\+\+Ewk\+\_\+\+Hit\+\_\+\+Test}
+\begin{DoxyCompactList}\small\item\em Structure used to report hit test result. \end{DoxyCompactList}\item 
+struct \hyperlink{struct__Ewk__Touch__Point}{\+\_\+\+Ewk\+\_\+\+Touch\+\_\+\+Point}
+\begin{DoxyCompactList}\small\item\em Represents a touch point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ewk__frame_8h_a77a952575f20156445721683202be110}{typedef struct \\*
+\hyperlink{struct__Ewk__Frame__Load__Error}{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error} \hyperlink{ewk__frame_8h_a77a952575f20156445721683202be110}{Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}}\label{ewk__frame_8h_a77a952575f20156445721683202be110}
+
+\begin{DoxyCompactList}\small\item\em Creates a type name for \hyperlink{struct__Ewk__Frame__Load__Error}{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}. \end{DoxyCompactList}\item 
+\hypertarget{ewk__frame_8h_acddf624050dec184d7071e77847d1d94}{typedef struct \\*
+\hyperlink{struct__Ewk__Frame__Resource__Request}{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request} \hyperlink{ewk__frame_8h_acddf624050dec184d7071e77847d1d94}{Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request}}\label{ewk__frame_8h_acddf624050dec184d7071e77847d1d94}
+
+\begin{DoxyCompactList}\small\item\em Creates a type name for \hyperlink{struct__Ewk__Frame__Resource__Request}{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request}. \end{DoxyCompactList}\item 
+\hypertarget{ewk__frame_8h_a738f355baff59c9821ee7d962a2d4492}{typedef struct \\*
+\hyperlink{struct__Ewk__Frame__Resource__Response}{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Response} \hyperlink{ewk__frame_8h_a738f355baff59c9821ee7d962a2d4492}{Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Response}}\label{ewk__frame_8h_a738f355baff59c9821ee7d962a2d4492}
+
+\begin{DoxyCompactList}\small\item\em Creates a type name for \hyperlink{struct__Ewk__Frame__Resource__Response}{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Response}. \end{DoxyCompactList}\item 
+\hypertarget{ewk__frame_8h_a55b0441f1eec59b7cc6314394eb502f9}{typedef struct \\*
+\hyperlink{struct__Ewk__Frame__Resource__Messages}{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Messages} \hyperlink{ewk__frame_8h_a55b0441f1eec59b7cc6314394eb502f9}{Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Messages}}\label{ewk__frame_8h_a55b0441f1eec59b7cc6314394eb502f9}
+
+\begin{DoxyCompactList}\small\item\em Creates a type name for \hyperlink{struct__Ewk__Frame__Resource__Messages}{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Messages}. \end{DoxyCompactList}\item 
+\hypertarget{ewk__frame_8h_a462349df6b57692977314cb4eea36d7c}{typedef struct \\*
+\hyperlink{struct__Ewk__Text__With__Direction}{\+\_\+\+Ewk\+\_\+\+Text\+\_\+\+With\+\_\+\+Direction} \hyperlink{ewk__frame_8h_a462349df6b57692977314cb4eea36d7c}{Ewk\+\_\+\+Text\+\_\+\+With\+\_\+\+Direction}}\label{ewk__frame_8h_a462349df6b57692977314cb4eea36d7c}
+
+\begin{DoxyCompactList}\small\item\em Creates a type name for Ewk\+\_\+\+Text\+\_\+\+With\+\_\+\+Direction. \end{DoxyCompactList}\item 
+\hypertarget{ewk__frame_8h_add5032d9553a6eff5f0574e2f90efbee}{typedef struct \\*
+\hyperlink{struct__Ewk__Frame__Xss__Notification}{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Xss\+\_\+\+Notification} \hyperlink{ewk__frame_8h_add5032d9553a6eff5f0574e2f90efbee}{Ewk\+\_\+\+Frame\+\_\+\+Xss\+\_\+\+Notification}}\label{ewk__frame_8h_add5032d9553a6eff5f0574e2f90efbee}
+
+\begin{DoxyCompactList}\small\item\em Creates a type name for Ewk\+\_\+\+Frame\+\_\+\+Xss\+\_\+\+Notification. \end{DoxyCompactList}\item 
+\hypertarget{ewk__frame_8h_ad1cc1f8dc348ef33559701317aac6bc7}{typedef struct \hyperlink{struct__Ewk__Hit__Test}{\+\_\+\+Ewk\+\_\+\+Hit\+\_\+\+Test} \hyperlink{ewk__frame_8h_ad1cc1f8dc348ef33559701317aac6bc7}{Ewk\+\_\+\+Hit\+\_\+\+Test}}\label{ewk__frame_8h_ad1cc1f8dc348ef33559701317aac6bc7}
+
+\begin{DoxyCompactList}\small\item\em Creates a type name for \hyperlink{struct__Ewk__Hit__Test}{\+\_\+\+Ewk\+\_\+\+Hit\+\_\+\+Test}. \end{DoxyCompactList}\item 
+\hypertarget{ewk__frame_8h_aeee984e930c6c55877cbb27bee753435}{typedef struct \hyperlink{struct__Ewk__Touch__Point}{\+\_\+\+Ewk\+\_\+\+Touch\+\_\+\+Point} \hyperlink{ewk__frame_8h_aeee984e930c6c55877cbb27bee753435}{Ewk\+\_\+\+Touch\+\_\+\+Point}}\label{ewk__frame_8h_aeee984e930c6c55877cbb27bee753435}
+
+\begin{DoxyCompactList}\small\item\em Creates a type name for \hyperlink{struct__Ewk__Touch__Point}{\+\_\+\+Ewk\+\_\+\+Touch\+\_\+\+Point}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{ewk__frame_8h_a6949882f3b66bb6bcbbb9cc3021716cc}{Ewk\+\_\+\+Text\+\_\+\+Direction} \{ \hyperlink{ewk__frame_8h_a6949882f3b66bb6bcbbb9cc3021716ccae6d12269ad4d4ff188f94c037957bc39}{E\+W\+K\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T}, 
+{\bfseries E\+W\+K\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+L\+E\+F\+T\+\_\+\+T\+O\+\_\+\+R\+I\+G\+H\+T}, 
+{\bfseries E\+W\+K\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+R\+I\+G\+H\+T\+\_\+\+T\+O\+\_\+\+L\+E\+F\+T}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum containing text directionality values. \end{DoxyCompactList}\item 
+\hypertarget{ewk__frame_8h_a4e7b23a3c424823318f3f23b74850e96}{enum \hyperlink{ewk__frame_8h_a4e7b23a3c424823318f3f23b74850e96}{Ewk\+\_\+\+Hit\+\_\+\+Test\+\_\+\+Result\+\_\+\+Context} \{ \\*
+{\bfseries E\+W\+K\+\_\+\+H\+I\+T\+\_\+\+T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+D\+O\+C\+U\+M\+E\+N\+T} = 1 $<$$<$ 1, 
+{\bfseries E\+W\+K\+\_\+\+H\+I\+T\+\_\+\+T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+L\+I\+N\+K} = 1 $<$$<$ 2, 
+{\bfseries E\+W\+K\+\_\+\+H\+I\+T\+\_\+\+T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+I\+M\+A\+G\+E} = 1 $<$$<$ 3, 
+{\bfseries E\+W\+K\+\_\+\+H\+I\+T\+\_\+\+T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+D\+I\+A} = 1 $<$$<$ 4, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+H\+I\+T\+\_\+\+T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+S\+E\+L\+E\+C\+T\+I\+O\+N} = 1 $<$$<$ 5, 
+{\bfseries E\+W\+K\+\_\+\+H\+I\+T\+\_\+\+T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+D\+I\+T\+A\+B\+L\+E} = 1 $<$$<$ 6
+ \}}\label{ewk__frame_8h_a4e7b23a3c424823318f3f23b74850e96}
+
+\begin{DoxyCompactList}\small\item\em Enum containing hit test data types. \end{DoxyCompactList}\item 
+\hypertarget{ewk__frame_8h_aa1bdc646f41f64373f0fc9bbf5178033}{enum \hyperlink{ewk__frame_8h_aa1bdc646f41f64373f0fc9bbf5178033}{Ewk\+\_\+\+Navigation\+\_\+\+Type} \{ \\*
+{\bfseries E\+W\+K\+\_\+\+N\+A\+V\+I\+G\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+I\+N\+K\+\_\+\+C\+L\+I\+C\+K\+E\+D}, 
+{\bfseries E\+W\+K\+\_\+\+N\+A\+V\+I\+G\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+O\+R\+M\+\_\+\+S\+U\+B\+M\+I\+T\+T\+E\+D}, 
+{\bfseries E\+W\+K\+\_\+\+N\+A\+V\+I\+G\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+A\+C\+K\+\_\+\+F\+O\+R\+W\+A\+R\+D}, 
+{\bfseries E\+W\+K\+\_\+\+N\+A\+V\+I\+G\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+E\+L\+O\+A\+D}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+N\+A\+V\+I\+G\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+O\+R\+M\+\_\+\+R\+E\+S\+U\+B\+M\+I\+T\+T\+E\+D}, 
+{\bfseries E\+W\+K\+\_\+\+N\+A\+V\+I\+G\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+T\+H\+E\+R}
+ \}}\label{ewk__frame_8h_aa1bdc646f41f64373f0fc9bbf5178033}
+
+\begin{DoxyCompactList}\small\item\em Enum containing navigation types. \end{DoxyCompactList}\item 
+\hypertarget{ewk__frame_8h_a9e64576ac2f238c131510dfb5b4151aa}{enum \hyperlink{ewk__frame_8h_a9e64576ac2f238c131510dfb5b4151aa}{Ewk\+\_\+\+Touch\+\_\+\+Event\+\_\+\+Type} \{ {\bfseries E\+W\+K\+\_\+\+T\+O\+U\+C\+H\+\_\+\+S\+T\+A\+R\+T}, 
+{\bfseries E\+W\+K\+\_\+\+T\+O\+U\+C\+H\+\_\+\+M\+O\+V\+E}, 
+{\bfseries E\+W\+K\+\_\+\+T\+O\+U\+C\+H\+\_\+\+E\+N\+D}, 
+{\bfseries E\+W\+K\+\_\+\+T\+O\+U\+C\+H\+\_\+\+C\+A\+N\+C\+E\+L}
+ \}}\label{ewk__frame_8h_a9e64576ac2f238c131510dfb5b4151aa}
+
+\begin{DoxyCompactList}\small\item\em Represents actions of touch events. \end{DoxyCompactList}\item 
+\hypertarget{ewk__frame_8h_a25a4e7f2c01b49665661a667bb4ea63e}{enum \hyperlink{ewk__frame_8h_a25a4e7f2c01b49665661a667bb4ea63e}{Ewk\+\_\+\+Touch\+\_\+\+Point\+\_\+\+Type} \{ \\*
+{\bfseries E\+W\+K\+\_\+\+T\+O\+U\+C\+H\+\_\+\+P\+O\+I\+N\+T\+\_\+\+R\+E\+L\+E\+A\+S\+E\+D}, 
+{\bfseries E\+W\+K\+\_\+\+T\+O\+U\+C\+H\+\_\+\+P\+O\+I\+N\+T\+\_\+\+P\+R\+E\+S\+S\+E\+D}, 
+{\bfseries E\+W\+K\+\_\+\+T\+O\+U\+C\+H\+\_\+\+P\+O\+I\+N\+T\+\_\+\+M\+O\+V\+E\+D}, 
+{\bfseries E\+W\+K\+\_\+\+T\+O\+U\+C\+H\+\_\+\+P\+O\+I\+N\+T\+\_\+\+S\+T\+A\+T\+I\+O\+N\+A\+R\+Y}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+T\+O\+U\+C\+H\+\_\+\+P\+O\+I\+N\+T\+\_\+\+C\+A\+N\+C\+E\+L\+L\+E\+D}, 
+{\bfseries E\+W\+K\+\_\+\+T\+O\+U\+C\+H\+\_\+\+P\+O\+I\+N\+T\+\_\+\+E\+N\+D}
+ \}}\label{ewk__frame_8h_a25a4e7f2c01b49665661a667bb4ea63e}
+
+\begin{DoxyCompactList}\small\item\em Represents states of touch events. \end{DoxyCompactList}\item 
+\hypertarget{ewk__frame_8h_a388fb35abc3f9f74ee165d412e8d93c1}{enum {\bfseries Ewk\+\_\+\+Text\+\_\+\+Selection\+\_\+\+Type} \{ {\bfseries E\+W\+K\+\_\+\+T\+E\+X\+T\+\_\+\+S\+E\+L\+E\+C\+T\+I\+O\+N\+\_\+\+N\+O\+N\+E}, 
+{\bfseries E\+W\+K\+\_\+\+T\+E\+X\+T\+\_\+\+S\+E\+L\+E\+C\+T\+I\+O\+N\+\_\+\+C\+A\+R\+E\+T}, 
+{\bfseries E\+W\+K\+\_\+\+T\+E\+X\+T\+\_\+\+S\+E\+L\+E\+C\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E}
+ \}}\label{ewk__frame_8h_a388fb35abc3f9f74ee165d412e8d93c1}
+
+\item 
+enum \hyperlink{ewk__frame_8h_a8e30e05f9feb1b95476c01b1bc2eb59d}{Ewk\+\_\+\+Certificate\+\_\+\+Status} \{ \hyperlink{ewk__frame_8h_a8e30e05f9feb1b95476c01b1bc2eb59da1387908b004e241d689f0f9866125ba1}{E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E} = 1 $<$$<$ 1, 
+\hyperlink{ewk__frame_8h_a8e30e05f9feb1b95476c01b1bc2eb59da2fcf666f04089b8e8db8bc30ae23b80d}{E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+U\+N\+T\+R\+U\+S\+T\+E\+D} = 1 $<$$<$ 2, 
+\hyperlink{ewk__frame_8h_a8e30e05f9feb1b95476c01b1bc2eb59da8c0fc2659773a26dcc87b44676f871c0}{E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+R\+U\+S\+T\+E\+D} = 1 $<$$<$ 3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\+A\+P\+I Evas\+\_\+\+Object $\ast$ \hyperlink{ewk__frame_8h_aca48b5c3aa97f2d25c66c4c395c84271}{ewk\+\_\+frame\+\_\+view\+\_\+get} (const Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I \hyperlink{struct__Ewk__Security__Origin}{Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$ \hyperlink{ewk__frame_8h_a624fa6923dc8baec1e99458f26c2129d}{ewk\+\_\+frame\+\_\+security\+\_\+origin\+\_\+get} (const Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Iterator $\ast$ \hyperlink{ewk__frame_8h_ad8158718019258e4403df097b604c426}{ewk\+\_\+frame\+\_\+children\+\_\+iterator\+\_\+new} (Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Evas\+\_\+\+Object $\ast$ \hyperlink{ewk__frame_8h_a36bda34cf928f11afe7d1db72a40c0ac}{ewk\+\_\+frame\+\_\+child\+\_\+find} (Evas\+\_\+\+Object $\ast$o, const char $\ast$name)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a43bb60724142a554f98ea514111c5eb5}{ewk\+\_\+frame\+\_\+uri\+\_\+set} (Evas\+\_\+\+Object $\ast$o, const char $\ast$uri)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__frame_8h_a51455e3faa6f7f9ac16a1d820610eb5e}{ewk\+\_\+frame\+\_\+uri\+\_\+get} (const Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I const \\*
+\hyperlink{ewk__frame_8h_a462349df6b57692977314cb4eea36d7c}{Ewk\+\_\+\+Text\+\_\+\+With\+\_\+\+Direction} $\ast$ \hyperlink{ewk__frame_8h_a707a9c3b56af950e4becdfb974bfb9b9}{ewk\+\_\+frame\+\_\+title\+\_\+get} (const Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__frame_8h_a4b874577af42580cbcd357a1d9d5428c}{ewk\+\_\+frame\+\_\+name\+\_\+get} (const Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a35a1807b953747c6d70111b4d5cf18d3}{ewk\+\_\+frame\+\_\+contents\+\_\+size\+\_\+get} (const Evas\+\_\+\+Object $\ast$o, Evas\+\_\+\+Coord $\ast$w, Evas\+\_\+\+Coord $\ast$h)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a70d1ab379d0218e98f8dc4df1f732cf8}{ewk\+\_\+frame\+\_\+contents\+\_\+set} (Evas\+\_\+\+Object $\ast$o, const char $\ast$contents, size\+\_\+t contents\+\_\+size, const char $\ast$mime\+\_\+type, const char $\ast$encoding, const char $\ast$base\+\_\+uri)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_aeb6a6082bf0fd51064d71b6eafe9268a}{ewk\+\_\+frame\+\_\+contents\+\_\+alternate\+\_\+set} (Evas\+\_\+\+Object $\ast$o, const char $\ast$contents, size\+\_\+t contents\+\_\+size, const char $\ast$mime\+\_\+type, const char $\ast$encoding, const char $\ast$base\+\_\+uri, const char $\ast$unreachable\+\_\+uri)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__frame_8h_a0c3f852a46ce6ec66a86f7bbd2cd0aec}{ewk\+\_\+frame\+\_\+script\+\_\+execute} (Evas\+\_\+\+Object $\ast$o, const char $\ast$script)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a04864942cbc9f1013422424a5bef2dcb}{ewk\+\_\+frame\+\_\+editable\+\_\+get} (const Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a16bd4c8c03b10bc6f64e02ebc7515faf}{ewk\+\_\+frame\+\_\+editable\+\_\+set} (Evas\+\_\+\+Object $\ast$o, Eina\+\_\+\+Bool editable)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__frame_8h_a741a0e8ebdeef26efe0a55034e7f1453}{ewk\+\_\+frame\+\_\+selection\+\_\+get} (const Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_ab5d1296134d863c017f2f6eb189a3aaf}{ewk\+\_\+frame\+\_\+text\+\_\+search} (const Evas\+\_\+\+Object $\ast$o, const char $\ast$string, Eina\+\_\+\+Bool case\+\_\+sensitive, Eina\+\_\+\+Bool forward, Eina\+\_\+\+Bool wrap)
+\item 
+E\+A\+P\+I unsigned int \hyperlink{ewk__frame_8h_ad92620cca85904bd5c86dd87b2918721}{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+mark} (Evas\+\_\+\+Object $\ast$o, const char $\ast$string, Eina\+\_\+\+Bool case\+\_\+sensitive, Eina\+\_\+\+Bool highlight, unsigned int limit)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_ab7a3b7d18c9614b32543b257d9668fd7}{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+unmark\+\_\+all} (Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a524f4cee5003a3b76e3caf371a5e5879}{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+highlight\+\_\+set} (Evas\+\_\+\+Object $\ast$o, Eina\+\_\+\+Bool highlight)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a19f69a52a34b752b0ba046d7c1420a54}{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+highlight\+\_\+get} (const Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a6bf702b3f40aa6c9411535246e151e6e}{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+nth\+\_\+pos\+\_\+get} (const Evas\+\_\+\+Object $\ast$o, size\+\_\+t n, int $\ast$x, int $\ast$y)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a77b4c58991bad09e20e96b9232757ba1}{ewk\+\_\+frame\+\_\+stop} (Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a687ab9b855d08a79e71336d10823dc76}{ewk\+\_\+frame\+\_\+reload} (Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_abb3c368d2883c665420bc4bdd68f3690}{ewk\+\_\+frame\+\_\+reload\+\_\+full} (Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_afdaf20f9dd694e558199458d581dcde4}{ewk\+\_\+frame\+\_\+back} (Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a8d2abb99083d4bb115e082a79a7bfb4f}{ewk\+\_\+frame\+\_\+forward} (Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a5ece0c27529dbf9d036c306c5e614010}{ewk\+\_\+frame\+\_\+navigate} (Evas\+\_\+\+Object $\ast$o, int steps)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_aab0f8b34c10d2ece0d3241747f5d9a90}{ewk\+\_\+frame\+\_\+back\+\_\+possible} (Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_abe5471fd07e37dfc19f418b34d739651}{ewk\+\_\+frame\+\_\+forward\+\_\+possible} (Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a381533046ff8562900f6cc4cd63058b7}{ewk\+\_\+frame\+\_\+navigate\+\_\+possible} (Evas\+\_\+\+Object $\ast$o, int steps)
+\item 
+E\+A\+P\+I float \hyperlink{ewk__frame_8h_ad0665d36fbf8bb268b0adeff99da11f8}{ewk\+\_\+frame\+\_\+page\+\_\+zoom\+\_\+get} (const Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_ac3daa5d7ba60acb0d5e3bb15753678a4}{ewk\+\_\+frame\+\_\+page\+\_\+zoom\+\_\+set} (Evas\+\_\+\+Object $\ast$o, float page\+\_\+zoom\+\_\+factor)
+\item 
+E\+A\+P\+I float \hyperlink{ewk__frame_8h_ab44cb28bba0c5d366530485d425d696d}{ewk\+\_\+frame\+\_\+text\+\_\+zoom\+\_\+get} (const Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_ac495bf77e4129b0046f018b5dfd20bcb}{ewk\+\_\+frame\+\_\+text\+\_\+zoom\+\_\+set} (Evas\+\_\+\+Object $\ast$o, float text\+\_\+zoom\+\_\+factor)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__frame_8h_a7e81b59c880dbb064fce1003c56caa83}{ewk\+\_\+frame\+\_\+hit\+\_\+test\+\_\+free} (\hyperlink{ewk__frame_8h_ad1cc1f8dc348ef33559701317aac6bc7}{Ewk\+\_\+\+Hit\+\_\+\+Test} $\ast$hit\+\_\+test)
+\item 
+E\+A\+P\+I \hyperlink{ewk__frame_8h_ad1cc1f8dc348ef33559701317aac6bc7}{Ewk\+\_\+\+Hit\+\_\+\+Test} $\ast$ \hyperlink{ewk__frame_8h_a91dcc8ff8536253cb2517648234af339}{ewk\+\_\+frame\+\_\+hit\+\_\+test\+\_\+new} (const Evas\+\_\+\+Object $\ast$o, int x, int y)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a83e35877575a092bec4ed4884b7f7f90}{ewk\+\_\+frame\+\_\+scroll\+\_\+add} (Evas\+\_\+\+Object $\ast$o, int dx, int dy)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a98e58b7fa845e929951275aedce844a2}{ewk\+\_\+frame\+\_\+scroll\+\_\+set} (Evas\+\_\+\+Object $\ast$o, int x, int y)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_abbbc30564cfac31d9558b1d829ae3681}{ewk\+\_\+frame\+\_\+scroll\+\_\+size\+\_\+get} (const Evas\+\_\+\+Object $\ast$o, int $\ast$w, int $\ast$h)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a3b1da4a9adacdb9c3188a89811f30168}{ewk\+\_\+frame\+\_\+scroll\+\_\+pos\+\_\+get} (const Evas\+\_\+\+Object $\ast$o, int $\ast$x, int $\ast$y)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a22691fdafe1a7f288bf3497f437329ab}{ewk\+\_\+frame\+\_\+visible\+\_\+content\+\_\+geometry\+\_\+get} (const Evas\+\_\+\+Object $\ast$o, Eina\+\_\+\+Bool include\+\_\+scrollbars, int $\ast$x, int $\ast$y, int $\ast$w, int $\ast$h)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_ae1181fe7b28cb528d66e2ecb767d9a85}{ewk\+\_\+frame\+\_\+paint\+\_\+full\+\_\+get} (const Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__frame_8h_a3581cf33ba692abaa663d0f8743722bd}{ewk\+\_\+frame\+\_\+paint\+\_\+full\+\_\+set} (Evas\+\_\+\+Object $\ast$o, Eina\+\_\+\+Bool flag)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_ad9e4f90636baef640f0e4a40880a0178}{ewk\+\_\+frame\+\_\+feed\+\_\+focus\+\_\+in} (Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_ab6f37f6d188407aa7b6883188842f76d}{ewk\+\_\+frame\+\_\+feed\+\_\+focus\+\_\+out} (Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_af416eee559279639a8b3df3344a397f5}{ewk\+\_\+frame\+\_\+focused\+\_\+element\+\_\+geometry\+\_\+get} (const Evas\+\_\+\+Object $\ast$o, int $\ast$x, int $\ast$y, int $\ast$w, int $\ast$h)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_ad44ba10ecb51de50d5c61f788d1fd6f5}{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+wheel} (Evas\+\_\+\+Object $\ast$o, const Evas\+\_\+\+Event\+\_\+\+Mouse\+\_\+\+Wheel $\ast$ev)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_ad7790ced9fa7c5731434636c90fd5bce}{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+down} (Evas\+\_\+\+Object $\ast$o, const Evas\+\_\+\+Event\+\_\+\+Mouse\+\_\+\+Down $\ast$ev)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a93f7e45233c2fb2dd322f1adea3e8cc5}{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+up} (Evas\+\_\+\+Object $\ast$o, const Evas\+\_\+\+Event\+\_\+\+Mouse\+\_\+\+Up $\ast$ev)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a8b9a486a77a6db4933aca813921f88b7}{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+move} (Evas\+\_\+\+Object $\ast$o, const Evas\+\_\+\+Event\+\_\+\+Mouse\+\_\+\+Move $\ast$ev)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a67029f951c95b3abc8b78d9552d1e3ac}{ewk\+\_\+frame\+\_\+feed\+\_\+touch\+\_\+event} (Evas\+\_\+\+Object $\ast$o, \hyperlink{ewk__frame_8h_a9e64576ac2f238c131510dfb5b4151aa}{Ewk\+\_\+\+Touch\+\_\+\+Event\+\_\+\+Type} action, Eina\+\_\+\+List $\ast$points, unsigned modifiers)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_afd0fc6393986a61158174cfc52d63ac7}{ewk\+\_\+frame\+\_\+feed\+\_\+key\+\_\+down} (Evas\+\_\+\+Object $\ast$o, const Evas\+\_\+\+Event\+\_\+\+Key\+\_\+\+Down $\ast$ev)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_aab9683e8c777bd6fc826256b23397210}{ewk\+\_\+frame\+\_\+feed\+\_\+key\+\_\+up} (Evas\+\_\+\+Object $\ast$o, const Evas\+\_\+\+Event\+\_\+\+Key\+\_\+\+Up $\ast$ev)
+\item 
+E\+A\+P\+I Ewk\+\_\+\+Text\+\_\+\+Selection\+\_\+\+Type \hyperlink{ewk__frame_8h_a7676f70a9c4ece2469e00c212e6abf97}{ewk\+\_\+frame\+\_\+text\+\_\+selection\+\_\+type\+\_\+get} (const Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I ssize\+\_\+t \hyperlink{ewk__frame_8h_afb0ec7b63d56472d2f6ee3a14501e4c2}{ewk\+\_\+frame\+\_\+source\+\_\+get} (const Evas\+\_\+\+Object $\ast$o, char $\ast$$\ast$frame\+\_\+source)
+\item 
+E\+A\+P\+I Eina\+\_\+\+List $\ast$ \hyperlink{ewk__frame_8h_a5b61b38063c7c635eabd7880400bb85e}{ewk\+\_\+frame\+\_\+resources\+\_\+location\+\_\+get} (const Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__frame_8h_a1735c9bcb4568813490890c70e4fdccb}{ewk\+\_\+frame\+\_\+plain\+\_\+text\+\_\+get} (const Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a01c23cc1f7af4991ed854658e6787d62}{ewk\+\_\+frame\+\_\+mixed\+\_\+content\+\_\+displayed\+\_\+get} (const Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__frame_8h_a60074d49bc42a220a3ed45bffb8a861b}{ewk\+\_\+frame\+\_\+mixed\+\_\+content\+\_\+run\+\_\+get} (const Evas\+\_\+\+Object $\ast$o)
+\item 
+E\+A\+P\+I \hyperlink{ewk__frame_8h_a8e30e05f9feb1b95476c01b1bc2eb59d}{Ewk\+\_\+\+Certificate\+\_\+\+Status} \hyperlink{ewk__frame_8h_a1505448605aa3d14abf3082249ba6be2}{ewk\+\_\+frame\+\_\+certificate\+\_\+status\+\_\+get} (Evas\+\_\+\+Object $\ast$o)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Web\+Kit frame smart object. 
+
+This object is the low level access to Web\+Kit-\/\+E\+F\+L browser component. It represents both the main and internal frames that H\+T\+M\+L pages contain.
+
+Every ewk\+\_\+view has at least one frame, called \char`\"{}main frame\char`\"{} and retrieved with \hyperlink{ewk__view_8h_af21210605d1aea14d06a507854b10e3b}{ewk\+\_\+view\+\_\+frame\+\_\+main\+\_\+get()}. One can retrieve frame's owner view with \hyperlink{ewk__frame_8h_aca48b5c3aa97f2d25c66c4c395c84271}{ewk\+\_\+frame\+\_\+view\+\_\+get()}. Parent frame can be retrieved with standard smart object's evas\+\_\+object\+\_\+smart\+\_\+parent\+\_\+get(). Children can be accessed with \hyperlink{ewk__frame_8h_ad8158718019258e4403df097b604c426}{ewk\+\_\+frame\+\_\+children\+\_\+iterator\+\_\+new()} or \hyperlink{ewk__frame_8h_a36bda34cf928f11afe7d1db72a40c0ac}{ewk\+\_\+frame\+\_\+child\+\_\+find()}.
+
+The following signals (see evas\+\_\+object\+\_\+smart\+\_\+callback\+\_\+add()) are emitted\+:
+
+
+\begin{DoxyItemize}
+\item \char`\"{}contents,size,changed\char`\"{}, Evas\+\_\+\+Coord\mbox{[}2\mbox{]}\+: reports contents size were changed due new layout, script actions or any other events.
+\item \char`\"{}editorclient,contents,changed\char`\"{}, void\+: reports that editor client's contents were changed
+\item \char`\"{}icon,changed\char`\"{}, void\+: frame favicon changed.
+\item \char`\"{}load,committed\char`\"{}, void\+: reports load committed.
+\item \char`\"{}load,document,finished\char`\"{}, void\+: frame finished loading the document.
+\item \char`\"{}load,error\char`\"{}, const Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error$\ast$\+: reports load failed and it gives a pointer to structure defining the error as an argument.
+\item \char`\"{}load,finished\char`\"{}, const Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error$\ast$\+: reports load finished and it gives {\ttfamily N\+U\+L\+L} on success or pointer to structure defining the error.
+\item \char`\"{}load,resource,finished\char`\"{}, unsigned long$\ast$\+: reports resource load finished and it gives a pointer to its identifier.
+\item \char`\"{}load,resource,failed\char`\"{}, Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error$\ast$\+: reports resource load failure and it gives a pointer to structure defining the error as an argument.
+\item \char`\"{}load,firstlayout,finished\char`\"{}, void\+: frame finished first layout.
+\item \char`\"{}load,nonemptylayout,finished\char`\"{}, void\+: frame finished first non-\/empty layout.
+\item \char`\"{}load,progress\char`\"{}, double$\ast$\+: load progress is changed (overall value from 0.\+0 to 1.\+0, connect to individual frames for fine grained).
+\item \char`\"{}load,provisional\char`\"{}, void\+: frame started provisional load.
+\item \char`\"{}load,provisional,failed\char`\"{}, Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error$\ast$\+: frame provisional load failed.
+\item \char`\"{}load,started\char`\"{}, void\+: frame started loading the document.
+\item \char`\"{}mixedcontent,displayed\char`\"{}, void\+: frame has loaded and displayed mixed content.
+\item \char`\"{}mixedcontent,run\char`\"{}, void\+: frame has loaded and run mixed content.
+\item \char`\"{}navigation,first\char`\"{}, void\+: first navigation was occurred.
+\item \char`\"{}redirect,cancelled\char`\"{}, void\+: client redirect was cancelled.
+\item \char`\"{}redirect,load,provisional\char`\"{}, void\+: received server redirect for provisional load.
+\item \char`\"{}redirect,requested\char`\"{}, const char$\ast$\+: url of the client redirect that will be performed.
+\item \char`\"{}resource,request,new\char`\"{}, Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request$\ast$\+: reports that there's a new resource request.
+\item \char`\"{}resource,request,willsend\char`\"{}, Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Messages$\ast$\+: a resource will be requested. and the possible redirect response.
+\item \char`\"{}resource,response,received\char`\"{}, Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Response$\ast$\+: reports that a response to a resource request was received.
+\item \char`\"{}state,save\char`\"{}, void\+: frame's state will be saved as a history item.
+\item \char`\"{}title,changed\char`\"{}, Ewk\+\_\+\+Text\+\_\+\+With\+\_\+\+Direction$\ast$\+: title of the main frame was changed.
+\item \char`\"{}uri,changed\char`\"{}, const char$\ast$\+: uri of the main frame was changed.
+\item \char`\"{}xss,detected\char`\"{}, Ewk\+\_\+\+Frame\+\_\+\+Xss\+\_\+\+Notification$\ast$\+: reflected X\+S\+S is encountered in the page and suppressed. 
+\end{DoxyItemize}
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{ewk__frame_8h_a8e30e05f9feb1b95476c01b1bc2eb59d}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!Ewk\+\_\+\+Certificate\+\_\+\+Status@{Ewk\+\_\+\+Certificate\+\_\+\+Status}}
+\index{Ewk\+\_\+\+Certificate\+\_\+\+Status@{Ewk\+\_\+\+Certificate\+\_\+\+Status}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{Ewk\+\_\+\+Certificate\+\_\+\+Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Ewk\+\_\+\+Certificate\+\_\+\+Status}}}\label{ewk__frame_8h_a8e30e05f9feb1b95476c01b1bc2eb59d}
+Represents the validity of a X.\+509 certificate related to the current frame.
+
+A certificate is considered untrusted when any problem is found in it\+: it may have expired, the certificate's Common Name does not match the current host, the certificate does not validate against the current set of root C\+A certificates etc.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__frame_8h_a1505448605aa3d14abf3082249ba6be2}{ewk\+\_\+frame\+\_\+certificate\+\_\+status\+\_\+get}, \hyperlink{ewk__network_8h_a5865aebf88acb3cb1b8ac53a431c447f}{ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+set} 
+\end{DoxySeeAlso}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E@{E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E@{E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E}}\item[{\em 
+\hypertarget{ewk__frame_8h_a8e30e05f9feb1b95476c01b1bc2eb59da1387908b004e241d689f0f9866125ba1}{E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E}\label{ewk__frame_8h_a8e30e05f9feb1b95476c01b1bc2eb59da1387908b004e241d689f0f9866125ba1}
+}]No certificate provided (non-\/\+H\+T\+T\+P\+S connection). \index{E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+U\+N\+T\+R\+U\+S\+T\+E\+D@{E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+U\+N\+T\+R\+U\+S\+T\+E\+D}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+U\+N\+T\+R\+U\+S\+T\+E\+D@{E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+U\+N\+T\+R\+U\+S\+T\+E\+D}}\item[{\em 
+\hypertarget{ewk__frame_8h_a8e30e05f9feb1b95476c01b1bc2eb59da2fcf666f04089b8e8db8bc30ae23b80d}{E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+U\+N\+T\+R\+U\+S\+T\+E\+D}\label{ewk__frame_8h_a8e30e05f9feb1b95476c01b1bc2eb59da2fcf666f04089b8e8db8bc30ae23b80d}
+}]The certificate provided is not trusted. \index{E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+R\+U\+S\+T\+E\+D@{E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+R\+U\+S\+T\+E\+D}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+R\+U\+S\+T\+E\+D@{E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+R\+U\+S\+T\+E\+D}}\item[{\em 
+\hypertarget{ewk__frame_8h_a8e30e05f9feb1b95476c01b1bc2eb59da8c0fc2659773a26dcc87b44676f871c0}{E\+W\+K\+\_\+\+C\+E\+R\+T\+I\+F\+I\+C\+A\+T\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+R\+U\+S\+T\+E\+D}\label{ewk__frame_8h_a8e30e05f9feb1b95476c01b1bc2eb59da8c0fc2659773a26dcc87b44676f871c0}
+}]The certificate is valid and fully trusted. \end{description}
+\end{Desc}
+\hypertarget{ewk__frame_8h_a6949882f3b66bb6bcbbb9cc3021716cc}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!Ewk\+\_\+\+Text\+\_\+\+Direction@{Ewk\+\_\+\+Text\+\_\+\+Direction}}
+\index{Ewk\+\_\+\+Text\+\_\+\+Direction@{Ewk\+\_\+\+Text\+\_\+\+Direction}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{Ewk\+\_\+\+Text\+\_\+\+Direction}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Ewk\+\_\+\+Text\+\_\+\+Direction}}}\label{ewk__frame_8h_a6949882f3b66bb6bcbbb9cc3021716cc}
+
+
+Enum containing text directionality values. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\+W\+K\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T@{E\+W\+K\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!E\+W\+K\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T@{E\+W\+K\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T}}\item[{\em 
+\hypertarget{ewk__frame_8h_a6949882f3b66bb6bcbbb9cc3021716ccae6d12269ad4d4ff188f94c037957bc39}{E\+W\+K\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T}\label{ewk__frame_8h_a6949882f3b66bb6bcbbb9cc3021716ccae6d12269ad4d4ff188f94c037957bc39}
+}]Natural writing direction (\char`\"{}inherit\char`\"{}) \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{ewk__frame_8h_afdaf20f9dd694e558199458d581dcde4}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+back@{ewk\+\_\+frame\+\_\+back}}
+\index{ewk\+\_\+frame\+\_\+back@{ewk\+\_\+frame\+\_\+back}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+back}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_afdaf20f9dd694e558199458d581dcde4}
+Asks the frame to navigate back in the history.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to navigate back\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__frame_8h_a5ece0c27529dbf9d036c306c5e614010}{ewk\+\_\+frame\+\_\+navigate()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__frame_8h_aab0f8b34c10d2ece0d3241747f5d9a90}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+back\+\_\+possible@{ewk\+\_\+frame\+\_\+back\+\_\+possible}}
+\index{ewk\+\_\+frame\+\_\+back\+\_\+possible@{ewk\+\_\+frame\+\_\+back\+\_\+possible}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+back\+\_\+possible}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+back\+\_\+possible (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_aab0f8b34c10d2ece0d3241747f5d9a90}
+Queries if it's possible to navigate backwards one item in the history.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to query if backward navigation is possible\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if it's possible to navigate backwards one item in the history, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__frame_8h_a381533046ff8562900f6cc4cd63058b7}{ewk\+\_\+frame\+\_\+navigate\+\_\+possible()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__frame_8h_a1505448605aa3d14abf3082249ba6be2}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+certificate\+\_\+status\+\_\+get@{ewk\+\_\+frame\+\_\+certificate\+\_\+status\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+certificate\+\_\+status\+\_\+get@{ewk\+\_\+frame\+\_\+certificate\+\_\+status\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+certificate\+\_\+status\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I {\bf Ewk\+\_\+\+Certificate\+\_\+\+Status} ewk\+\_\+frame\+\_\+certificate\+\_\+status\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a1505448605aa3d14abf3082249ba6be2}
+Returns the validity of the X.\+509 certificate related to the current frame. \hypertarget{ewk__frame_8h_a36bda34cf928f11afe7d1db72a40c0ac}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+child\+\_\+find@{ewk\+\_\+frame\+\_\+child\+\_\+find}}
+\index{ewk\+\_\+frame\+\_\+child\+\_\+find@{ewk\+\_\+frame\+\_\+child\+\_\+find}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+child\+\_\+find}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Evas\+\_\+\+Object$\ast$ ewk\+\_\+frame\+\_\+child\+\_\+find (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a36bda34cf928f11afe7d1db72a40c0ac}
+Finds a child frame by its name, recursively.
+
+For pre-\/defined names, returns {\itshape o} if {\itshape name} is \char`\"{}\+\_\+self\char`\"{} or \char`\"{}\+\_\+current\char`\"{}, returns {\itshape o's} parent frame if {\itshape name} is \char`\"{}\+\_\+parent\char`\"{}, and returns the main frame if {\itshape name} is \char`\"{}\+\_\+top\char`\"{}. Also returns {\itshape o} if it is the main frame and {\itshape name} is either \char`\"{}\+\_\+parent\char`\"{} or \char`\"{}\+\_\+top\char`\"{}. For other names, this function returns the first frame that matches {\itshape name}. This function searches {\itshape o} and its descendents first, then {\itshape o's} parent and its children moving up the hierarchy until a match is found. If no match is found in {\itshape o's} hierarchy, this function will search for a matching frame in other main frame hierarchies.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to find a child frame \\
+\hline
+{\em name} & child frame name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+child frame of the given frame, or {\ttfamily N\+U\+L\+L} if the the child wasn't found 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_ad8158718019258e4403df097b604c426}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+children\+\_\+iterator\+\_\+new@{ewk\+\_\+frame\+\_\+children\+\_\+iterator\+\_\+new}}
+\index{ewk\+\_\+frame\+\_\+children\+\_\+iterator\+\_\+new@{ewk\+\_\+frame\+\_\+children\+\_\+iterator\+\_\+new}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+children\+\_\+iterator\+\_\+new}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Iterator$\ast$ ewk\+\_\+frame\+\_\+children\+\_\+iterator\+\_\+new (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_ad8158718019258e4403df097b604c426}
+Returns a new iterator over all direct children frames.
+
+Keep frame object intact while iteration happens otherwise frame may be destroyed while iterated.
+
+Iteration results are Evas\+\_\+\+Object$\ast$, so give eina\+\_\+iterator\+\_\+next() a pointer to it.
+
+Returned iterator should be freed by eina\+\_\+iterator\+\_\+free().
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to create the iterator\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a newly allocated iterator on sucess, or {\ttfamily N\+U\+L\+L} if not possible to create the iterator 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_aeb6a6082bf0fd51064d71b6eafe9268a}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+contents\+\_\+alternate\+\_\+set@{ewk\+\_\+frame\+\_\+contents\+\_\+alternate\+\_\+set}}
+\index{ewk\+\_\+frame\+\_\+contents\+\_\+alternate\+\_\+set@{ewk\+\_\+frame\+\_\+contents\+\_\+alternate\+\_\+set}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+contents\+\_\+alternate\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+contents\+\_\+alternate\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{const char $\ast$}]{contents, }
+\item[{size\+\_\+t}]{contents\+\_\+size, }
+\item[{const char $\ast$}]{mime\+\_\+type, }
+\item[{const char $\ast$}]{encoding, }
+\item[{const char $\ast$}]{base\+\_\+uri, }
+\item[{const char $\ast$}]{unreachable\+\_\+uri}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_aeb6a6082bf0fd51064d71b6eafe9268a}
+Requests loading alternative contents for unreachable U\+R\+I in this frame.
+
+This is similar to \hyperlink{ewk__frame_8h_a70d1ab379d0218e98f8dc4df1f732cf8}{ewk\+\_\+frame\+\_\+contents\+\_\+set()}, but is used when some U\+R\+I was failed to load, using the provided content instead. The main difference is that back-\/forward navigation list is not changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to load alternative content \\
+\hline
+{\em contents} & what to load into frame, must {\bfseries not} be {\ttfamily N\+U\+L\+L} \\
+\hline
+{\em contents\+\_\+size} & size of {\itshape contents} (in bytes), if {\ttfamily 0} is given, length of {\itshape contents} is used \\
+\hline
+{\em mime\+\_\+type} & type of {\itshape contents} data, if {\ttfamily N\+U\+L\+L} is given \char`\"{}text/html\char`\"{} is assumed \\
+\hline
+{\em encoding} & encoding used for {\itshape contents} data, if {\ttfamily N\+U\+L\+L} is given \char`\"{}\+U\+T\+F-\/8\char`\"{} is assumed \\
+\hline
+{\em base\+\_\+uri} & base U\+R\+I to use for relative resources, may be {\ttfamily N\+U\+L\+L}, if provided must be an absolute uri \\
+\hline
+{\em unreachable\+\_\+uri} & the U\+R\+I that failed to load and is getting the alternative representation, must {\bfseries not} be {\ttfamily N\+U\+L\+L} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on successful request, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on errors 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a70d1ab379d0218e98f8dc4df1f732cf8}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+contents\+\_\+set@{ewk\+\_\+frame\+\_\+contents\+\_\+set}}
+\index{ewk\+\_\+frame\+\_\+contents\+\_\+set@{ewk\+\_\+frame\+\_\+contents\+\_\+set}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+contents\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+contents\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{const char $\ast$}]{contents, }
+\item[{size\+\_\+t}]{contents\+\_\+size, }
+\item[{const char $\ast$}]{mime\+\_\+type, }
+\item[{const char $\ast$}]{encoding, }
+\item[{const char $\ast$}]{base\+\_\+uri}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a70d1ab379d0218e98f8dc4df1f732cf8}
+Requests loading the given contents in this frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to load document \\
+\hline
+{\em contents} & what to load into frame \\
+\hline
+{\em contents\+\_\+size} & size of {\itshape contents} (in bytes), if {\ttfamily 0} is given, length of {\itshape contents} is used \\
+\hline
+{\em mime\+\_\+type} & type of {\itshape contents} data, if {\ttfamily N\+U\+L\+L} is given \char`\"{}text/html\char`\"{} is assumed \\
+\hline
+{\em encoding} & encoding for {\itshape contents} data, if {\ttfamily N\+U\+L\+L} is given \char`\"{}\+U\+T\+F-\/8\char`\"{} is assumed \\
+\hline
+{\em base\+\_\+uri} & base uri to use for relative resources, may be {\ttfamily N\+U\+L\+L}, if provided {\bfseries must} be an absolute uri\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on successful request, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on errors 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a35a1807b953747c6d70111b4d5cf18d3}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+contents\+\_\+size\+\_\+get@{ewk\+\_\+frame\+\_\+contents\+\_\+size\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+contents\+\_\+size\+\_\+get@{ewk\+\_\+frame\+\_\+contents\+\_\+size\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+contents\+\_\+size\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+contents\+\_\+size\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{Evas\+\_\+\+Coord $\ast$}]{w, }
+\item[{Evas\+\_\+\+Coord $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a35a1807b953747c6d70111b4d5cf18d3}
+Gets last known contents size.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to get contents size \\
+\hline
+{\em w} & pointer to store contents size width, may be {\ttfamily N\+U\+L\+L} \\
+\hline
+{\em h} & pointer to store contents size height, may be {\ttfamily N\+U\+L\+L} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure and {\itshape w} and {\itshape h} will be zeroed 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a04864942cbc9f1013422424a5bef2dcb}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+editable\+\_\+get@{ewk\+\_\+frame\+\_\+editable\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+editable\+\_\+get@{ewk\+\_\+frame\+\_\+editable\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+editable\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+editable\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a04864942cbc9f1013422424a5bef2dcb}
+Queries if the frame is editable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the frame object to query editable state\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the frame is editable, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a16bd4c8c03b10bc6f64e02ebc7515faf}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+editable\+\_\+set@{ewk\+\_\+frame\+\_\+editable\+\_\+set}}
+\index{ewk\+\_\+frame\+\_\+editable\+\_\+set@{ewk\+\_\+frame\+\_\+editable\+\_\+set}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+editable\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+editable\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{Eina\+\_\+\+Bool}]{editable}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a16bd4c8c03b10bc6f64e02ebc7515faf}
+Sets editable state for frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the frame object to set editable state \\
+\hline
+{\em editable} & a new state to set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_ad9e4f90636baef640f0e4a40880a0178}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+feed\+\_\+focus\+\_\+in@{ewk\+\_\+frame\+\_\+feed\+\_\+focus\+\_\+in}}
+\index{ewk\+\_\+frame\+\_\+feed\+\_\+focus\+\_\+in@{ewk\+\_\+frame\+\_\+feed\+\_\+focus\+\_\+in}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+feed\+\_\+focus\+\_\+in}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+feed\+\_\+focus\+\_\+in (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_ad9e4f90636baef640f0e4a40880a0178}
+Feeds the focus in event to the frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to feed focus\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the focus was handled, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_ab6f37f6d188407aa7b6883188842f76d}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+feed\+\_\+focus\+\_\+out@{ewk\+\_\+frame\+\_\+feed\+\_\+focus\+\_\+out}}
+\index{ewk\+\_\+frame\+\_\+feed\+\_\+focus\+\_\+out@{ewk\+\_\+frame\+\_\+feed\+\_\+focus\+\_\+out}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+feed\+\_\+focus\+\_\+out}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+feed\+\_\+focus\+\_\+out (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_ab6f37f6d188407aa7b6883188842f76d}
+Feeds the focus out event to the frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to remove focus\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} since the feature is not implemented 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_afd0fc6393986a61158174cfc52d63ac7}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+feed\+\_\+key\+\_\+down@{ewk\+\_\+frame\+\_\+feed\+\_\+key\+\_\+down}}
+\index{ewk\+\_\+frame\+\_\+feed\+\_\+key\+\_\+down@{ewk\+\_\+frame\+\_\+feed\+\_\+key\+\_\+down}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+feed\+\_\+key\+\_\+down}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+feed\+\_\+key\+\_\+down (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{const Evas\+\_\+\+Event\+\_\+\+Key\+\_\+\+Down $\ast$}]{ev}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_afd0fc6393986a61158174cfc52d63ac7}
+Feeds the keyboard key down event to the frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to feed event \\
+\hline
+{\em ev} & keyboard key down event\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the key down event was handled, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_aab9683e8c777bd6fc826256b23397210}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+feed\+\_\+key\+\_\+up@{ewk\+\_\+frame\+\_\+feed\+\_\+key\+\_\+up}}
+\index{ewk\+\_\+frame\+\_\+feed\+\_\+key\+\_\+up@{ewk\+\_\+frame\+\_\+feed\+\_\+key\+\_\+up}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+feed\+\_\+key\+\_\+up}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+feed\+\_\+key\+\_\+up (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{const Evas\+\_\+\+Event\+\_\+\+Key\+\_\+\+Up $\ast$}]{ev}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_aab9683e8c777bd6fc826256b23397210}
+Feeds the keyboard key up event to the frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to feed event \\
+\hline
+{\em ev} & keyboard key up event\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the key up event was handled, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_ad7790ced9fa7c5731434636c90fd5bce}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+down@{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+down}}
+\index{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+down@{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+down}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+down}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+down (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{const Evas\+\_\+\+Event\+\_\+\+Mouse\+\_\+\+Down $\ast$}]{ev}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_ad7790ced9fa7c5731434636c90fd5bce}
+Feeds the mouse down event to the frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to feed the mouse down event \\
+\hline
+{\em ev} & the mouse down event\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the mouse down event was handled, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a8b9a486a77a6db4933aca813921f88b7}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+move@{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+move}}
+\index{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+move@{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+move}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+move}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+move (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{const Evas\+\_\+\+Event\+\_\+\+Mouse\+\_\+\+Move $\ast$}]{ev}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a8b9a486a77a6db4933aca813921f88b7}
+Feeds the mouse move event to the frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to feed the mouse move event \\
+\hline
+{\em ev} & the mouse move event\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the mouse move event was handled, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a93f7e45233c2fb2dd322f1adea3e8cc5}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+up@{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+up}}
+\index{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+up@{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+up}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+up}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+up (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{const Evas\+\_\+\+Event\+\_\+\+Mouse\+\_\+\+Up $\ast$}]{ev}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a93f7e45233c2fb2dd322f1adea3e8cc5}
+Feeds the mouse up event to the frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to feed the mouse up event \\
+\hline
+{\em ev} & the mouse up event\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the mouse up event was handled, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_ad44ba10ecb51de50d5c61f788d1fd6f5}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+wheel@{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+wheel}}
+\index{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+wheel@{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+wheel}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+wheel}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+feed\+\_\+mouse\+\_\+wheel (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{const Evas\+\_\+\+Event\+\_\+\+Mouse\+\_\+\+Wheel $\ast$}]{ev}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_ad44ba10ecb51de50d5c61f788d1fd6f5}
+Feeds the mouse wheel event to the frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to feed the mouse wheel event \\
+\hline
+{\em ev} & the mouse wheel event\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the mouse wheel event was handled, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a67029f951c95b3abc8b78d9552d1e3ac}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+feed\+\_\+touch\+\_\+event@{ewk\+\_\+frame\+\_\+feed\+\_\+touch\+\_\+event}}
+\index{ewk\+\_\+frame\+\_\+feed\+\_\+touch\+\_\+event@{ewk\+\_\+frame\+\_\+feed\+\_\+touch\+\_\+event}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+feed\+\_\+touch\+\_\+event}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+feed\+\_\+touch\+\_\+event (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{{\bf Ewk\+\_\+\+Touch\+\_\+\+Event\+\_\+\+Type}}]{action, }
+\item[{Eina\+\_\+\+List $\ast$}]{points, }
+\item[{unsigned}]{modifiers}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a67029f951c95b3abc8b78d9552d1e3ac}
+Feeds the touch event to the frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to feed touch event \\
+\hline
+{\em action} & the action of touch event \\
+\hline
+{\em points} & a list of points (Ewk\+\_\+\+Touch\+\_\+\+Point) to process \\
+\hline
+{\em meta\+State} & modifiers state of touch event. Users are expected to pass O\+Red values of the E\+C\+O\+R\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R macros in Ecore\+\_\+\+Input.\+h, such as E\+C\+O\+R\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R\+\_\+\+A\+L\+T or E\+C\+O\+R\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R\+\_\+\+S\+H\+I\+F\+T\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if touch event was handled, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_af416eee559279639a8b3df3344a397f5}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+focused\+\_\+element\+\_\+geometry\+\_\+get@{ewk\+\_\+frame\+\_\+focused\+\_\+element\+\_\+geometry\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+focused\+\_\+element\+\_\+geometry\+\_\+get@{ewk\+\_\+frame\+\_\+focused\+\_\+element\+\_\+geometry\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+focused\+\_\+element\+\_\+geometry\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+focused\+\_\+element\+\_\+geometry\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{int $\ast$}]{x, }
+\item[{int $\ast$}]{y, }
+\item[{int $\ast$}]{w, }
+\item[{int $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_af416eee559279639a8b3df3344a397f5}
+Gets the geometry, relative to the frame, of the focused element in the document.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object containing the focused element \\
+\hline
+{\em x} & pointer where to store the X value of the geometry, may be {\ttfamily N\+U\+L\+L} \\
+\hline
+{\em x} & pointer where to store the Y value of the geometry, may be {\ttfamily N\+U\+L\+L} \\
+\hline
+{\em x} & pointer where to store width of the geometry, may be {\ttfamily N\+U\+L\+L} \\
+\hline
+{\em x} & pointer where to store height of the geometry, may be {\ttfamily N\+U\+L\+L} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the frame contains the currently focused element and its geometry was correctly fetched, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} in any other case 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a8d2abb99083d4bb115e082a79a7bfb4f}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+forward@{ewk\+\_\+frame\+\_\+forward}}
+\index{ewk\+\_\+frame\+\_\+forward@{ewk\+\_\+frame\+\_\+forward}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+forward}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+forward (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a8d2abb99083d4bb115e082a79a7bfb4f}
+Asks frame to navigate forward in the history.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to navigate forward\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__frame_8h_a5ece0c27529dbf9d036c306c5e614010}{ewk\+\_\+frame\+\_\+navigate()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__frame_8h_abe5471fd07e37dfc19f418b34d739651}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+forward\+\_\+possible@{ewk\+\_\+frame\+\_\+forward\+\_\+possible}}
+\index{ewk\+\_\+frame\+\_\+forward\+\_\+possible@{ewk\+\_\+frame\+\_\+forward\+\_\+possible}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+forward\+\_\+possible}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+forward\+\_\+possible (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_abe5471fd07e37dfc19f418b34d739651}
+Queries if it's possible to navigate forwards one item in the history.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to query if forward navigation is possible\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if it's possible to navigate forwards in the history, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__frame_8h_a381533046ff8562900f6cc4cd63058b7}{ewk\+\_\+frame\+\_\+navigate\+\_\+possible()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__frame_8h_a7e81b59c880dbb064fce1003c56caa83}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+hit\+\_\+test\+\_\+free@{ewk\+\_\+frame\+\_\+hit\+\_\+test\+\_\+free}}
+\index{ewk\+\_\+frame\+\_\+hit\+\_\+test\+\_\+free@{ewk\+\_\+frame\+\_\+hit\+\_\+test\+\_\+free}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+hit\+\_\+test\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+frame\+\_\+hit\+\_\+test\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Hit\+\_\+\+Test} $\ast$}]{hit\+\_\+test}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a7e81b59c880dbb064fce1003c56caa83}
+Frees hit test instance created by \hyperlink{ewk__frame_8h_a91dcc8ff8536253cb2517648234af339}{ewk\+\_\+frame\+\_\+hit\+\_\+test\+\_\+new()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hit\+\_\+test} & instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__frame_8h_a91dcc8ff8536253cb2517648234af339}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+hit\+\_\+test\+\_\+new@{ewk\+\_\+frame\+\_\+hit\+\_\+test\+\_\+new}}
+\index{ewk\+\_\+frame\+\_\+hit\+\_\+test\+\_\+new@{ewk\+\_\+frame\+\_\+hit\+\_\+test\+\_\+new}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+hit\+\_\+test\+\_\+new}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I {\bf Ewk\+\_\+\+Hit\+\_\+\+Test}$\ast$ ewk\+\_\+frame\+\_\+hit\+\_\+test\+\_\+new (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a91dcc8ff8536253cb2517648234af339}
+Creates a new hit test for the given frame and point.
+
+The returned object should be freed by \hyperlink{ewk__frame_8h_a7e81b59c880dbb064fce1003c56caa83}{ewk\+\_\+frame\+\_\+hit\+\_\+test\+\_\+free()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to do hit test on \\
+\hline
+{\em x} & the horizontal position to query \\
+\hline
+{\em y} & the vertical position to query\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a newly allocated hit test on success, {\ttfamily N\+U\+L\+L} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a01c23cc1f7af4991ed854658e6787d62}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+mixed\+\_\+content\+\_\+displayed\+\_\+get@{ewk\+\_\+frame\+\_\+mixed\+\_\+content\+\_\+displayed\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+mixed\+\_\+content\+\_\+displayed\+\_\+get@{ewk\+\_\+frame\+\_\+mixed\+\_\+content\+\_\+displayed\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+mixed\+\_\+content\+\_\+displayed\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+mixed\+\_\+content\+\_\+displayed\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a01c23cc1f7af4991ed854658e6787d62}
+Returns whether the frame has displayed mixed content.
+
+When a frame has displayed mixed content, its current U\+R\+I is an H\+T\+T\+P\+S one, but it has loaded and displayed a resource (such as an image) from an insecure (non-\/\+H\+T\+T\+P\+S) U\+R\+I. Both the frame and the container view send a \char`\"{}mixedcontent,displayed\char`\"{} signal in this case.
+
+The status is reset only when a load event occurs (eg. the page is reloaded or a new page is loaded).
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The frame to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__view_8h_ae025264304d5b27de66be117bb7146a2}{ewk\+\_\+view\+\_\+mixed\+\_\+content\+\_\+displayed\+\_\+get} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__frame_8h_a60074d49bc42a220a3ed45bffb8a861b}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+mixed\+\_\+content\+\_\+run\+\_\+get@{ewk\+\_\+frame\+\_\+mixed\+\_\+content\+\_\+run\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+mixed\+\_\+content\+\_\+run\+\_\+get@{ewk\+\_\+frame\+\_\+mixed\+\_\+content\+\_\+run\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+mixed\+\_\+content\+\_\+run\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+mixed\+\_\+content\+\_\+run\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a60074d49bc42a220a3ed45bffb8a861b}
+Returns whether the frame has run mixed content.
+
+When a frame has run mixed content, its current U\+R\+I is an H\+T\+T\+P\+S one, but it has loaded and run a resource (such as an image) from an insecure (non-\/\+H\+T\+T\+P\+S) U\+R\+I. Both the frame and the container view send a \char`\"{}mixedcontent,run\char`\"{} signal in this case.
+
+The status is reset only when a load event occurs (eg. the page is reloaded or a new page is loaded).
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The frame to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__view_8h_a002e372e64066e21d2defd0c0c6c7ff4}{ewk\+\_\+view\+\_\+mixed\+\_\+content\+\_\+run\+\_\+get} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__frame_8h_a4b874577af42580cbcd357a1d9d5428c}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+name\+\_\+get@{ewk\+\_\+frame\+\_\+name\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+name\+\_\+get@{ewk\+\_\+frame\+\_\+name\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+name\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+frame\+\_\+name\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a4b874577af42580cbcd357a1d9d5428c}
+Gets the name of this frame.
+
+It returns an internal string and should not be modified. The string is guaranteed to be stringshared.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to get name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+frame name on success or {\ttfamily N\+U\+L\+L} on failure 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a5ece0c27529dbf9d036c306c5e614010}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+navigate@{ewk\+\_\+frame\+\_\+navigate}}
+\index{ewk\+\_\+frame\+\_\+navigate@{ewk\+\_\+frame\+\_\+navigate}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+navigate}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+navigate (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{int}]{steps}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a5ece0c27529dbf9d036c306c5e614010}
+Navigates back or forward in the history.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to navigate \\
+\hline
+{\em steps} & if positive navigates that amount forwards, if negative does backwards\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a381533046ff8562900f6cc4cd63058b7}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+navigate\+\_\+possible@{ewk\+\_\+frame\+\_\+navigate\+\_\+possible}}
+\index{ewk\+\_\+frame\+\_\+navigate\+\_\+possible@{ewk\+\_\+frame\+\_\+navigate\+\_\+possible}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+navigate\+\_\+possible}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+navigate\+\_\+possible (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{int}]{steps}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a381533046ff8562900f6cc4cd63058b7}
+Queries if it's possible to navigate given {\itshape steps} in the history.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to query if is possible to navigate {\itshape steps} in the history \\
+\hline
+{\em steps} & positive value navigates that amount forwards, negative value does backwards\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if it's possible to navigate {\itshape steps} in the history, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_ad0665d36fbf8bb268b0adeff99da11f8}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+page\+\_\+zoom\+\_\+get@{ewk\+\_\+frame\+\_\+page\+\_\+zoom\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+page\+\_\+zoom\+\_\+get@{ewk\+\_\+frame\+\_\+page\+\_\+zoom\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+page\+\_\+zoom\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I float ewk\+\_\+frame\+\_\+page\+\_\+zoom\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_ad0665d36fbf8bb268b0adeff99da11f8}
+Gets the current page zoom level used by this frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to get zoom level\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+page zoom level for the frame or {\ttfamily -\/1.\+0} on failure
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__frame_8h_ab44cb28bba0c5d366530485d425d696d}{ewk\+\_\+frame\+\_\+text\+\_\+zoom\+\_\+get()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__frame_8h_ac3daa5d7ba60acb0d5e3bb15753678a4}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+page\+\_\+zoom\+\_\+set@{ewk\+\_\+frame\+\_\+page\+\_\+zoom\+\_\+set}}
+\index{ewk\+\_\+frame\+\_\+page\+\_\+zoom\+\_\+set@{ewk\+\_\+frame\+\_\+page\+\_\+zoom\+\_\+set}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+page\+\_\+zoom\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+page\+\_\+zoom\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{float}]{page\+\_\+zoom\+\_\+factor}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_ac3daa5d7ba60acb0d5e3bb15753678a4}
+Sets the current page zoom level used by this frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to change zoom level \\
+\hline
+{\em page\+\_\+zoom\+\_\+factor} & a new zoom level\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__frame_8h_ac495bf77e4129b0046f018b5dfd20bcb}{ewk\+\_\+frame\+\_\+text\+\_\+zoom\+\_\+set()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__frame_8h_ae1181fe7b28cb528d66e2ecb767d9a85}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+paint\+\_\+full\+\_\+get@{ewk\+\_\+frame\+\_\+paint\+\_\+full\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+paint\+\_\+full\+\_\+get@{ewk\+\_\+frame\+\_\+paint\+\_\+full\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+paint\+\_\+full\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+paint\+\_\+full\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_ae1181fe7b28cb528d66e2ecb767d9a85}
+Queries if the frame should be repainted completely.
+
+Function tells if dirty areas should be repainted even if they are out of the screen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to query if the frame should be repainted completely\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if any dirty areas should be repainted, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a3581cf33ba692abaa663d0f8743722bd}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+paint\+\_\+full\+\_\+set@{ewk\+\_\+frame\+\_\+paint\+\_\+full\+\_\+set}}
+\index{ewk\+\_\+frame\+\_\+paint\+\_\+full\+\_\+set@{ewk\+\_\+frame\+\_\+paint\+\_\+full\+\_\+set}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+paint\+\_\+full\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+frame\+\_\+paint\+\_\+full\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{Eina\+\_\+\+Bool}]{flag}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a3581cf33ba692abaa663d0f8743722bd}
+Sets if the frame should be repainted completely.
+
+Function sets if dirty areas should be repainted even if they are out of the screen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to set if the frame should be repainted completely \\
+\hline
+{\em flag} & {\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} to repaint the frame completely, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} if not \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__frame_8h_a1735c9bcb4568813490890c70e4fdccb}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+plain\+\_\+text\+\_\+get@{ewk\+\_\+frame\+\_\+plain\+\_\+text\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+plain\+\_\+text\+\_\+get@{ewk\+\_\+frame\+\_\+plain\+\_\+text\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+plain\+\_\+text\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+frame\+\_\+plain\+\_\+text\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a1735c9bcb4568813490890c70e4fdccb}
+Retrieve the frame's contents in plain text.
+
+This function returns the contents of the given frame converted to plain text, removing all the H\+T\+M\+L formatting.
+
+The returned string {\bfseries should} be freed by eina\+\_\+stringshare\+\_\+del() after use.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ewk\+Frame} & Frame object whose contents to retrieve.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A newly allocated string (which must be freed by the caller with {\ttfamily free()}) or {\ttfamily N\+U\+L\+L} in case of failure. 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a687ab9b855d08a79e71336d10823dc76}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+reload@{ewk\+\_\+frame\+\_\+reload}}
+\index{ewk\+\_\+frame\+\_\+reload@{ewk\+\_\+frame\+\_\+reload}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+reload}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+reload (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a687ab9b855d08a79e71336d10823dc76}
+Asks frame to reload current document.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to reload current document\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__frame_8h_abb3c368d2883c665420bc4bdd68f3690}{ewk\+\_\+frame\+\_\+reload\+\_\+full()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__frame_8h_abb3c368d2883c665420bc4bdd68f3690}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+reload\+\_\+full@{ewk\+\_\+frame\+\_\+reload\+\_\+full}}
+\index{ewk\+\_\+frame\+\_\+reload\+\_\+full@{ewk\+\_\+frame\+\_\+reload\+\_\+full}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+reload\+\_\+full}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+reload\+\_\+full (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_abb3c368d2883c665420bc4bdd68f3690}
+Asks frame to fully reload current document, using no previous caches.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to reload current document\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a5b61b38063c7c635eabd7880400bb85e}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+resources\+\_\+location\+\_\+get@{ewk\+\_\+frame\+\_\+resources\+\_\+location\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+resources\+\_\+location\+\_\+get@{ewk\+\_\+frame\+\_\+resources\+\_\+location\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+resources\+\_\+location\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+List$\ast$ ewk\+\_\+frame\+\_\+resources\+\_\+location\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a5b61b38063c7c635eabd7880400bb85e}
+Gets the resource list of this frame.
+
+It's part of H\+T\+M\+L saving feature. Currently only locations of images are supported. An application might find these values in frame source and replace them to the local paths. Values are not duplicated and they are decoded.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame smart object to get the resources list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Eina\+\_\+\+List} with location of resources on success, or {\ttfamily N\+U\+L\+L} on failure, the Eina\+\_\+\+List should be freed after use
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__frame_8h_afb0ec7b63d56472d2f6ee3a14501e4c2}{ewk\+\_\+frame\+\_\+source\+\_\+get()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__frame_8h_a0c3f852a46ce6ec66a86f7bbd2cd0aec}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+script\+\_\+execute@{ewk\+\_\+frame\+\_\+script\+\_\+execute}}
+\index{ewk\+\_\+frame\+\_\+script\+\_\+execute@{ewk\+\_\+frame\+\_\+script\+\_\+execute}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+script\+\_\+execute}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+frame\+\_\+script\+\_\+execute (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{const char $\ast$}]{script}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a0c3f852a46ce6ec66a86f7bbd2cd0aec}
+Requests execution of the given script.
+
+The returned string {\bfseries should} be freed by eina\+\_\+stringshare\+\_\+del() after use.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to execute script \\
+\hline
+{\em script} & Java Script to execute\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+newly allocated string for result or {\ttfamily N\+U\+L\+L} if the result cannot be converted to string or failure 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a83e35877575a092bec4ed4884b7f7f90}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+scroll\+\_\+add@{ewk\+\_\+frame\+\_\+scroll\+\_\+add}}
+\index{ewk\+\_\+frame\+\_\+scroll\+\_\+add@{ewk\+\_\+frame\+\_\+scroll\+\_\+add}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+scroll\+\_\+add}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+scroll\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{int}]{dx, }
+\item[{int}]{dy}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a83e35877575a092bec4ed4884b7f7f90}
+Sets a relative scroll of the given frame.
+
+This function does scroll {\itshape dx} and {\itshape dy} pixels from the current position of scroll.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to scroll \\
+\hline
+{\em dx} & horizontal offset to scroll \\
+\hline
+{\em dy} & vertical offset to scroll\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a3b1da4a9adacdb9c3188a89811f30168}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+scroll\+\_\+pos\+\_\+get@{ewk\+\_\+frame\+\_\+scroll\+\_\+pos\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+scroll\+\_\+pos\+\_\+get@{ewk\+\_\+frame\+\_\+scroll\+\_\+pos\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+scroll\+\_\+pos\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+scroll\+\_\+pos\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{int $\ast$}]{x, }
+\item[{int $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a3b1da4a9adacdb9c3188a89811f30168}
+Gets the current scroll position of given frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to get the current scroll position \\
+\hline
+{\em x} & the pointer to store the horizontal position, may be {\ttfamily N\+U\+L\+L} \\
+\hline
+{\em y} & the pointer to store the vertical position. may be {\ttfamily N\+U\+L\+L} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise and values are zeroed. 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a98e58b7fa845e929951275aedce844a2}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+scroll\+\_\+set@{ewk\+\_\+frame\+\_\+scroll\+\_\+set}}
+\index{ewk\+\_\+frame\+\_\+scroll\+\_\+set@{ewk\+\_\+frame\+\_\+scroll\+\_\+set}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+scroll\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+scroll\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a98e58b7fa845e929951275aedce844a2}
+Sets an absolute scroll of the given frame.
+
+Both values are from zero to the contents size minus the viewport size. See \hyperlink{ewk__frame_8h_abbbc30564cfac31d9558b1d829ae3681}{ewk\+\_\+frame\+\_\+scroll\+\_\+size\+\_\+get()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to scroll \\
+\hline
+{\em x} & horizontal position to scroll \\
+\hline
+{\em y} & vertical position to scroll\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_abbbc30564cfac31d9558b1d829ae3681}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+scroll\+\_\+size\+\_\+get@{ewk\+\_\+frame\+\_\+scroll\+\_\+size\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+scroll\+\_\+size\+\_\+get@{ewk\+\_\+frame\+\_\+scroll\+\_\+size\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+scroll\+\_\+size\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+scroll\+\_\+size\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{int $\ast$}]{w, }
+\item[{int $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_abbbc30564cfac31d9558b1d829ae3681}
+Gets the possible scroll size of the given frame.
+
+Possible scroll size is contents size minus the viewport size. It's the last allowed value for \hyperlink{ewk__frame_8h_a98e58b7fa845e929951275aedce844a2}{ewk\+\_\+frame\+\_\+scroll\+\_\+set()}
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to get scroll size \\
+\hline
+{\em w} & the pointer to store the horizontal size that is possible to scroll, may be {\ttfamily N\+U\+L\+L} \\
+\hline
+{\em h} & the pointer to store the vertical size that is possible to scroll, may be {\ttfamily N\+U\+L\+L} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise and values are zeroed 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a624fa6923dc8baec1e99458f26c2129d}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+security\+\_\+origin\+\_\+get@{ewk\+\_\+frame\+\_\+security\+\_\+origin\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+security\+\_\+origin\+\_\+get@{ewk\+\_\+frame\+\_\+security\+\_\+origin\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+security\+\_\+origin\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I {\bf Ewk\+\_\+\+Security\+\_\+\+Origin}$\ast$ ewk\+\_\+frame\+\_\+security\+\_\+origin\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a624fa6923dc8baec1e99458f26c2129d}
+Retrieves the Ewk\+\_\+\+Security\+\_\+\+Origin of this frame.
+
+The returned object should be freed by \hyperlink{ewk__security__origin_8h_a70bc02fb4b080c97c8dffa4c69e97799}{ewk\+\_\+security\+\_\+origin\+\_\+free()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to get the security origin\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+security origin object 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a741a0e8ebdeef26efe0a55034e7f1453}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+selection\+\_\+get@{ewk\+\_\+frame\+\_\+selection\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+selection\+\_\+get@{ewk\+\_\+frame\+\_\+selection\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+selection\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+frame\+\_\+selection\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a741a0e8ebdeef26efe0a55034e7f1453}
+Gets the copy of the selected text.
+
+The returned string {\bfseries should} be freed by eina\+\_\+stringshare\+\_\+del() after use.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the frame object to get selected text\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a newly allocated string or {\ttfamily N\+U\+L\+L} if nothing is selected or on failure 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_afb0ec7b63d56472d2f6ee3a14501e4c2}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+source\+\_\+get@{ewk\+\_\+frame\+\_\+source\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+source\+\_\+get@{ewk\+\_\+frame\+\_\+source\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+source\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I ssize\+\_\+t ewk\+\_\+frame\+\_\+source\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{char $\ast$$\ast$}]{frame\+\_\+source}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_afb0ec7b63d56472d2f6ee3a14501e4c2}
+Gets the frame source.
+
+It's part of H\+T\+M\+L saving feature. Currently only H\+T\+M\+L documents are supported.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame smart object to get the frame source \\
+\hline
+{\em frame\+\_\+source} & a pointer to store the source of frame, must {\bfseries not} be {\ttfamily N\+U\+L\+L}, this value {\bfseries should} be freed after use\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily length} of {\itshape frame\+\_\+source} on success, or {\ttfamily -\/1} on failure
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__frame_8h_a5b61b38063c7c635eabd7880400bb85e}{ewk\+\_\+frame\+\_\+resources\+\_\+location\+\_\+get()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__frame_8h_a77b4c58991bad09e20e96b9232757ba1}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+stop@{ewk\+\_\+frame\+\_\+stop}}
+\index{ewk\+\_\+frame\+\_\+stop@{ewk\+\_\+frame\+\_\+stop}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+stop}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a77b4c58991bad09e20e96b9232757ba1}
+Asks frame to stop loading.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to stop loading\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a19f69a52a34b752b0ba046d7c1420a54}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+highlight\+\_\+get@{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+highlight\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+highlight\+\_\+get@{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+highlight\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+highlight\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+highlight\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a19f69a52a34b752b0ba046d7c1420a54}
+Returns whether matches marked with \hyperlink{ewk__frame_8h_ad92620cca85904bd5c86dd87b2918721}{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+mark()} are highlighted.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to query if matches are highlighted or not\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if matches are highlighted, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a524f4cee5003a3b76e3caf371a5e5879}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+highlight\+\_\+set@{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+highlight\+\_\+set}}
+\index{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+highlight\+\_\+set@{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+highlight\+\_\+set}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+highlight\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+highlight\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{Eina\+\_\+\+Bool}]{highlight}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a524f4cee5003a3b76e3caf371a5e5879}
+Sets whether matches marked with \hyperlink{ewk__frame_8h_ad92620cca85904bd5c86dd87b2918721}{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+mark()} should be highlighted.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object where to set if matches are highlighted or not \\
+\hline
+{\em highlight} & {\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if matches are highlighted, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} if not\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_ad92620cca85904bd5c86dd87b2918721}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+mark@{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+mark}}
+\index{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+mark@{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+mark}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+mark}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I unsigned int ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+mark (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{const char $\ast$}]{string, }
+\item[{Eina\+\_\+\+Bool}]{case\+\_\+sensitive, }
+\item[{Eina\+\_\+\+Bool}]{highlight, }
+\item[{unsigned int}]{limit}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_ad92620cca85904bd5c86dd87b2918721}
+Marks matches the given string in a document.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object where to search text \\
+\hline
+{\em string} & reference string to match \\
+\hline
+{\em case\+\_\+sensitive} & if match should be case sensitive or not \\
+\hline
+{\em highlight} & if matches should be highlighted \\
+\hline
+{\em limit} & maximum amount of matches, or zero to unlimited\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of matched {\itshape string} 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a6bf702b3f40aa6c9411535246e151e6e}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+nth\+\_\+pos\+\_\+get@{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+nth\+\_\+pos\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+nth\+\_\+pos\+\_\+get@{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+nth\+\_\+pos\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+nth\+\_\+pos\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+nth\+\_\+pos\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{size\+\_\+t}]{n, }
+\item[{int $\ast$}]{x, }
+\item[{int $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a6bf702b3f40aa6c9411535246e151e6e}
+Returns the position of the n-\/th matched text in the frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object where matches are marked \\
+\hline
+{\em n} & index of element \\
+\hline
+{\em x} & the pointer to store the horizontal position of {\itshape n} matched text, may be {\ttfamily N\+U\+L\+L} \\
+\hline
+{\em y} & the pointer to store the vertical position of {\itshape n} matched text, may be {\ttfamily N\+U\+L\+L} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} when no matches were found or {\itshape n} is bigger than search results or on failure 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_ab7a3b7d18c9614b32543b257d9668fd7}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+unmark\+\_\+all@{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+unmark\+\_\+all}}
+\index{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+unmark\+\_\+all@{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+unmark\+\_\+all}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+unmark\+\_\+all}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+unmark\+\_\+all (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_ab7a3b7d18c9614b32543b257d9668fd7}
+Unmarks all marked matches in a document. Reverses the effect of \hyperlink{ewk__frame_8h_ad92620cca85904bd5c86dd87b2918721}{ewk\+\_\+frame\+\_\+text\+\_\+matches\+\_\+mark()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object where to unmark matches\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_ab5d1296134d863c017f2f6eb189a3aaf}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+text\+\_\+search@{ewk\+\_\+frame\+\_\+text\+\_\+search}}
+\index{ewk\+\_\+frame\+\_\+text\+\_\+search@{ewk\+\_\+frame\+\_\+text\+\_\+search}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+text\+\_\+search}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+text\+\_\+search (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{const char $\ast$}]{string, }
+\item[{Eina\+\_\+\+Bool}]{case\+\_\+sensitive, }
+\item[{Eina\+\_\+\+Bool}]{forward, }
+\item[{Eina\+\_\+\+Bool}]{wrap}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_ab5d1296134d863c017f2f6eb189a3aaf}
+Searches the given string in a document.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object where to search the text \\
+\hline
+{\em string} & reference string to search \\
+\hline
+{\em case\+\_\+sensitive} & if search should be case sensitive or not \\
+\hline
+{\em forward} & if search is from cursor and on or backwards \\
+\hline
+{\em wrap} & if search should wrap at the end\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the given string was found, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} if not or failure 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a7676f70a9c4ece2469e00c212e6abf97}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+text\+\_\+selection\+\_\+type\+\_\+get@{ewk\+\_\+frame\+\_\+text\+\_\+selection\+\_\+type\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+text\+\_\+selection\+\_\+type\+\_\+get@{ewk\+\_\+frame\+\_\+text\+\_\+selection\+\_\+type\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+text\+\_\+selection\+\_\+type\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Ewk\+\_\+\+Text\+\_\+\+Selection\+\_\+\+Type ewk\+\_\+frame\+\_\+text\+\_\+selection\+\_\+type\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a7676f70a9c4ece2469e00c212e6abf97}
+Returns current text selection type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & a frame object to check selection type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+current text selection type on success or no selection otherwise 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_ab44cb28bba0c5d366530485d425d696d}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+text\+\_\+zoom\+\_\+get@{ewk\+\_\+frame\+\_\+text\+\_\+zoom\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+text\+\_\+zoom\+\_\+get@{ewk\+\_\+frame\+\_\+text\+\_\+zoom\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+text\+\_\+zoom\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I float ewk\+\_\+frame\+\_\+text\+\_\+zoom\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_ab44cb28bba0c5d366530485d425d696d}
+Gets the current text zoom level used by this frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to get zoom level\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+text zoom level for the frame or {\ttfamily -\/1.\+0} on failure
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__frame_8h_ad0665d36fbf8bb268b0adeff99da11f8}{ewk\+\_\+frame\+\_\+page\+\_\+zoom\+\_\+get()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__frame_8h_ac495bf77e4129b0046f018b5dfd20bcb}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+text\+\_\+zoom\+\_\+set@{ewk\+\_\+frame\+\_\+text\+\_\+zoom\+\_\+set}}
+\index{ewk\+\_\+frame\+\_\+text\+\_\+zoom\+\_\+set@{ewk\+\_\+frame\+\_\+text\+\_\+zoom\+\_\+set}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+text\+\_\+zoom\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+text\+\_\+zoom\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{float}]{text\+\_\+zoom\+\_\+factor}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_ac495bf77e4129b0046f018b5dfd20bcb}
+Sets the current text zoom level used by this frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to change zoom level \\
+\hline
+{\em text\+Zoom\+Factor} & a new zoom level\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__frame_8h_ac3daa5d7ba60acb0d5e3bb15753678a4}{ewk\+\_\+frame\+\_\+page\+\_\+zoom\+\_\+set()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__frame_8h_a707a9c3b56af950e4becdfb974bfb9b9}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+title\+\_\+get@{ewk\+\_\+frame\+\_\+title\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+title\+\_\+get@{ewk\+\_\+frame\+\_\+title\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+title\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const {\bf Ewk\+\_\+\+Text\+\_\+\+With\+\_\+\+Direction}$\ast$ ewk\+\_\+frame\+\_\+title\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a707a9c3b56af950e4becdfb974bfb9b9}
+Gets the title of this frame.
+
+It returns an internal string and should not be modified. The string is guaranteed to be stringshared.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to get title\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+frame title on success or {\ttfamily N\+U\+L\+L} on failure 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a51455e3faa6f7f9ac16a1d820610eb5e}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+uri\+\_\+get@{ewk\+\_\+frame\+\_\+uri\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+uri\+\_\+get@{ewk\+\_\+frame\+\_\+uri\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+uri\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+frame\+\_\+uri\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a51455e3faa6f7f9ac16a1d820610eb5e}
+Gets the uri of this frame.
+
+It returns an internal string and should not be modified. The string is guaranteed to be stringshared.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to get uri\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+frame uri on success or {\ttfamily N\+U\+L\+L} on failure 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a43bb60724142a554f98ea514111c5eb5}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+uri\+\_\+set@{ewk\+\_\+frame\+\_\+uri\+\_\+set}}
+\index{ewk\+\_\+frame\+\_\+uri\+\_\+set@{ewk\+\_\+frame\+\_\+uri\+\_\+set}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+uri\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+uri\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{const char $\ast$}]{uri}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a43bb60724142a554f98ea514111c5eb5}
+Asks the main frame to load the given U\+R\+I.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to load uri \\
+\hline
+{\em uri} & uniform resource identifier to load\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_aca48b5c3aa97f2d25c66c4c395c84271}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+view\+\_\+get@{ewk\+\_\+frame\+\_\+view\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+view\+\_\+get@{ewk\+\_\+frame\+\_\+view\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+view\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Evas\+\_\+\+Object$\ast$ ewk\+\_\+frame\+\_\+view\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_aca48b5c3aa97f2d25c66c4c395c84271}
+Retrieves the ewk\+\_\+view object that owns this frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to get view object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+view object or {\ttfamily N\+U\+L\+L} on failure 
+\end{DoxyReturn}
+\hypertarget{ewk__frame_8h_a22691fdafe1a7f288bf3497f437329ab}{\index{ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}!ewk\+\_\+frame\+\_\+visible\+\_\+content\+\_\+geometry\+\_\+get@{ewk\+\_\+frame\+\_\+visible\+\_\+content\+\_\+geometry\+\_\+get}}
+\index{ewk\+\_\+frame\+\_\+visible\+\_\+content\+\_\+geometry\+\_\+get@{ewk\+\_\+frame\+\_\+visible\+\_\+content\+\_\+geometry\+\_\+get}!ewk\+\_\+frame.\+h@{ewk\+\_\+frame.\+h}}
+\subsubsection[{ewk\+\_\+frame\+\_\+visible\+\_\+content\+\_\+geometry\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+frame\+\_\+visible\+\_\+content\+\_\+geometry\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Evas\+\_\+\+Object $\ast$}]{o, }
+\item[{Eina\+\_\+\+Bool}]{include\+\_\+scrollbars, }
+\item[{int $\ast$}]{x, }
+\item[{int $\ast$}]{y, }
+\item[{int $\ast$}]{w, }
+\item[{int $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{ewk__frame_8h_a22691fdafe1a7f288bf3497f437329ab}
+Gets the visible content geometry of the frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & frame object to query visible content geometry \\
+\hline
+{\em include\+\_\+scrollbars} & whenever to include scrollbars size \\
+\hline
+{\em x} & the pointer to store the horizontal position, may be {\ttfamily N\+U\+L\+L} \\
+\hline
+{\em y} & the pointer to store the vertical position, may be {\ttfamily N\+U\+L\+L} \\
+\hline
+{\em w} & the pointer to store width, may be {\ttfamily N\+U\+L\+L} \\
+\hline
+{\em h} & the pointer to store height, may be {\ttfamily N\+U\+L\+L} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise and values are zeroed 
+\end{DoxyReturn}

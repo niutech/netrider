@@ -1,0 +1,206 @@
+\hypertarget{ewk__web__database_8h}{\section{ewk\+\_\+web\+\_\+database.\+h File Reference}
+\label{ewk__web__database_8h}\index{ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}}
+}
+
+
+Web Database A\+P\+I.  
+
+
+{\ttfamily \#include \char`\"{}ewk\+\_\+security\+\_\+origin.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$Evas.\+h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ewk__web__database_8h_a408173ce52810fd7aa3bf342b83ffbe5}{typedef struct \hyperlink{struct__Ewk__Web__Database}{\+\_\+\+Ewk\+\_\+\+Web\+\_\+\+Database} {\bfseries Ewk\+\_\+\+Web\+\_\+\+Database}}\label{ewk__web__database_8h_a408173ce52810fd7aa3bf342b83ffbe5}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__web__database_8h_a6828825d6ae75a67657f5037ddaac55f}{ewk\+\_\+web\+\_\+database\+\_\+display\+\_\+name\+\_\+get} (\hyperlink{struct__Ewk__Web__Database}{Ewk\+\_\+\+Web\+\_\+\+Database} $\ast$o)
+\item 
+E\+A\+P\+I uint64\+\_\+t \hyperlink{ewk__web__database_8h_a06fc3e79cfa72248b9e08b366c074921}{ewk\+\_\+web\+\_\+database\+\_\+expected\+\_\+size\+\_\+get} (const \hyperlink{struct__Ewk__Web__Database}{Ewk\+\_\+\+Web\+\_\+\+Database} $\ast$o)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__web__database_8h_a243a387aef664e7fee9b1c4bccbc795a}{ewk\+\_\+web\+\_\+database\+\_\+filename\+\_\+get} (\hyperlink{struct__Ewk__Web__Database}{Ewk\+\_\+\+Web\+\_\+\+Database} $\ast$o)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__web__database_8h_a082ab70f677fa3df8990c2887903f0ff}{ewk\+\_\+web\+\_\+database\+\_\+name\+\_\+get} (\hyperlink{struct__Ewk__Web__Database}{Ewk\+\_\+\+Web\+\_\+\+Database} $\ast$o)
+\item 
+E\+A\+P\+I \hyperlink{struct__Ewk__Security__Origin}{Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$ \hyperlink{ewk__web__database_8h_ad3c9a90a5bb752138acd3402220daf30}{ewk\+\_\+web\+\_\+database\+\_\+security\+\_\+origin\+\_\+get} (const \hyperlink{struct__Ewk__Web__Database}{Ewk\+\_\+\+Web\+\_\+\+Database} $\ast$o)
+\item 
+E\+A\+P\+I uint64\+\_\+t \hyperlink{ewk__web__database_8h_a93b8476505b86dad9d6e755d41fdbafa}{ewk\+\_\+web\+\_\+database\+\_\+size\+\_\+get} (const \hyperlink{struct__Ewk__Web__Database}{Ewk\+\_\+\+Web\+\_\+\+Database} $\ast$o)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__web__database_8h_a333701e96e879145d4161249063346b3}{ewk\+\_\+web\+\_\+database\+\_\+remove} (\hyperlink{struct__Ewk__Web__Database}{Ewk\+\_\+\+Web\+\_\+\+Database} $\ast$o)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__web__database_8h_ac2d6db333a97f27ea156542f99af4175}{ewk\+\_\+web\+\_\+database\+\_\+remove\+\_\+all} (void)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__web__database_8h_afeb86895ebcff52e42eadbc3690cbf9f}{ewk\+\_\+web\+\_\+database\+\_\+free} (\hyperlink{struct__Ewk__Web__Database}{Ewk\+\_\+\+Web\+\_\+\+Database} $\ast$o)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__web__database_8h_a074695da56e4e7fed28c45fb060d5707}{ewk\+\_\+web\+\_\+database\+\_\+list\+\_\+free} (Eina\+\_\+\+List $\ast$database\+\_\+list)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Web Database A\+P\+I. 
+
+This A\+P\+I provides functions for managing Web Database created for a security origin. Web\+Kit needs to be compiled with Web Database support in order to use this A\+P\+I. 
+
+\subsection{Function Documentation}
+\hypertarget{ewk__web__database_8h_a6828825d6ae75a67657f5037ddaac55f}{\index{ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}!ewk\+\_\+web\+\_\+database\+\_\+display\+\_\+name\+\_\+get@{ewk\+\_\+web\+\_\+database\+\_\+display\+\_\+name\+\_\+get}}
+\index{ewk\+\_\+web\+\_\+database\+\_\+display\+\_\+name\+\_\+get@{ewk\+\_\+web\+\_\+database\+\_\+display\+\_\+name\+\_\+get}!ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}}
+\subsubsection[{ewk\+\_\+web\+\_\+database\+\_\+display\+\_\+name\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+web\+\_\+database\+\_\+display\+\_\+name\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Web\+\_\+\+Database} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__web__database_8h_a6828825d6ae75a67657f5037ddaac55f}
+Returns the user friendly name of the database.
+
+It returns a internal string which should not be modified. The string is guaranteed to be stringshared.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & web database object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the database name 
+\end{DoxyReturn}
+\hypertarget{ewk__web__database_8h_a06fc3e79cfa72248b9e08b366c074921}{\index{ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}!ewk\+\_\+web\+\_\+database\+\_\+expected\+\_\+size\+\_\+get@{ewk\+\_\+web\+\_\+database\+\_\+expected\+\_\+size\+\_\+get}}
+\index{ewk\+\_\+web\+\_\+database\+\_\+expected\+\_\+size\+\_\+get@{ewk\+\_\+web\+\_\+database\+\_\+expected\+\_\+size\+\_\+get}!ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}}
+\subsubsection[{ewk\+\_\+web\+\_\+database\+\_\+expected\+\_\+size\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I uint64\+\_\+t ewk\+\_\+web\+\_\+database\+\_\+expected\+\_\+size\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Web\+\_\+\+Database} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__web__database_8h_a06fc3e79cfa72248b9e08b366c074921}
+Returns the size of the database expected by the web author.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & web database object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+expected size 
+\end{DoxyReturn}
+\hypertarget{ewk__web__database_8h_a243a387aef664e7fee9b1c4bccbc795a}{\index{ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}!ewk\+\_\+web\+\_\+database\+\_\+filename\+\_\+get@{ewk\+\_\+web\+\_\+database\+\_\+filename\+\_\+get}}
+\index{ewk\+\_\+web\+\_\+database\+\_\+filename\+\_\+get@{ewk\+\_\+web\+\_\+database\+\_\+filename\+\_\+get}!ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}}
+\subsubsection[{ewk\+\_\+web\+\_\+database\+\_\+filename\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+web\+\_\+database\+\_\+filename\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Web\+\_\+\+Database} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__web__database_8h_a243a387aef664e7fee9b1c4bccbc795a}
+Returns the absolute path to the database file.
+
+It returns a internal string which should not be modified. The string is guaranteed to be stringshared.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & web database object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the database path 
+\end{DoxyReturn}
+\hypertarget{ewk__web__database_8h_afeb86895ebcff52e42eadbc3690cbf9f}{\index{ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}!ewk\+\_\+web\+\_\+database\+\_\+free@{ewk\+\_\+web\+\_\+database\+\_\+free}}
+\index{ewk\+\_\+web\+\_\+database\+\_\+free@{ewk\+\_\+web\+\_\+database\+\_\+free}!ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}}
+\subsubsection[{ewk\+\_\+web\+\_\+database\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+web\+\_\+database\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Web\+\_\+\+Database} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__web__database_8h_afeb86895ebcff52e42eadbc3690cbf9f}
+Release all resources allocated by a web database object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & web database object \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__web__database_8h_a074695da56e4e7fed28c45fb060d5707}{\index{ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}!ewk\+\_\+web\+\_\+database\+\_\+list\+\_\+free@{ewk\+\_\+web\+\_\+database\+\_\+list\+\_\+free}}
+\index{ewk\+\_\+web\+\_\+database\+\_\+list\+\_\+free@{ewk\+\_\+web\+\_\+database\+\_\+list\+\_\+free}!ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}}
+\subsubsection[{ewk\+\_\+web\+\_\+database\+\_\+list\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+web\+\_\+database\+\_\+list\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{Eina\+\_\+\+List $\ast$}]{database\+\_\+list}
+\end{DoxyParamCaption}
+)}}\label{ewk__web__database_8h_a074695da56e4e7fed28c45fb060d5707}
+Convenience function for releasing all web database objects from a list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em database\+\_\+list} & list of web database objects to be freed \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__web__database_8h_a082ab70f677fa3df8990c2887903f0ff}{\index{ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}!ewk\+\_\+web\+\_\+database\+\_\+name\+\_\+get@{ewk\+\_\+web\+\_\+database\+\_\+name\+\_\+get}}
+\index{ewk\+\_\+web\+\_\+database\+\_\+name\+\_\+get@{ewk\+\_\+web\+\_\+database\+\_\+name\+\_\+get}!ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}}
+\subsubsection[{ewk\+\_\+web\+\_\+database\+\_\+name\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+web\+\_\+database\+\_\+name\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Web\+\_\+\+Database} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__web__database_8h_a082ab70f677fa3df8990c2887903f0ff}
+Returns the name of the database.
+
+It returns a internal string which should not be modified. The string is guaranteed to be stringshared.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & web database object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the database name 
+\end{DoxyReturn}
+\hypertarget{ewk__web__database_8h_a333701e96e879145d4161249063346b3}{\index{ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}!ewk\+\_\+web\+\_\+database\+\_\+remove@{ewk\+\_\+web\+\_\+database\+\_\+remove}}
+\index{ewk\+\_\+web\+\_\+database\+\_\+remove@{ewk\+\_\+web\+\_\+database\+\_\+remove}!ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}}
+\subsubsection[{ewk\+\_\+web\+\_\+database\+\_\+remove}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+web\+\_\+database\+\_\+remove (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Web\+\_\+\+Database} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__web__database_8h_a333701e96e879145d4161249063346b3}
+Remove the database from the security origin and destroy all data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & web database object \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__web__database_8h_ac2d6db333a97f27ea156542f99af4175}{\index{ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}!ewk\+\_\+web\+\_\+database\+\_\+remove\+\_\+all@{ewk\+\_\+web\+\_\+database\+\_\+remove\+\_\+all}}
+\index{ewk\+\_\+web\+\_\+database\+\_\+remove\+\_\+all@{ewk\+\_\+web\+\_\+database\+\_\+remove\+\_\+all}!ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}}
+\subsubsection[{ewk\+\_\+web\+\_\+database\+\_\+remove\+\_\+all}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+web\+\_\+database\+\_\+remove\+\_\+all (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__web__database_8h_ac2d6db333a97f27ea156542f99af4175}
+Remove all the databases in the current default path. \hypertarget{ewk__web__database_8h_ad3c9a90a5bb752138acd3402220daf30}{\index{ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}!ewk\+\_\+web\+\_\+database\+\_\+security\+\_\+origin\+\_\+get@{ewk\+\_\+web\+\_\+database\+\_\+security\+\_\+origin\+\_\+get}}
+\index{ewk\+\_\+web\+\_\+database\+\_\+security\+\_\+origin\+\_\+get@{ewk\+\_\+web\+\_\+database\+\_\+security\+\_\+origin\+\_\+get}!ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}}
+\subsubsection[{ewk\+\_\+web\+\_\+database\+\_\+security\+\_\+origin\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I {\bf Ewk\+\_\+\+Security\+\_\+\+Origin}$\ast$ ewk\+\_\+web\+\_\+database\+\_\+security\+\_\+origin\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Web\+\_\+\+Database} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__web__database_8h_ad3c9a90a5bb752138acd3402220daf30}
+Retrieves the security origin of the database.
+
+The returned value should be freed by \hyperlink{ewk__security__origin_8h_a70bc02fb4b080c97c8dffa4c69e97799}{ewk\+\_\+security\+\_\+origin\+\_\+free()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & web database object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the security origin 
+\end{DoxyReturn}
+\hypertarget{ewk__web__database_8h_a93b8476505b86dad9d6e755d41fdbafa}{\index{ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}!ewk\+\_\+web\+\_\+database\+\_\+size\+\_\+get@{ewk\+\_\+web\+\_\+database\+\_\+size\+\_\+get}}
+\index{ewk\+\_\+web\+\_\+database\+\_\+size\+\_\+get@{ewk\+\_\+web\+\_\+database\+\_\+size\+\_\+get}!ewk\+\_\+web\+\_\+database.\+h@{ewk\+\_\+web\+\_\+database.\+h}}
+\subsubsection[{ewk\+\_\+web\+\_\+database\+\_\+size\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I uint64\+\_\+t ewk\+\_\+web\+\_\+database\+\_\+size\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Web\+\_\+\+Database} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__web__database_8h_a93b8476505b86dad9d6e755d41fdbafa}
+Returns the size of the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & web database object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the current size of the database 
+\end{DoxyReturn}

@@ -1,0 +1,269 @@
+\hypertarget{ewk__security__origin_8h}{\section{ewk\+\_\+security\+\_\+origin.\+h File Reference}
+\label{ewk__security__origin_8h}\index{ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}}
+}
+
+
+Security Origin A\+P\+I.  
+
+
+{\ttfamily \#include $<$Eina.\+h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ewk__security__origin_8h_a00820adc7ca30ca1600926a8dcd89bbc}{typedef struct \hyperlink{struct__Ewk__Security__Origin}{\+\_\+\+Ewk\+\_\+\+Security\+\_\+\+Origin} {\bfseries Ewk\+\_\+\+Security\+\_\+\+Origin}}\label{ewk__security__origin_8h_a00820adc7ca30ca1600926a8dcd89bbc}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__security__origin_8h_a891523f975c304a62e28687e56882418}{ewk\+\_\+security\+\_\+origin\+\_\+protocol\+\_\+get} (const \hyperlink{struct__Ewk__Security__Origin}{Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$o)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__security__origin_8h_a0076633d697d49f2b6df140eccff48b3}{ewk\+\_\+security\+\_\+origin\+\_\+host\+\_\+get} (const \hyperlink{struct__Ewk__Security__Origin}{Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$o)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__security__origin_8h_a7477791a2d63db724e43ebf96f4bb787}{ewk\+\_\+security\+\_\+origin\+\_\+string\+\_\+get} (const \hyperlink{struct__Ewk__Security__Origin}{Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$o)
+\item 
+E\+A\+P\+I uint32\+\_\+t \hyperlink{ewk__security__origin_8h_a0a380b49c592918e7db816e2ccf88630}{ewk\+\_\+security\+\_\+origin\+\_\+port\+\_\+get} (const \hyperlink{struct__Ewk__Security__Origin}{Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$o)
+\item 
+E\+A\+P\+I uint64\+\_\+t \hyperlink{ewk__security__origin_8h_ad2b66e11752c2ecb557184ccc567621a}{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+usage\+\_\+get} (const \hyperlink{struct__Ewk__Security__Origin}{Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$o)
+\item 
+E\+A\+P\+I uint64\+\_\+t \hyperlink{ewk__security__origin_8h_a37e14b5d6616fb61ed785f6d3341cd32}{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+quota\+\_\+get} (const \hyperlink{struct__Ewk__Security__Origin}{Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$o)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__security__origin_8h_ab8d4f200d5e0e87c9c9ddbb084fb77dc}{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+quota\+\_\+set} (const \hyperlink{struct__Ewk__Security__Origin}{Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$o, uint64\+\_\+t quota)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__security__origin_8h_a9ce055440d233f0c9c032b5e8993fb0b}{ewk\+\_\+security\+\_\+origin\+\_\+application\+\_\+cache\+\_\+quota\+\_\+set} (const \hyperlink{struct__Ewk__Security__Origin}{Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$o, int64\+\_\+t quota)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__security__origin_8h_a1f092c662c8f2a8c669284a4a4967781}{ewk\+\_\+security\+\_\+origin\+\_\+application\+\_\+cache\+\_\+clear} (const \hyperlink{struct__Ewk__Security__Origin}{Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+List $\ast$ \hyperlink{ewk__security__origin_8h_ae0f0aaff9de209b0e5c3088e14714d56}{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+get\+\_\+all} (const \hyperlink{struct__Ewk__Security__Origin}{Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$o)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__security__origin_8h_a70bc02fb4b080c97c8dffa4c69e97799}{ewk\+\_\+security\+\_\+origin\+\_\+free} (\hyperlink{struct__Ewk__Security__Origin}{Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$o)
+\item 
+E\+A\+P\+I \hyperlink{struct__Ewk__Security__Origin}{Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$ \hyperlink{ewk__security__origin_8h_af021bffb7e864ed2cd8c5c16b8b92a3c}{ewk\+\_\+security\+\_\+origin\+\_\+new\+\_\+from\+\_\+string} (const char $\ast$url)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Security Origin A\+P\+I. 
+
+Security Origin is the mechanism that defines the access limits of a website. Based on information such as domain, protocol and port, you can grant or not authorization for accessing data and performing certain tasks. Database quota can also be defined based on the security origin.
+
+The database related functions will do nothing if Web\+Kit is built without Web S\+Q\+L Database support. 
+
+\subsection{Function Documentation}
+\hypertarget{ewk__security__origin_8h_a1f092c662c8f2a8c669284a4a4967781}{\index{ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}!ewk\+\_\+security\+\_\+origin\+\_\+application\+\_\+cache\+\_\+clear@{ewk\+\_\+security\+\_\+origin\+\_\+application\+\_\+cache\+\_\+clear}}
+\index{ewk\+\_\+security\+\_\+origin\+\_\+application\+\_\+cache\+\_\+clear@{ewk\+\_\+security\+\_\+origin\+\_\+application\+\_\+cache\+\_\+clear}!ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}}
+\subsubsection[{ewk\+\_\+security\+\_\+origin\+\_\+application\+\_\+cache\+\_\+clear}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+security\+\_\+origin\+\_\+application\+\_\+cache\+\_\+clear (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__security__origin_8h_a1f092c662c8f2a8c669284a4a4967781}
+Clears the application cache for a security origin.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & security origin object. \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__security__origin_8h_a9ce055440d233f0c9c032b5e8993fb0b}{\index{ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}!ewk\+\_\+security\+\_\+origin\+\_\+application\+\_\+cache\+\_\+quota\+\_\+set@{ewk\+\_\+security\+\_\+origin\+\_\+application\+\_\+cache\+\_\+quota\+\_\+set}}
+\index{ewk\+\_\+security\+\_\+origin\+\_\+application\+\_\+cache\+\_\+quota\+\_\+set@{ewk\+\_\+security\+\_\+origin\+\_\+application\+\_\+cache\+\_\+quota\+\_\+set}!ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}}
+\subsubsection[{ewk\+\_\+security\+\_\+origin\+\_\+application\+\_\+cache\+\_\+quota\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+security\+\_\+origin\+\_\+application\+\_\+cache\+\_\+quota\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$}]{o, }
+\item[{int64\+\_\+t}]{quota}
+\end{DoxyParamCaption}
+)}}\label{ewk__security__origin_8h_a9ce055440d233f0c9c032b5e8993fb0b}
+Sets the application cache usage quota for a security origin.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & security origin object \\
+\hline
+{\em quota} & the usage quota in bytes \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__security__origin_8h_a70bc02fb4b080c97c8dffa4c69e97799}{\index{ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}!ewk\+\_\+security\+\_\+origin\+\_\+free@{ewk\+\_\+security\+\_\+origin\+\_\+free}}
+\index{ewk\+\_\+security\+\_\+origin\+\_\+free@{ewk\+\_\+security\+\_\+origin\+\_\+free}!ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}}
+\subsubsection[{ewk\+\_\+security\+\_\+origin\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+security\+\_\+origin\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__security__origin_8h_a70bc02fb4b080c97c8dffa4c69e97799}
+Release all resources allocated by a security origin object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & security origin object \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__security__origin_8h_a0076633d697d49f2b6df140eccff48b3}{\index{ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}!ewk\+\_\+security\+\_\+origin\+\_\+host\+\_\+get@{ewk\+\_\+security\+\_\+origin\+\_\+host\+\_\+get}}
+\index{ewk\+\_\+security\+\_\+origin\+\_\+host\+\_\+get@{ewk\+\_\+security\+\_\+origin\+\_\+host\+\_\+get}!ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}}
+\subsubsection[{ewk\+\_\+security\+\_\+origin\+\_\+host\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+security\+\_\+origin\+\_\+host\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__security__origin_8h_a0076633d697d49f2b6df140eccff48b3}
+Returns the host of the security origin.
+
+It returns a internal string which should not be modified. The string is guaranteed to be stringshared.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & security origin object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the host domain or {\ttfamily N\+U\+L\+L} if there is not a host scheme 
+\end{DoxyReturn}
+\hypertarget{ewk__security__origin_8h_af021bffb7e864ed2cd8c5c16b8b92a3c}{\index{ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}!ewk\+\_\+security\+\_\+origin\+\_\+new\+\_\+from\+\_\+string@{ewk\+\_\+security\+\_\+origin\+\_\+new\+\_\+from\+\_\+string}}
+\index{ewk\+\_\+security\+\_\+origin\+\_\+new\+\_\+from\+\_\+string@{ewk\+\_\+security\+\_\+origin\+\_\+new\+\_\+from\+\_\+string}!ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}}
+\subsubsection[{ewk\+\_\+security\+\_\+origin\+\_\+new\+\_\+from\+\_\+string}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I {\bf Ewk\+\_\+\+Security\+\_\+\+Origin}$\ast$ ewk\+\_\+security\+\_\+origin\+\_\+new\+\_\+from\+\_\+string (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{url}
+\end{DoxyParamCaption}
+)}}\label{ewk__security__origin_8h_af021bffb7e864ed2cd8c5c16b8b92a3c}
+Creates a security origin for a url.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & the url for the security origin.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the security origin object 
+\end{DoxyReturn}
+\hypertarget{ewk__security__origin_8h_a0a380b49c592918e7db816e2ccf88630}{\index{ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}!ewk\+\_\+security\+\_\+origin\+\_\+port\+\_\+get@{ewk\+\_\+security\+\_\+origin\+\_\+port\+\_\+get}}
+\index{ewk\+\_\+security\+\_\+origin\+\_\+port\+\_\+get@{ewk\+\_\+security\+\_\+origin\+\_\+port\+\_\+get}!ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}}
+\subsubsection[{ewk\+\_\+security\+\_\+origin\+\_\+port\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I uint32\+\_\+t ewk\+\_\+security\+\_\+origin\+\_\+port\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__security__origin_8h_a0a380b49c592918e7db816e2ccf88630}
+Returns the port of the security origin.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & security origin object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the port or {\ttfamily 0} if there is not a proper security origin scheme 
+\end{DoxyReturn}
+\hypertarget{ewk__security__origin_8h_a891523f975c304a62e28687e56882418}{\index{ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}!ewk\+\_\+security\+\_\+origin\+\_\+protocol\+\_\+get@{ewk\+\_\+security\+\_\+origin\+\_\+protocol\+\_\+get}}
+\index{ewk\+\_\+security\+\_\+origin\+\_\+protocol\+\_\+get@{ewk\+\_\+security\+\_\+origin\+\_\+protocol\+\_\+get}!ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}}
+\subsubsection[{ewk\+\_\+security\+\_\+origin\+\_\+protocol\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+security\+\_\+origin\+\_\+protocol\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__security__origin_8h_a891523f975c304a62e28687e56882418}
+Returns the protocol of the security origin.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & security origin object\\
+\hline
+\end{DoxyParams}
+It returns a internal string which should not be modified. The string is guaranteed to be stringshared.
+
+\begin{DoxyReturn}{Returns}
+the protocol scheme or {\ttfamily N\+U\+L\+L} if there is not a protocol scheme 
+\end{DoxyReturn}
+\hypertarget{ewk__security__origin_8h_a7477791a2d63db724e43ebf96f4bb787}{\index{ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}!ewk\+\_\+security\+\_\+origin\+\_\+string\+\_\+get@{ewk\+\_\+security\+\_\+origin\+\_\+string\+\_\+get}}
+\index{ewk\+\_\+security\+\_\+origin\+\_\+string\+\_\+get@{ewk\+\_\+security\+\_\+origin\+\_\+string\+\_\+get}!ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}}
+\subsubsection[{ewk\+\_\+security\+\_\+origin\+\_\+string\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+security\+\_\+origin\+\_\+string\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__security__origin_8h_a7477791a2d63db724e43ebf96f4bb787}
+Convert this Ewk\+\_\+\+Security\+\_\+\+Origin into a string. The string representation of a security origin is similar to a U\+R\+L, except it lacks a path component. The string representation does not encode the value of the security origin's domain property.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & security origin object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the string representation of security origin or {\ttfamily N\+U\+L\+L} if there is not a proper security origin scheme 
+\end{DoxyReturn}
+\hypertarget{ewk__security__origin_8h_ae0f0aaff9de209b0e5c3088e14714d56}{\index{ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}!ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+get\+\_\+all@{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+get\+\_\+all}}
+\index{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+get\+\_\+all@{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+get\+\_\+all}!ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}}
+\subsubsection[{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+get\+\_\+all}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+List$\ast$ ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+get\+\_\+all (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__security__origin_8h_ae0f0aaff9de209b0e5c3088e14714d56}
+Return the list of web databases in the security origin.
+
+Each item of the list should be release using \hyperlink{ewk__web__database_8h_afeb86895ebcff52e42eadbc3690cbf9f}{ewk\+\_\+web\+\_\+database\+\_\+free()} or use \hyperlink{ewk__web__database_8h_a074695da56e4e7fed28c45fb060d5707}{ewk\+\_\+web\+\_\+database\+\_\+list\+\_\+free()} as convenience.
+
+This function won't work if Web S\+Q\+L Database was not enabled when building Web\+Kit and will just return {\ttfamily N\+U\+L\+L}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & security origin object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of web databases in the security origin or {\ttfamily N\+U\+L\+L} if there is not a proper security origin scheme
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__web__database_8h_afeb86895ebcff52e42eadbc3690cbf9f}{ewk\+\_\+web\+\_\+database\+\_\+free()} 
+
+\hyperlink{ewk__web__database_8h_a074695da56e4e7fed28c45fb060d5707}{ewk\+\_\+web\+\_\+database\+\_\+list\+\_\+free()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__security__origin_8h_a37e14b5d6616fb61ed785f6d3341cd32}{\index{ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}!ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+quota\+\_\+get@{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+quota\+\_\+get}}
+\index{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+quota\+\_\+get@{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+quota\+\_\+get}!ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}}
+\subsubsection[{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+quota\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I uint64\+\_\+t ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+quota\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__security__origin_8h_a37e14b5d6616fb61ed785f6d3341cd32}
+Retrieves the quota of a database for a security origin.
+
+This function won't work if Web S\+Q\+L Database was not enabled when building Web\+Kit and will just return 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & security origin object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the quota in bytes or {\ttfamily 0} if there is not a proper security origin scheme 
+\end{DoxyReturn}
+\hypertarget{ewk__security__origin_8h_ab8d4f200d5e0e87c9c9ddbb084fb77dc}{\index{ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}!ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+quota\+\_\+set@{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+quota\+\_\+set}}
+\index{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+quota\+\_\+set@{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+quota\+\_\+set}!ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}}
+\subsubsection[{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+quota\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+quota\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$}]{o, }
+\item[{uint64\+\_\+t}]{quota}
+\end{DoxyParamCaption}
+)}}\label{ewk__security__origin_8h_ab8d4f200d5e0e87c9c9ddbb084fb77dc}
+Sets the database usage quota for a security origin.
+
+This function won't work if Web S\+Q\+L Database was not enabled when building Web\+Kit.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & security origin object \\
+\hline
+{\em quota} & the usage quota in bytes \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__security__origin_8h_ad2b66e11752c2ecb557184ccc567621a}{\index{ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}!ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+usage\+\_\+get@{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+usage\+\_\+get}}
+\index{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+usage\+\_\+get@{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+usage\+\_\+get}!ewk\+\_\+security\+\_\+origin.\+h@{ewk\+\_\+security\+\_\+origin.\+h}}
+\subsubsection[{ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+usage\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I uint64\+\_\+t ewk\+\_\+security\+\_\+origin\+\_\+web\+\_\+database\+\_\+usage\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__security__origin_8h_ad2b66e11752c2ecb557184ccc567621a}
+Retrieves the usage of a database for a security origin.
+
+This function won't work if Web S\+Q\+L Database was not enabled when building Web\+Kit and will just return 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & security origin object or {\ttfamily 0} if there is not a proper security origin scheme\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the usage in bytes 
+\end{DoxyReturn}

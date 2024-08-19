@@ -1,0 +1,80 @@
+\hypertarget{ewk__auth_8h}{\section{ewk\+\_\+auth.\+h File Reference}
+\label{ewk__auth_8h}\index{ewk\+\_\+auth.\+h@{ewk\+\_\+auth.\+h}}
+}
+
+
+Describes the authentication A\+P\+I.  
+
+
+{\ttfamily \#include $<$Eina.\+h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{ewk__auth_8h_a7ba4a756f80a8cb700fb18823cc90554}{Ewk\+\_\+\+Auth\+\_\+\+Show\+\_\+\+Dialog\+\_\+\+Callback} )(const char $\ast$realm, const char $\ast$uri, void $\ast$data)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\+A\+P\+I void \hyperlink{ewk__auth_8h_a8d8db6de473487448e083e0c1273a749}{ewk\+\_\+auth\+\_\+show\+\_\+dialog\+\_\+callback\+\_\+set} (\hyperlink{ewk__auth_8h_a7ba4a756f80a8cb700fb18823cc90554}{Ewk\+\_\+\+Auth\+\_\+\+Show\+\_\+\+Dialog\+\_\+\+Callback})
+\item 
+E\+A\+P\+I void \hyperlink{ewk__auth_8h_a1a8ffa9cb02e9614043e0de7baacfdc6}{ewk\+\_\+auth\+\_\+credentials\+\_\+set} (char $\ast$username, char $\ast$password, void $\ast$data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Describes the authentication A\+P\+I. 
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ewk__auth_8h_a7ba4a756f80a8cb700fb18823cc90554}{\index{ewk\+\_\+auth.\+h@{ewk\+\_\+auth.\+h}!Ewk\+\_\+\+Auth\+\_\+\+Show\+\_\+\+Dialog\+\_\+\+Callback@{Ewk\+\_\+\+Auth\+\_\+\+Show\+\_\+\+Dialog\+\_\+\+Callback}}
+\index{Ewk\+\_\+\+Auth\+\_\+\+Show\+\_\+\+Dialog\+\_\+\+Callback@{Ewk\+\_\+\+Auth\+\_\+\+Show\+\_\+\+Dialog\+\_\+\+Callback}!ewk\+\_\+auth.\+h@{ewk\+\_\+auth.\+h}}
+\subsubsection[{Ewk\+\_\+\+Auth\+\_\+\+Show\+\_\+\+Dialog\+\_\+\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ Ewk\+\_\+\+Auth\+\_\+\+Show\+\_\+\+Dialog\+\_\+\+Callback)(const char $\ast$realm, const char $\ast$uri, void $\ast$data)}}\label{ewk__auth_8h_a7ba4a756f80a8cb700fb18823cc90554}
+Callback to be called when authentication is required.
+
+
+\begin{DoxyParams}{Parameters}
+{\em realm} & auth's realm \\
+\hline
+{\em uri} & uri \\
+\hline
+{\em data} & points to Web\+Kit\+Auth\+Data \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Function Documentation}
+\hypertarget{ewk__auth_8h_a1a8ffa9cb02e9614043e0de7baacfdc6}{\index{ewk\+\_\+auth.\+h@{ewk\+\_\+auth.\+h}!ewk\+\_\+auth\+\_\+credentials\+\_\+set@{ewk\+\_\+auth\+\_\+credentials\+\_\+set}}
+\index{ewk\+\_\+auth\+\_\+credentials\+\_\+set@{ewk\+\_\+auth\+\_\+credentials\+\_\+set}!ewk\+\_\+auth.\+h@{ewk\+\_\+auth.\+h}}
+\subsubsection[{ewk\+\_\+auth\+\_\+credentials\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+auth\+\_\+credentials\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{username, }
+\item[{char $\ast$}]{password, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{ewk__auth_8h_a1a8ffa9cb02e9614043e0de7baacfdc6}
+Calls authentication method for setting credentials.
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & username \\
+\hline
+{\em password} & user password \\
+\hline
+{\em data} & soup authentication data \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__auth_8h_a8d8db6de473487448e083e0c1273a749}{\index{ewk\+\_\+auth.\+h@{ewk\+\_\+auth.\+h}!ewk\+\_\+auth\+\_\+show\+\_\+dialog\+\_\+callback\+\_\+set@{ewk\+\_\+auth\+\_\+show\+\_\+dialog\+\_\+callback\+\_\+set}}
+\index{ewk\+\_\+auth\+\_\+show\+\_\+dialog\+\_\+callback\+\_\+set@{ewk\+\_\+auth\+\_\+show\+\_\+dialog\+\_\+callback\+\_\+set}!ewk\+\_\+auth.\+h@{ewk\+\_\+auth.\+h}}
+\subsubsection[{ewk\+\_\+auth\+\_\+show\+\_\+dialog\+\_\+callback\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+auth\+\_\+show\+\_\+dialog\+\_\+callback\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Auth\+\_\+\+Show\+\_\+\+Dialog\+\_\+\+Callback}}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__auth_8h_a8d8db6de473487448e083e0c1273a749}
+Sets callback to be called when authentication is required.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & callback to be called \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,63 @@
+\hypertarget{struct__Ewk__Frame__Load__Error}{\section{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error Struct Reference}
+\label{struct__Ewk__Frame__Load__Error}\index{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}}
+}
+
+
+Structure used to report load errors.  
+
+
+
+
+{\ttfamily \#include $<$ewk\+\_\+frame.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{struct__Ewk__Frame__Load__Error_a15be8c88263d19ad8671c037f69914a5}{code}
+\item 
+Eina\+\_\+\+Bool \hyperlink{struct__Ewk__Frame__Load__Error_a4a0b006829bd4c47d146aaa248e5bf00}{is\+\_\+cancellation}
+\item 
+const char $\ast$ \hyperlink{struct__Ewk__Frame__Load__Error_acced5cec39060d9e982a6b777b1fffea}{domain}
+\item 
+const char $\ast$ \hyperlink{struct__Ewk__Frame__Load__Error_aa60f960a10b3296d6d22f75857f3232d}{description}
+\item 
+const char $\ast$ \hyperlink{struct__Ewk__Frame__Load__Error_a56036e422a54ec3329cef5120b3cde52}{failing\+\_\+url}
+\item 
+unsigned long \hyperlink{struct__Ewk__Frame__Load__Error_abe4b75c6837e5286e6ce93e5faa4f1f7}{resource\+\_\+identifier}
+\item 
+Evas\+\_\+\+Object $\ast$ \hyperlink{struct__Ewk__Frame__Load__Error_aa95d535f8e3ae79ee2869fdd410d6db3}{frame}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure used to report load errors. 
+
+Load errors are reported as signal by ewk\+\_\+view. All the strings are temporary references and should {\bfseries not} be used after the signal callback returns. If it's required, make copies with strdup() or eina\+\_\+stringshare\+\_\+add() (they are not even guaranteed to be stringshared, so must use eina\+\_\+stringshare\+\_\+add() and not eina\+\_\+stringshare\+\_\+ref()). 
+
+\subsection{Member Data Documentation}
+\hypertarget{struct__Ewk__Frame__Load__Error_a15be8c88263d19ad8671c037f69914a5}{\index{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}!code@{code}}
+\index{code@{code}!\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}}
+\subsubsection[{code}]{\setlength{\rightskip}{0pt plus 5cm}int \+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error\+::code}}\label{struct__Ewk__Frame__Load__Error_a15be8c88263d19ad8671c037f69914a5}
+numeric error code \hypertarget{struct__Ewk__Frame__Load__Error_aa60f960a10b3296d6d22f75857f3232d}{\index{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}!description@{description}}
+\index{description@{description}!\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}}
+\subsubsection[{description}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ \+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error\+::description}}\label{struct__Ewk__Frame__Load__Error_aa60f960a10b3296d6d22f75857f3232d}
+error description already localized \hypertarget{struct__Ewk__Frame__Load__Error_acced5cec39060d9e982a6b777b1fffea}{\index{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}!domain@{domain}}
+\index{domain@{domain}!\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}}
+\subsubsection[{domain}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ \+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error\+::domain}}\label{struct__Ewk__Frame__Load__Error_acced5cec39060d9e982a6b777b1fffea}
+error domain name \hypertarget{struct__Ewk__Frame__Load__Error_a56036e422a54ec3329cef5120b3cde52}{\index{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}!failing\+\_\+url@{failing\+\_\+url}}
+\index{failing\+\_\+url@{failing\+\_\+url}!\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}}
+\subsubsection[{failing\+\_\+url}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ \+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error\+::failing\+\_\+url}}\label{struct__Ewk__Frame__Load__Error_a56036e422a54ec3329cef5120b3cde52}
+the url that failed to load \hypertarget{struct__Ewk__Frame__Load__Error_aa95d535f8e3ae79ee2869fdd410d6db3}{\index{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}!frame@{frame}}
+\index{frame@{frame}!\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}}
+\subsubsection[{frame}]{\setlength{\rightskip}{0pt plus 5cm}Evas\+\_\+\+Object$\ast$ \+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error\+::frame}}\label{struct__Ewk__Frame__Load__Error_aa95d535f8e3ae79ee2869fdd410d6db3}
+frame where the failure happened \hypertarget{struct__Ewk__Frame__Load__Error_a4a0b006829bd4c47d146aaa248e5bf00}{\index{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}!is\+\_\+cancellation@{is\+\_\+cancellation}}
+\index{is\+\_\+cancellation@{is\+\_\+cancellation}!\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}}
+\subsubsection[{is\+\_\+cancellation}]{\setlength{\rightskip}{0pt plus 5cm}Eina\+\_\+\+Bool \+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error\+::is\+\_\+cancellation}}\label{struct__Ewk__Frame__Load__Error_a4a0b006829bd4c47d146aaa248e5bf00}
+if load failed because it was canceled \hypertarget{struct__Ewk__Frame__Load__Error_abe4b75c6837e5286e6ce93e5faa4f1f7}{\index{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}!resource\+\_\+identifier@{resource\+\_\+identifier}}
+\index{resource\+\_\+identifier@{resource\+\_\+identifier}!\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error}}
+\subsubsection[{resource\+\_\+identifier}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long \+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Load\+\_\+\+Error\+::resource\+\_\+identifier}}\label{struct__Ewk__Frame__Load__Error_abe4b75c6837e5286e6ce93e5faa4f1f7}
+identifier of resource 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ewk__frame_8h}{ewk\+\_\+frame.\+h}\end{DoxyCompactItemize}

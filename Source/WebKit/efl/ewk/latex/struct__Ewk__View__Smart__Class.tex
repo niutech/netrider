@@ -1,0 +1,128 @@
+\hypertarget{struct__Ewk__View__Smart__Class}{\section{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class Struct Reference}
+\label{struct__Ewk__View__Smart__Class}\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class}}
+}
+
+
+Ewk view's class, to be overridden by sub-\/classes.  
+
+
+
+
+{\ttfamily \#include $<$ewk\+\_\+view.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Evas\+\_\+\+Smart\+\_\+\+Class \hyperlink{struct__Ewk__View__Smart__Class_a02f459baba6f2dfaea30b89a536565fc}{sc}
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_ae5257235e08dda975f0dca01f3ece792}{unsigned long {\bfseries version}}\label{struct__Ewk__View__Smart__Class_ae5257235e08dda975f0dca01f3ece792}
+
+\item 
+Evas\+\_\+\+Object $\ast$($\ast$ \hyperlink{struct__Ewk__View__Smart__Class_a9d7f52e3cb15ab9ea6b4b0ff4747a0fc}{window\+\_\+create} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, Eina\+\_\+\+Bool javascript, const \hyperlink{ewk__window__features_8h_af32c782291330d29e9f355daf530b22e}{Ewk\+\_\+\+Window\+\_\+\+Features} $\ast$window\+\_\+features)
+\item 
+void($\ast$ \hyperlink{struct__Ewk__View__Smart__Class_a31f6ed4872b25f49c501f6b40f00c92f}{window\+\_\+close} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd)
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_ab8a523117168364c4da1995d78b3d465}{Eina\+\_\+\+Bool($\ast$ {\bfseries contents\+\_\+resize} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, int w, int h)}\label{struct__Ewk__View__Smart__Class_ab8a523117168364c4da1995d78b3d465}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_a3d24e01d77238c4a546667f5e32e9f05}{Eina\+\_\+\+Bool($\ast$ {\bfseries zoom\+\_\+set} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, float zoom, Evas\+\_\+\+Coord cx, Evas\+\_\+\+Coord cy)}\label{struct__Ewk__View__Smart__Class_a3d24e01d77238c4a546667f5e32e9f05}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_af0e46a7e1fe43fb66806b079a6a6105a}{Eina\+\_\+\+Bool($\ast$ {\bfseries zoom\+\_\+weak\+\_\+set} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, float zoom, Evas\+\_\+\+Coord cx, Evas\+\_\+\+Coord cy)}\label{struct__Ewk__View__Smart__Class_af0e46a7e1fe43fb66806b079a6a6105a}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_aa5d994daa01afa0d21e2d52298aab6e0}{void($\ast$ {\bfseries zoom\+\_\+weak\+\_\+smooth\+\_\+scale\+\_\+set} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, Eina\+\_\+\+Bool smooth\+\_\+scale)}\label{struct__Ewk__View__Smart__Class_aa5d994daa01afa0d21e2d52298aab6e0}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_a25c339127c210eb2bfa422cd23d0d533}{void($\ast$ {\bfseries flush} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd)}\label{struct__Ewk__View__Smart__Class_a25c339127c210eb2bfa422cd23d0d533}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_a9be9d78f8e531832ec1c3b9042a844d3}{Eina\+\_\+\+Bool($\ast$ {\bfseries disable\+\_\+render} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd)}\label{struct__Ewk__View__Smart__Class_a9be9d78f8e531832ec1c3b9042a844d3}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_a2608f0c0f40f33f1ef6a2921498c578e}{Eina\+\_\+\+Bool($\ast$ {\bfseries enable\+\_\+render} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd)}\label{struct__Ewk__View__Smart__Class_a2608f0c0f40f33f1ef6a2921498c578e}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_a6a0067b645aa2073891ff8da3f3548dd}{Eina\+\_\+\+Bool($\ast$ {\bfseries focus\+\_\+in} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd)}\label{struct__Ewk__View__Smart__Class_a6a0067b645aa2073891ff8da3f3548dd}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_ad7cfdf5f0b6b8d6739fcf5d17fad37af}{Eina\+\_\+\+Bool($\ast$ {\bfseries focus\+\_\+out} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd)}\label{struct__Ewk__View__Smart__Class_ad7cfdf5f0b6b8d6739fcf5d17fad37af}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_ad1648595a24575645fbea251ac496562}{Eina\+\_\+\+Bool($\ast$ {\bfseries fullscreen\+\_\+enter} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd)}\label{struct__Ewk__View__Smart__Class_ad1648595a24575645fbea251ac496562}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_a67c39642d3bf9c210988a9307c86b643}{Eina\+\_\+\+Bool($\ast$ {\bfseries fullscreen\+\_\+exit} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd)}\label{struct__Ewk__View__Smart__Class_a67c39642d3bf9c210988a9307c86b643}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_ad3ff9882b155e554822ef7d41fd54bd6}{Eina\+\_\+\+Bool($\ast$ {\bfseries mouse\+\_\+wheel} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, const Evas\+\_\+\+Event\+\_\+\+Mouse\+\_\+\+Wheel $\ast$ev)}\label{struct__Ewk__View__Smart__Class_ad3ff9882b155e554822ef7d41fd54bd6}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_a05336fc04153b9e8a609928aaeb0b515}{Eina\+\_\+\+Bool($\ast$ {\bfseries mouse\+\_\+down} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, const Evas\+\_\+\+Event\+\_\+\+Mouse\+\_\+\+Down $\ast$ev)}\label{struct__Ewk__View__Smart__Class_a05336fc04153b9e8a609928aaeb0b515}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_aeef9e651ea9bb763a0bc9e9df3863e7b}{Eina\+\_\+\+Bool($\ast$ {\bfseries mouse\+\_\+up} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, const Evas\+\_\+\+Event\+\_\+\+Mouse\+\_\+\+Up $\ast$ev)}\label{struct__Ewk__View__Smart__Class_aeef9e651ea9bb763a0bc9e9df3863e7b}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_aedc8be51f4152a339a2333e05cd74685}{Eina\+\_\+\+Bool($\ast$ {\bfseries mouse\+\_\+move} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, const Evas\+\_\+\+Event\+\_\+\+Mouse\+\_\+\+Move $\ast$ev)}\label{struct__Ewk__View__Smart__Class_aedc8be51f4152a339a2333e05cd74685}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_a4c53e20041a4b18a2f1fb96d482e9219}{Eina\+\_\+\+Bool($\ast$ {\bfseries key\+\_\+down} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, const Evas\+\_\+\+Event\+\_\+\+Key\+\_\+\+Down $\ast$ev)}\label{struct__Ewk__View__Smart__Class_a4c53e20041a4b18a2f1fb96d482e9219}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_ab6264f5b371f29330a33a3c876f70126}{Eina\+\_\+\+Bool($\ast$ {\bfseries key\+\_\+up} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, const Evas\+\_\+\+Event\+\_\+\+Key\+\_\+\+Up $\ast$ev)}\label{struct__Ewk__View__Smart__Class_ab6264f5b371f29330a33a3c876f70126}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_a0ae37e5777fb49cc6af2aa9dd4c585e5}{void($\ast$ {\bfseries add\+\_\+console\+\_\+message} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, const char $\ast$message, unsigned int line\+Number, const char $\ast$source\+I\+D)}\label{struct__Ewk__View__Smart__Class_a0ae37e5777fb49cc6af2aa9dd4c585e5}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_ad69d8c05004e8dc86fa52aa82071dff3}{void($\ast$ {\bfseries run\+\_\+javascript\+\_\+alert} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, Evas\+\_\+\+Object $\ast$frame, const char $\ast$message)}\label{struct__Ewk__View__Smart__Class_ad69d8c05004e8dc86fa52aa82071dff3}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_a7c59d7a041594242ffd89808db7f3ef9}{Eina\+\_\+\+Bool($\ast$ {\bfseries run\+\_\+javascript\+\_\+confirm} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, Evas\+\_\+\+Object $\ast$frame, const char $\ast$message)}\label{struct__Ewk__View__Smart__Class_a7c59d7a041594242ffd89808db7f3ef9}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_ababfd2424aceb2c87227a0ca88c2dfa5}{Eina\+\_\+\+Bool($\ast$ {\bfseries run\+\_\+before\+\_\+unload\+\_\+confirm} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, Evas\+\_\+\+Object $\ast$frame, const char $\ast$message)}\label{struct__Ewk__View__Smart__Class_ababfd2424aceb2c87227a0ca88c2dfa5}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_a037a42601ff1857d186cd9d41289bd3f}{Eina\+\_\+\+Bool($\ast$ {\bfseries run\+\_\+javascript\+\_\+prompt} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, Evas\+\_\+\+Object $\ast$frame, const char $\ast$message, const char $\ast$default\+Value, const char $\ast$$\ast$value)}\label{struct__Ewk__View__Smart__Class_a037a42601ff1857d186cd9d41289bd3f}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_a7828a1c157181889312245fac93775f5}{Eina\+\_\+\+Bool($\ast$ {\bfseries should\+\_\+interrupt\+\_\+javascript} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd)}\label{struct__Ewk__View__Smart__Class_a7828a1c157181889312245fac93775f5}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_a9fd8288f0ccc240a2ff24c204f23e8f6}{int64\+\_\+t($\ast$ {\bfseries exceeded\+\_\+application\+\_\+cache\+\_\+quota} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, \hyperlink{struct__Ewk__Security__Origin}{Ewk\+\_\+\+Security\+\_\+\+Origin} $\ast$origin, int64\+\_\+t default\+Origin\+Quota, int64\+\_\+t total\+Space\+Needed)}\label{struct__Ewk__View__Smart__Class_a9fd8288f0ccc240a2ff24c204f23e8f6}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_a6354c2b5c844636c2178466cd68c13b1}{uint64\+\_\+t($\ast$ {\bfseries exceeded\+\_\+database\+\_\+quota} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, Evas\+\_\+\+Object $\ast$frame, const char $\ast$database\+Name, uint64\+\_\+t current\+\_\+size, uint64\+\_\+t expected\+\_\+size)}\label{struct__Ewk__View__Smart__Class_a6354c2b5c844636c2178466cd68c13b1}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_a3899bad7807c3c01aef4dd9eaed5e190}{Eina\+\_\+\+Bool($\ast$ {\bfseries run\+\_\+open\+\_\+panel} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, Evas\+\_\+\+Object $\ast$frame, \hyperlink{struct__Ewk__File__Chooser}{Ewk\+\_\+\+File\+\_\+\+Chooser} $\ast$file\+\_\+chooser, Eina\+\_\+\+List $\ast$$\ast$selected\+\_\+filenames)}\label{struct__Ewk__View__Smart__Class_a3899bad7807c3c01aef4dd9eaed5e190}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_aa4e5fca0f364da94e9a22ed3cabdc461}{Eina\+\_\+\+Bool($\ast$ {\bfseries navigation\+\_\+policy\+\_\+decision} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, \hyperlink{ewk__frame_8h_acddf624050dec184d7071e77847d1d94}{Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request} $\ast$request, \hyperlink{ewk__frame_8h_aa1bdc646f41f64373f0fc9bbf5178033}{Ewk\+\_\+\+Navigation\+\_\+\+Type} navigation\+\_\+type)}\label{struct__Ewk__View__Smart__Class_aa4e5fca0f364da94e9a22ed3cabdc461}
+
+\item 
+\hypertarget{struct__Ewk__View__Smart__Class_aa605e0d2333d49b5ac409e908334e5d0}{Eina\+\_\+\+Bool($\ast$ {\bfseries focus\+\_\+can\+\_\+cycle} )(\hyperlink{ewk__view_8h_a9a4bd081861301f6c55cb5da384dfc7d}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, Ewk\+\_\+\+Focus\+\_\+\+Direction direction)}\label{struct__Ewk__View__Smart__Class_aa605e0d2333d49b5ac409e908334e5d0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ewk view's class, to be overridden by sub-\/classes. 
+
+\subsection{Member Data Documentation}
+\hypertarget{struct__Ewk__View__Smart__Class_a02f459baba6f2dfaea30b89a536565fc}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class}!sc@{sc}}
+\index{sc@{sc}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class}}
+\subsubsection[{sc}]{\setlength{\rightskip}{0pt plus 5cm}Evas\+\_\+\+Smart\+\_\+\+Class \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class\+::sc}}\label{struct__Ewk__View__Smart__Class_a02f459baba6f2dfaea30b89a536565fc}
+All but 'data' is free to be changed. \hypertarget{struct__Ewk__View__Smart__Class_a31f6ed4872b25f49c501f6b40f00c92f}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class}!window\+\_\+close@{window\+\_\+close}}
+\index{window\+\_\+close@{window\+\_\+close}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class}}
+\subsubsection[{window\+\_\+close}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class\+::window\+\_\+close)({\bf Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd)}}\label{struct__Ewk__View__Smart__Class_a31f6ed4872b25f49c501f6b40f00c92f}
+closes a window \hypertarget{struct__Ewk__View__Smart__Class_a9d7f52e3cb15ab9ea6b4b0ff4747a0fc}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class}!window\+\_\+create@{window\+\_\+create}}
+\index{window\+\_\+create@{window\+\_\+create}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class}}
+\subsubsection[{window\+\_\+create}]{\setlength{\rightskip}{0pt plus 5cm}Evas\+\_\+\+Object$\ast$($\ast$ \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class\+::window\+\_\+create)({\bf Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data} $\ast$sd, Eina\+\_\+\+Bool javascript, const {\bf Ewk\+\_\+\+Window\+\_\+\+Features} $\ast$window\+\_\+features)}}\label{struct__Ewk__View__Smart__Class_a9d7f52e3cb15ab9ea6b4b0ff4747a0fc}
+creates a new window, requested by webkit 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ewk__view_8h}{ewk\+\_\+view.\+h}\end{DoxyCompactItemize}

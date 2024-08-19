@@ -1,0 +1,65 @@
+\hypertarget{ewk__paint__context__private_8h}{\section{ewk\+\_\+paint\+\_\+context\+\_\+private.\+h File Reference}
+\label{ewk__paint__context__private_8h}\index{ewk\+\_\+paint\+\_\+context\+\_\+private.\+h@{ewk\+\_\+paint\+\_\+context\+\_\+private.\+h}}
+}
+
+
+Describes the paint context A\+P\+I.  
+
+
+{\ttfamily \#include \char`\"{}Frame\+View.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Graphics\+Context.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ref\+Ptr\+Cairo.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$Evas.\+h$>$}\\*
+{\ttfamily \#include $<$cairo.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__Ewk__Paint__Context}{\+\_\+\+Ewk\+\_\+\+Paint\+\_\+\+Context}
+\begin{DoxyCompactList}\small\item\em Structure that keeps the paint context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ewk__paint__context__private_8h_ac3d59c71f16af3e2d299f141a9ef2d00}{typedef struct \hyperlink{struct__Ewk__Paint__Context}{\+\_\+\+Ewk\+\_\+\+Paint\+\_\+\+Context} \hyperlink{ewk__paint__context__private_8h_ac3d59c71f16af3e2d299f141a9ef2d00}{Ewk\+\_\+\+Paint\+\_\+\+Context}}\label{ewk__paint__context__private_8h_ac3d59c71f16af3e2d299f141a9ef2d00}
+
+\begin{DoxyCompactList}\small\item\em Creates a type name for {\itshape \hyperlink{struct__Ewk__Paint__Context}{\+\_\+\+Ewk\+\_\+\+Paint\+\_\+\+Context}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ewk__paint__context__private_8h_a4881c63ae32bdd16e04a404ccbd796bb}{\hyperlink{ewk__paint__context__private_8h_ac3d59c71f16af3e2d299f141a9ef2d00}{Ewk\+\_\+\+Paint\+\_\+\+Context} $\ast$ {\bfseries ewk\+\_\+paint\+\_\+context\+\_\+new} (cairo\+\_\+t $\ast$cairo)}\label{ewk__paint__context__private_8h_a4881c63ae32bdd16e04a404ccbd796bb}
+
+\item 
+\hypertarget{ewk__paint__context__private_8h_a8a32432783d0f0331cd6eba9b9112229}{\hyperlink{ewk__paint__context__private_8h_ac3d59c71f16af3e2d299f141a9ef2d00}{Ewk\+\_\+\+Paint\+\_\+\+Context} $\ast$ {\bfseries ewk\+\_\+paint\+\_\+context\+\_\+from\+\_\+image\+\_\+new} (Evas\+\_\+\+Object $\ast$image)}\label{ewk__paint__context__private_8h_a8a32432783d0f0331cd6eba9b9112229}
+
+\item 
+\hypertarget{ewk__paint__context__private_8h_a84988c30dd2ebbb615ea267a4a0bac36}{\hyperlink{ewk__paint__context__private_8h_ac3d59c71f16af3e2d299f141a9ef2d00}{Ewk\+\_\+\+Paint\+\_\+\+Context} $\ast$ {\bfseries ewk\+\_\+paint\+\_\+context\+\_\+from\+\_\+image\+\_\+data\+\_\+new} (uint8\+\_\+t $\ast$pixels, int width, int height, int color\+Space)}\label{ewk__paint__context__private_8h_a84988c30dd2ebbb615ea267a4a0bac36}
+
+\item 
+\hypertarget{ewk__paint__context__private_8h_a8f4de247e04f4f009e993d3eab43f587}{void {\bfseries ewk\+\_\+paint\+\_\+context\+\_\+free} (\hyperlink{ewk__paint__context__private_8h_ac3d59c71f16af3e2d299f141a9ef2d00}{Ewk\+\_\+\+Paint\+\_\+\+Context} $\ast$context)}\label{ewk__paint__context__private_8h_a8f4de247e04f4f009e993d3eab43f587}
+
+\item 
+\hypertarget{ewk__paint__context__private_8h_aaaae58af176fbf828998f6ef2c935270}{void {\bfseries ewk\+\_\+paint\+\_\+context\+\_\+save} (\hyperlink{ewk__paint__context__private_8h_ac3d59c71f16af3e2d299f141a9ef2d00}{Ewk\+\_\+\+Paint\+\_\+\+Context} $\ast$context)}\label{ewk__paint__context__private_8h_aaaae58af176fbf828998f6ef2c935270}
+
+\item 
+\hypertarget{ewk__paint__context__private_8h_a3348fbde6feb5e23e8156c9bc3450f37}{void {\bfseries ewk\+\_\+paint\+\_\+context\+\_\+restore} (\hyperlink{ewk__paint__context__private_8h_ac3d59c71f16af3e2d299f141a9ef2d00}{Ewk\+\_\+\+Paint\+\_\+\+Context} $\ast$context)}\label{ewk__paint__context__private_8h_a3348fbde6feb5e23e8156c9bc3450f37}
+
+\item 
+\hypertarget{ewk__paint__context__private_8h_a26c1ec1ad3ae273e0ed7584bf4288fbd}{void {\bfseries ewk\+\_\+paint\+\_\+context\+\_\+clip} (\hyperlink{ewk__paint__context__private_8h_ac3d59c71f16af3e2d299f141a9ef2d00}{Ewk\+\_\+\+Paint\+\_\+\+Context} $\ast$context, const Eina\+\_\+\+Rectangle $\ast$area)}\label{ewk__paint__context__private_8h_a26c1ec1ad3ae273e0ed7584bf4288fbd}
+
+\item 
+\hypertarget{ewk__paint__context__private_8h_a3c85816eb7d9a8bcf05b92f8ed0a0b53}{void {\bfseries ewk\+\_\+paint\+\_\+context\+\_\+scale} (\hyperlink{ewk__paint__context__private_8h_ac3d59c71f16af3e2d299f141a9ef2d00}{Ewk\+\_\+\+Paint\+\_\+\+Context} $\ast$context, float scale\+\_\+x, float scale\+\_\+y)}\label{ewk__paint__context__private_8h_a3c85816eb7d9a8bcf05b92f8ed0a0b53}
+
+\item 
+\hypertarget{ewk__paint__context__private_8h_ab89145dd2db971d11fb4927b69e110cc}{void {\bfseries ewk\+\_\+paint\+\_\+context\+\_\+translate} (\hyperlink{ewk__paint__context__private_8h_ac3d59c71f16af3e2d299f141a9ef2d00}{Ewk\+\_\+\+Paint\+\_\+\+Context} $\ast$context, float x, float y)}\label{ewk__paint__context__private_8h_ab89145dd2db971d11fb4927b69e110cc}
+
+\item 
+\hypertarget{ewk__paint__context__private_8h_a6a028fecae4e8e6fa7e17f67d6e0bcd3}{void {\bfseries ewk\+\_\+paint\+\_\+context\+\_\+paint} (\hyperlink{ewk__paint__context__private_8h_ac3d59c71f16af3e2d299f141a9ef2d00}{Ewk\+\_\+\+Paint\+\_\+\+Context} $\ast$context, Web\+Core\+::\+Frame\+View $\ast$view, const Eina\+\_\+\+Rectangle $\ast$area)}\label{ewk__paint__context__private_8h_a6a028fecae4e8e6fa7e17f67d6e0bcd3}
+
+\item 
+\hypertarget{ewk__paint__context__private_8h_ad2b2d59482a7b3e4eb793ebbe6070bbe}{void {\bfseries ewk\+\_\+paint\+\_\+context\+\_\+paint\+\_\+contents} (\hyperlink{ewk__paint__context__private_8h_ac3d59c71f16af3e2d299f141a9ef2d00}{Ewk\+\_\+\+Paint\+\_\+\+Context} $\ast$context, Web\+Core\+::\+Frame\+View $\ast$view, const Eina\+\_\+\+Rectangle $\ast$area)}\label{ewk__paint__context__private_8h_ad2b2d59482a7b3e4eb793ebbe6070bbe}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Describes the paint context A\+P\+I. 
+

@@ -1,0 +1,139 @@
+\hypertarget{ewk__window__features_8h}{\section{ewk\+\_\+window\+\_\+features.\+h File Reference}
+\label{ewk__window__features_8h}\index{ewk\+\_\+window\+\_\+features.\+h@{ewk\+\_\+window\+\_\+features.\+h}}
+}
+
+
+Access to the features of window.  
+
+
+{\ttfamily \#include $<$Eina.\+h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__Ewk__Window__Features}{\+\_\+\+Ewk\+\_\+\+Window\+\_\+\+Features} \hyperlink{ewk__window__features_8h_af32c782291330d29e9f355daf530b22e}{Ewk\+\_\+\+Window\+\_\+\+Features}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\+A\+P\+I void \hyperlink{ewk__window__features_8h_a0d30168ac1c4002f3e976cbc440d37ab}{ewk\+\_\+window\+\_\+features\+\_\+unref} (\hyperlink{ewk__window__features_8h_af32c782291330d29e9f355daf530b22e}{Ewk\+\_\+\+Window\+\_\+\+Features} $\ast$window\+\_\+features)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__window__features_8h_a91301d9ebfd10271794396dcc09713c2}{ewk\+\_\+window\+\_\+features\+\_\+ref} (\hyperlink{ewk__window__features_8h_af32c782291330d29e9f355daf530b22e}{Ewk\+\_\+\+Window\+\_\+\+Features} $\ast$window\+\_\+features)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__window__features_8h_af200d1da64006d996be06759a27b4689}{ewk\+\_\+window\+\_\+features\+\_\+bool\+\_\+property\+\_\+get} (const \hyperlink{ewk__window__features_8h_af32c782291330d29e9f355daf530b22e}{Ewk\+\_\+\+Window\+\_\+\+Features} $\ast$window\+\_\+features, Eina\+\_\+\+Bool $\ast$toolbar\+\_\+visible, Eina\+\_\+\+Bool $\ast$statusbar\+\_\+visible, Eina\+\_\+\+Bool $\ast$scrollbars\+\_\+visible, Eina\+\_\+\+Bool $\ast$menubar\+\_\+visible, Eina\+\_\+\+Bool $\ast$locationbar\+\_\+visible, Eina\+\_\+\+Bool $\ast$fullscreen)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__window__features_8h_a26b93ecf6c2b1748a3523ea780bee1ed}{ewk\+\_\+window\+\_\+features\+\_\+int\+\_\+property\+\_\+get} (const \hyperlink{ewk__window__features_8h_af32c782291330d29e9f355daf530b22e}{Ewk\+\_\+\+Window\+\_\+\+Features} $\ast$window\+\_\+features, int $\ast$x, int $\ast$y, int $\ast$w, int $\ast$h)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Access to the features of window. 
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ewk__window__features_8h_af32c782291330d29e9f355daf530b22e}{\index{ewk\+\_\+window\+\_\+features.\+h@{ewk\+\_\+window\+\_\+features.\+h}!Ewk\+\_\+\+Window\+\_\+\+Features@{Ewk\+\_\+\+Window\+\_\+\+Features}}
+\index{Ewk\+\_\+\+Window\+\_\+\+Features@{Ewk\+\_\+\+Window\+\_\+\+Features}!ewk\+\_\+window\+\_\+features.\+h@{ewk\+\_\+window\+\_\+features.\+h}}
+\subsubsection[{Ewk\+\_\+\+Window\+\_\+\+Features}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \+\_\+\+Ewk\+\_\+\+Window\+\_\+\+Features} {\bf Ewk\+\_\+\+Window\+\_\+\+Features}}}\label{ewk__window__features_8h_af32c782291330d29e9f355daf530b22e}
+Creates a type name for \hyperlink{struct__Ewk__Window__Features}{\+\_\+\+Ewk\+\_\+\+Window\+\_\+\+Features}. 
+
+\subsection{Function Documentation}
+\hypertarget{ewk__window__features_8h_af200d1da64006d996be06759a27b4689}{\index{ewk\+\_\+window\+\_\+features.\+h@{ewk\+\_\+window\+\_\+features.\+h}!ewk\+\_\+window\+\_\+features\+\_\+bool\+\_\+property\+\_\+get@{ewk\+\_\+window\+\_\+features\+\_\+bool\+\_\+property\+\_\+get}}
+\index{ewk\+\_\+window\+\_\+features\+\_\+bool\+\_\+property\+\_\+get@{ewk\+\_\+window\+\_\+features\+\_\+bool\+\_\+property\+\_\+get}!ewk\+\_\+window\+\_\+features.\+h@{ewk\+\_\+window\+\_\+features.\+h}}
+\subsubsection[{ewk\+\_\+window\+\_\+features\+\_\+bool\+\_\+property\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+window\+\_\+features\+\_\+bool\+\_\+property\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Window\+\_\+\+Features} $\ast$}]{window\+\_\+features, }
+\item[{Eina\+\_\+\+Bool $\ast$}]{toolbar\+\_\+visible, }
+\item[{Eina\+\_\+\+Bool $\ast$}]{statusbar\+\_\+visible, }
+\item[{Eina\+\_\+\+Bool $\ast$}]{scrollbars\+\_\+visible, }
+\item[{Eina\+\_\+\+Bool $\ast$}]{menubar\+\_\+visible, }
+\item[{Eina\+\_\+\+Bool $\ast$}]{locationbar\+\_\+visible, }
+\item[{Eina\+\_\+\+Bool $\ast$}]{fullscreen}
+\end{DoxyParamCaption}
+)}}\label{ewk__window__features_8h_af200d1da64006d996be06759a27b4689}
+Gets boolean properties of an Ewk\+\_\+\+Window\+\_\+\+Features.
+
+Properties are returned in the respective pointers. Passing {\ttfamily N\+U\+L\+L} to any of these pointers will cause that property to not be returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+\_\+features} & the object to get boolean properties \\
+\hline
+{\em toolbar\+\_\+visible} & the pointer to store if toolbar is visible \\
+\hline
+{\em statusbar\+\_\+visible} & the pointer to store if statusbar is visible \\
+\hline
+{\em scrollbars\+\_\+visible} & the pointer to store if scrollbars is visible \\
+\hline
+{\em menubar\+\_\+visible} & the pointer to store if menubar is visible \\
+\hline
+{\em locationbar\+\_\+visible} & the pointer to store if locationbar is visible \\
+\hline
+{\em fullscreen} & the pointer to store if fullscreen is enabled\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__window__features_8h_a26b93ecf6c2b1748a3523ea780bee1ed}{ewk\+\_\+window\+\_\+features\+\_\+int\+\_\+property\+\_\+get} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__window__features_8h_a26b93ecf6c2b1748a3523ea780bee1ed}{\index{ewk\+\_\+window\+\_\+features.\+h@{ewk\+\_\+window\+\_\+features.\+h}!ewk\+\_\+window\+\_\+features\+\_\+int\+\_\+property\+\_\+get@{ewk\+\_\+window\+\_\+features\+\_\+int\+\_\+property\+\_\+get}}
+\index{ewk\+\_\+window\+\_\+features\+\_\+int\+\_\+property\+\_\+get@{ewk\+\_\+window\+\_\+features\+\_\+int\+\_\+property\+\_\+get}!ewk\+\_\+window\+\_\+features.\+h@{ewk\+\_\+window\+\_\+features.\+h}}
+\subsubsection[{ewk\+\_\+window\+\_\+features\+\_\+int\+\_\+property\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+window\+\_\+features\+\_\+int\+\_\+property\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Window\+\_\+\+Features} $\ast$}]{window\+\_\+features, }
+\item[{int $\ast$}]{x, }
+\item[{int $\ast$}]{y, }
+\item[{int $\ast$}]{w, }
+\item[{int $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{ewk__window__features_8h_a26b93ecf6c2b1748a3523ea780bee1ed}
+Gets int properties of an Ewk\+\_\+\+Window\+\_\+\+Features.
+
+Properties are returned in the respective pointers. Passing {\ttfamily N\+U\+L\+L} to any of these pointers will cause that property to not be returned.
+
+Make sure to check if the value returned is less than 0 before using it, since in that case it means that property was not set in window\+\_\+features object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+\_\+features} & the window's features \\
+\hline
+{\em x} & the pointer to store x position \\
+\hline
+{\em y} & the pointer to store y position \\
+\hline
+{\em w} & the pointer to store width \\
+\hline
+{\em h} & the pointer to store height\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__window__features_8h_af200d1da64006d996be06759a27b4689}{ewk\+\_\+window\+\_\+features\+\_\+bool\+\_\+property\+\_\+get} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__window__features_8h_a91301d9ebfd10271794396dcc09713c2}{\index{ewk\+\_\+window\+\_\+features.\+h@{ewk\+\_\+window\+\_\+features.\+h}!ewk\+\_\+window\+\_\+features\+\_\+ref@{ewk\+\_\+window\+\_\+features\+\_\+ref}}
+\index{ewk\+\_\+window\+\_\+features\+\_\+ref@{ewk\+\_\+window\+\_\+features\+\_\+ref}!ewk\+\_\+window\+\_\+features.\+h@{ewk\+\_\+window\+\_\+features.\+h}}
+\subsubsection[{ewk\+\_\+window\+\_\+features\+\_\+ref}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+window\+\_\+features\+\_\+ref (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Window\+\_\+\+Features} $\ast$}]{window\+\_\+features}
+\end{DoxyParamCaption}
+)}}\label{ewk__window__features_8h_a91301d9ebfd10271794396dcc09713c2}
+Increases the reference count of an Ewk\+\_\+\+Window\+\_\+\+Features.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+\_\+features} & the object to increase reference count \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__window__features_8h_a0d30168ac1c4002f3e976cbc440d37ab}{\index{ewk\+\_\+window\+\_\+features.\+h@{ewk\+\_\+window\+\_\+features.\+h}!ewk\+\_\+window\+\_\+features\+\_\+unref@{ewk\+\_\+window\+\_\+features\+\_\+unref}}
+\index{ewk\+\_\+window\+\_\+features\+\_\+unref@{ewk\+\_\+window\+\_\+features\+\_\+unref}!ewk\+\_\+window\+\_\+features.\+h@{ewk\+\_\+window\+\_\+features.\+h}}
+\subsubsection[{ewk\+\_\+window\+\_\+features\+\_\+unref}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+window\+\_\+features\+\_\+unref (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Window\+\_\+\+Features} $\ast$}]{window\+\_\+features}
+\end{DoxyParamCaption}
+)}}\label{ewk__window__features_8h_a0d30168ac1c4002f3e976cbc440d37ab}
+Decreases the referece count of an Ewk\+\_\+\+Window\+\_\+\+Features, possibly freeing it.
+
+When the reference count of the object reaches 0, it is freed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+\_\+features} & the object to decrease reference count \\
+\hline
+\end{DoxyParams}

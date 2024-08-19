@@ -1,0 +1,37 @@
+
+The following libraries should be installed (as -dev or -devel versions since the header files are required):
+
+cmake, flex, bison, gperf, libsqlite3, libXslt, libicu, mesa-libGL, 
+libpng, libjpeg, libtiff, perl, ruby, glib, openssl, cairo, freetype2, libsoup, 
+HarfBuzz, FLTK, FLTK_Images, FLTK_GL, libxcomposite-dev(Ubuntu) etc.
+
+If the compilation fails, add the missing dependencies, i.e. libraries not mentioned above. Usually the
+libraries are installed but the header files are missing, so install the -dev or -devel versions too.
+Sometimes cmake complains about a wrong version just because the header files are missing. If nothing
+helps remove the version number from the find_package line in the file Source/cmake/OptionsNix.cmake.
+
+These instructions have been tested on a 64bit openSUSE 13.2 and Ubuntu 13.10 distribution.
+
+1. First compile the shared webkit library and netrider:
+- enter the webkitnix-src directory
+- run the ./build-webkit.sh script. Depending on your PC it will take 30-60 minutes to run.
+
+The build-webkit script assumes that you have a quad-core processor and therefore uses the parameter
+--makeargs=-j5. Adjust that to number of processors plus one for the fastest compile. If you just have
+a single core processor, remove this parameter. The compilation may run hours then.
+
+This will result with the libWebKitNix.so.0.1.0 library in WebKitBuild/Release/lib and netrider 
+in WebKitBuild/Release/bin.
+
+2. Now install the libWebKitNix.so library in /usr/local/lib, the netrider application in /usr/local/bin
+and the netrider directory with the settings etc. in your home directory.
+
+- run the ./install-webkit.sh script using sudo. This will install the files in /usr/local.
+- run the ./install-netrider.sh script NOT using sudo. This will install the netrider directory in
+your home directory.
+
+3. Run the netrider browser:
+
+Enter netrider on the command line.
+
+15th Feb 2015 Georg Potthast

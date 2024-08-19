@@ -1,0 +1,293 @@
+\hypertarget{ewk__js_8h}{\section{ewk\+\_\+js.\+h File Reference}
+\label{ewk__js_8h}\index{ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}}
+}
+
+
+Allows to export objects to Java\+Script A\+P\+I.  
+
+
+{\ttfamily \#include $<$Eina.\+h$>$}\\*
+{\ttfamily \#include $<$Evas.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__Ewk__JS__Variant}{\+\_\+\+Ewk\+\_\+\+J\+S\+\_\+\+Variant}
+\item 
+struct \hyperlink{struct__Ewk__JS__Method}{\+\_\+\+Ewk\+\_\+\+J\+S\+\_\+\+Method}
+\item 
+struct \hyperlink{struct__Ewk__JS__Property}{\+\_\+\+Ewk\+\_\+\+J\+S\+\_\+\+Property}
+\item 
+struct \hyperlink{struct__Ewk__JS__Default}{\+\_\+\+Ewk\+\_\+\+J\+S\+\_\+\+Default}
+\item 
+struct \hyperlink{struct__Ewk__JS__Class__Meta}{\+\_\+\+Ewk\+\_\+\+J\+S\+\_\+\+Class\+\_\+\+Meta}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ewk__js_8h_a190cda706cca1a90bd3301f709dda0ac}{\#define {\bfseries E\+W\+K\+\_\+\+J\+S\+\_\+\+C\+L\+A\+S\+S\+\_\+\+M\+E\+T\+A\+\_\+\+V\+E\+R\+S\+I\+O\+N}~0}\label{ewk__js_8h_a190cda706cca1a90bd3301f709dda0ac}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ewk__js_8h_a807c7a400f85f21d4b733396122502cd}{typedef struct \+\_\+\+Ewk\+\_\+\+J\+S\+\_\+\+Object {\bfseries Ewk\+\_\+\+J\+S\+\_\+\+Object}}\label{ewk__js_8h_a807c7a400f85f21d4b733396122502cd}
+
+\item 
+\hypertarget{ewk__js_8h_a90aa882a6bc0c5cbc52100d91d95b51f}{typedef struct \hyperlink{struct__Ewk__JS__Class__Meta}{\+\_\+\+Ewk\+\_\+\+J\+S\+\_\+\+Class\+\_\+\+Meta} {\bfseries Ewk\+\_\+\+J\+S\+\_\+\+Class\+\_\+\+Meta}}\label{ewk__js_8h_a90aa882a6bc0c5cbc52100d91d95b51f}
+
+\item 
+\hypertarget{ewk__js_8h_a751795979b56af1082ce3ee71c287078}{typedef struct \hyperlink{struct__Ewk__JS__Variant}{\+\_\+\+Ewk\+\_\+\+J\+S\+\_\+\+Variant} {\bfseries Ewk\+\_\+\+J\+S\+\_\+\+Variant}}\label{ewk__js_8h_a751795979b56af1082ce3ee71c287078}
+
+\item 
+\hypertarget{ewk__js_8h_ac8b64e5a5d87053989d0f6d885394e71}{typedef struct \hyperlink{struct__Ewk__JS__Method}{\+\_\+\+Ewk\+\_\+\+J\+S\+\_\+\+Method} {\bfseries Ewk\+\_\+\+J\+S\+\_\+\+Method}}\label{ewk__js_8h_ac8b64e5a5d87053989d0f6d885394e71}
+
+\item 
+\hypertarget{ewk__js_8h_af4f3b54e23efee61b0e1b2f7204d621a}{typedef struct \hyperlink{struct__Ewk__JS__Property}{\+\_\+\+Ewk\+\_\+\+J\+S\+\_\+\+Property} {\bfseries Ewk\+\_\+\+J\+S\+\_\+\+Property}}\label{ewk__js_8h_af4f3b54e23efee61b0e1b2f7204d621a}
+
+\item 
+\hypertarget{ewk__js_8h_a03e255a3b8b23f351b8143f908939332}{typedef struct \hyperlink{struct__Ewk__JS__Default}{\+\_\+\+Ewk\+\_\+\+J\+S\+\_\+\+Default} {\bfseries Ewk\+\_\+\+J\+S\+\_\+\+Default}}\label{ewk__js_8h_a03e255a3b8b23f351b8143f908939332}
+
+\item 
+\hypertarget{ewk__js_8h_af0c70867d436c88e74983eff41809014}{typedef Eina\+\_\+\+Bool($\ast$ {\bfseries Ewk\+\_\+\+J\+S\+\_\+\+Set\+\_\+\+Cb} )(Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$obj, const char $\ast$name, const \hyperlink{struct__Ewk__JS__Variant}{Ewk\+\_\+\+J\+S\+\_\+\+Variant} $\ast$value)}\label{ewk__js_8h_af0c70867d436c88e74983eff41809014}
+
+\item 
+\hypertarget{ewk__js_8h_ab31d47929ef6f185564080bba1bebda7}{typedef Eina\+\_\+\+Bool($\ast$ {\bfseries Ewk\+\_\+\+J\+S\+\_\+\+Get\+\_\+\+Cb} )(Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$obj, const char $\ast$name, \hyperlink{struct__Ewk__JS__Variant}{Ewk\+\_\+\+J\+S\+\_\+\+Variant} $\ast$value)}\label{ewk__js_8h_ab31d47929ef6f185564080bba1bebda7}
+
+\item 
+\hypertarget{ewk__js_8h_ae1db715d05feb67149e12eef0f412123}{typedef Eina\+\_\+\+Bool($\ast$ {\bfseries Ewk\+\_\+\+J\+S\+\_\+\+Del\+\_\+\+Cb} )(Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$obj, const char $\ast$name)}\label{ewk__js_8h_ae1db715d05feb67149e12eef0f412123}
+
+\item 
+\hypertarget{ewk__js_8h_a23758ff91df7e274cfeeec6850e683c5}{typedef \hyperlink{struct__Ewk__JS__Variant}{Ewk\+\_\+\+J\+S\+\_\+\+Variant} $\ast$($\ast$ {\bfseries Ewk\+\_\+\+J\+S\+\_\+\+Invoke\+\_\+\+Cb} )(Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$obj, \hyperlink{struct__Ewk__JS__Variant}{Ewk\+\_\+\+J\+S\+\_\+\+Variant} $\ast$args, int arg\+Count)}\label{ewk__js_8h_a23758ff91df7e274cfeeec6850e683c5}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ewk__js_8h_a7d175944fc2aa811953e27fb1bef96a3}{enum {\bfseries Ewk\+\_\+\+J\+S\+\_\+\+Variant\+\_\+\+Type} \{ \\*
+{\bfseries E\+W\+K\+\_\+\+J\+S\+\_\+\+V\+A\+R\+I\+A\+N\+T\+\_\+\+V\+O\+I\+D}, 
+{\bfseries E\+W\+K\+\_\+\+J\+S\+\_\+\+V\+A\+R\+I\+A\+N\+T\+\_\+\+N\+U\+L\+L}, 
+{\bfseries E\+W\+K\+\_\+\+J\+S\+\_\+\+V\+A\+R\+I\+A\+N\+T\+\_\+\+B\+O\+O\+L}, 
+{\bfseries E\+W\+K\+\_\+\+J\+S\+\_\+\+V\+A\+R\+I\+A\+N\+T\+\_\+\+I\+N\+T32}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+J\+S\+\_\+\+V\+A\+R\+I\+A\+N\+T\+\_\+\+D\+O\+U\+B\+L\+E}, 
+{\bfseries E\+W\+K\+\_\+\+J\+S\+\_\+\+V\+A\+R\+I\+A\+N\+T\+\_\+\+S\+T\+R\+I\+N\+G}, 
+{\bfseries E\+W\+K\+\_\+\+J\+S\+\_\+\+V\+A\+R\+I\+A\+N\+T\+\_\+\+O\+B\+J\+E\+C\+T}
+ \}}\label{ewk__js_8h_a7d175944fc2aa811953e27fb1bef96a3}
+
+\item 
+\hypertarget{ewk__js_8h_a1afbcf5ca53613182760f901f04deeb6}{enum {\bfseries Ewk\+\_\+\+J\+S\+\_\+\+Object\+\_\+\+Type} \{ {\bfseries E\+W\+K\+\_\+\+J\+S\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+O\+B\+J\+E\+C\+T}, 
+{\bfseries E\+W\+K\+\_\+\+J\+S\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+A\+R\+R\+A\+Y}, 
+{\bfseries E\+W\+K\+\_\+\+J\+S\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N}, 
+{\bfseries E\+W\+K\+\_\+\+J\+S\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+V\+A\+L\+I\+D}
+ \}}\label{ewk__js_8h_a1afbcf5ca53613182760f901f04deeb6}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\+A\+P\+I Eina\+\_\+\+Hash $\ast$ \hyperlink{ewk__js_8h_a53bf0de068c929d3ea1211abf59aae81}{ewk\+\_\+js\+\_\+object\+\_\+properties\+\_\+get} (const Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$obj)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__js_8h_acd7cc87c696cdd952d8e04442eba097e}{ewk\+\_\+js\+\_\+object\+\_\+name\+\_\+get} (const Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$obj)
+\item 
+E\+A\+P\+I Evas\+\_\+\+Object $\ast$ \hyperlink{ewk__js_8h_aaff3a7583ddf9c3d6d9e54ba0b904689}{ewk\+\_\+js\+\_\+object\+\_\+view\+\_\+get} (const Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$obj)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__js_8h_afa45d81b6e0babc607c61053002dcfaf}{ewk\+\_\+js\+\_\+variant\+\_\+free} (\hyperlink{struct__Ewk__JS__Variant}{Ewk\+\_\+\+J\+S\+\_\+\+Variant} $\ast$var)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__js_8h_a33dde25e879a5b7194710b2a71fc2549}{ewk\+\_\+js\+\_\+variant\+\_\+array\+\_\+free} (\hyperlink{struct__Ewk__JS__Variant}{Ewk\+\_\+\+J\+S\+\_\+\+Variant} $\ast$var, int count)
+\item 
+E\+A\+P\+I Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$ \hyperlink{ewk__js_8h_a488d7b01f660ea30cea88b812fe04bb8}{ewk\+\_\+js\+\_\+object\+\_\+new} (const \hyperlink{struct__Ewk__JS__Class__Meta}{Ewk\+\_\+\+J\+S\+\_\+\+Class\+\_\+\+Meta} $\ast$meta\+\_\+cls)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__js_8h_a6dc4711ec1536f9a1e305c9d33a12260}{ewk\+\_\+js\+\_\+object\+\_\+free} (Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$obj)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__js_8h_a3d36e9af0177b14c1dc32e73e34206ab}{ewk\+\_\+js\+\_\+object\+\_\+invoke} (Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$obj, \hyperlink{struct__Ewk__JS__Variant}{Ewk\+\_\+\+J\+S\+\_\+\+Variant} $\ast$args, int arg\+\_\+count, \hyperlink{struct__Ewk__JS__Variant}{Ewk\+\_\+\+J\+S\+\_\+\+Variant} $\ast$result)
+\item 
+E\+A\+P\+I Ewk\+\_\+\+J\+S\+\_\+\+Object\+\_\+\+Type \hyperlink{ewk__js_8h_adb5cae1ac99a98ea8c4116345989b97f}{ewk\+\_\+js\+\_\+object\+\_\+type\+\_\+get} (Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$obj)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__js_8h_a33c3794ed19833a0d4153393d09b41e3}{ewk\+\_\+js\+\_\+object\+\_\+type\+\_\+set} (Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$obj, Ewk\+\_\+\+J\+S\+\_\+\+Object\+\_\+\+Type type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Allows to export objects to Java\+Script A\+P\+I. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{ewk__js_8h_a6dc4711ec1536f9a1e305c9d33a12260}{\index{ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}!ewk\+\_\+js\+\_\+object\+\_\+free@{ewk\+\_\+js\+\_\+object\+\_\+free}}
+\index{ewk\+\_\+js\+\_\+object\+\_\+free@{ewk\+\_\+js\+\_\+object\+\_\+free}!ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}}
+\subsubsection[{ewk\+\_\+js\+\_\+object\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+js\+\_\+object\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$}]{obj}
+\end{DoxyParamCaption}
+)}}\label{ewk__js_8h_a6dc4711ec1536f9a1e305c9d33a12260}
+Release resources allocated by {\itshape obj}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & {\itshape Ewk\+\_\+\+J\+S\+\_\+\+Object} to be released. \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__js_8h_a3d36e9af0177b14c1dc32e73e34206ab}{\index{ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}!ewk\+\_\+js\+\_\+object\+\_\+invoke@{ewk\+\_\+js\+\_\+object\+\_\+invoke}}
+\index{ewk\+\_\+js\+\_\+object\+\_\+invoke@{ewk\+\_\+js\+\_\+object\+\_\+invoke}!ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}}
+\subsubsection[{ewk\+\_\+js\+\_\+object\+\_\+invoke}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+js\+\_\+object\+\_\+invoke (
+\begin{DoxyParamCaption}
+\item[{Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$}]{obj, }
+\item[{{\bf Ewk\+\_\+\+J\+S\+\_\+\+Variant} $\ast$}]{args, }
+\item[{int}]{arg\+\_\+count, }
+\item[{{\bf Ewk\+\_\+\+J\+S\+\_\+\+Variant} $\ast$}]{result}
+\end{DoxyParamCaption}
+)}}\label{ewk__js_8h_a3d36e9af0177b14c1dc32e73e34206ab}
+Calls the function this object represents.
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Object that represents function. \\
+\hline
+{\em args} & Arguments to be passed to function. \\
+\hline
+{\em arg\+\_\+count} & Number of arguments. \\
+\hline
+{\em result} & Return value of the invoked function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if function was executed, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} if function was not executed. 
+\end{DoxyReturn}
+\hypertarget{ewk__js_8h_acd7cc87c696cdd952d8e04442eba097e}{\index{ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}!ewk\+\_\+js\+\_\+object\+\_\+name\+\_\+get@{ewk\+\_\+js\+\_\+object\+\_\+name\+\_\+get}}
+\index{ewk\+\_\+js\+\_\+object\+\_\+name\+\_\+get@{ewk\+\_\+js\+\_\+object\+\_\+name\+\_\+get}!ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}}
+\subsubsection[{ewk\+\_\+js\+\_\+object\+\_\+name\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+js\+\_\+object\+\_\+name\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$}]{obj}
+\end{DoxyParamCaption}
+)}}\label{ewk__js_8h_acd7cc87c696cdd952d8e04442eba097e}
+Gets name of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Object whose name is wanted.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+name of object. 
+\end{DoxyReturn}
+\hypertarget{ewk__js_8h_a488d7b01f660ea30cea88b812fe04bb8}{\index{ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}!ewk\+\_\+js\+\_\+object\+\_\+new@{ewk\+\_\+js\+\_\+object\+\_\+new}}
+\index{ewk\+\_\+js\+\_\+object\+\_\+new@{ewk\+\_\+js\+\_\+object\+\_\+new}!ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}}
+\subsubsection[{ewk\+\_\+js\+\_\+object\+\_\+new}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Ewk\+\_\+\+J\+S\+\_\+\+Object$\ast$ ewk\+\_\+js\+\_\+object\+\_\+new (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+J\+S\+\_\+\+Class\+\_\+\+Meta} $\ast$}]{meta\+\_\+cls}
+\end{DoxyParamCaption}
+)}}\label{ewk__js_8h_a488d7b01f660ea30cea88b812fe04bb8}
+Create a Ewk\+\_\+\+J\+S\+\_\+\+Object to be used in {\itshape ewk\+\_\+view\+\_\+js\+\_\+object\+\_\+add}. The Meta class's methods and properties are not modified but references to it are kept as long as the object created from it lives. All properties created here will be added to the object hash of properties. Properties using default\+\_\+prop's get/set/del methods should also be added to the objects hash(see\+: {\itshape ewk\+\_\+js\+\_\+object\+\_\+properties\+\_\+get}). Methods must free the arguments they receive(see\+: {\itshape ewk\+\_\+js\+\_\+variang\+\_\+array\+\_\+free}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em cls} & {\itshape Ewk\+\_\+\+J\+S\+\_\+\+Class} that describes the object to be created.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Ewk\+\_\+\+J\+S\+\_\+\+Object created. 
+\end{DoxyReturn}
+\hypertarget{ewk__js_8h_a53bf0de068c929d3ea1211abf59aae81}{\index{ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}!ewk\+\_\+js\+\_\+object\+\_\+properties\+\_\+get@{ewk\+\_\+js\+\_\+object\+\_\+properties\+\_\+get}}
+\index{ewk\+\_\+js\+\_\+object\+\_\+properties\+\_\+get@{ewk\+\_\+js\+\_\+object\+\_\+properties\+\_\+get}!ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}}
+\subsubsection[{ewk\+\_\+js\+\_\+object\+\_\+properties\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Hash$\ast$ ewk\+\_\+js\+\_\+object\+\_\+properties\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$}]{obj}
+\end{DoxyParamCaption}
+)}}\label{ewk__js_8h_a53bf0de068c929d3ea1211abf59aae81}
+Gets Eina\+\_\+\+Hash with object's properties.
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Object whose properties are wanted.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object's properties. 
+\end{DoxyReturn}
+\hypertarget{ewk__js_8h_adb5cae1ac99a98ea8c4116345989b97f}{\index{ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}!ewk\+\_\+js\+\_\+object\+\_\+type\+\_\+get@{ewk\+\_\+js\+\_\+object\+\_\+type\+\_\+get}}
+\index{ewk\+\_\+js\+\_\+object\+\_\+type\+\_\+get@{ewk\+\_\+js\+\_\+object\+\_\+type\+\_\+get}!ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}}
+\subsubsection[{ewk\+\_\+js\+\_\+object\+\_\+type\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Ewk\+\_\+\+J\+S\+\_\+\+Object\+\_\+\+Type ewk\+\_\+js\+\_\+object\+\_\+type\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$}]{obj}
+\end{DoxyParamCaption}
+)}}\label{ewk__js_8h_adb5cae1ac99a98ea8c4116345989b97f}
+Returns the type this object represents.
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+W\+K\+\_\+\+J\+S\+\_\+\+O\+B\+J\+E\+C\+T} if it is an object, {\ttfamily E\+W\+K\+\_\+\+J\+S\+\_\+\+A\+R\+R\+A\+Y} if it is an array and {\ttfamily E\+W\+K\+\_\+\+J\+S\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N} if it is a function. 
+\end{DoxyReturn}
+\hypertarget{ewk__js_8h_a33c3794ed19833a0d4153393d09b41e3}{\index{ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}!ewk\+\_\+js\+\_\+object\+\_\+type\+\_\+set@{ewk\+\_\+js\+\_\+object\+\_\+type\+\_\+set}}
+\index{ewk\+\_\+js\+\_\+object\+\_\+type\+\_\+set@{ewk\+\_\+js\+\_\+object\+\_\+type\+\_\+set}!ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}}
+\subsubsection[{ewk\+\_\+js\+\_\+object\+\_\+type\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+js\+\_\+object\+\_\+type\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$}]{obj, }
+\item[{Ewk\+\_\+\+J\+S\+\_\+\+Object\+\_\+\+Type}]{type}
+\end{DoxyParamCaption}
+)}}\label{ewk__js_8h_a33c3794ed19833a0d4153393d09b41e3}
+Sets the type this object represents.
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Object \\
+\hline
+{\em type} & Type \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__js_8h_aaff3a7583ddf9c3d6d9e54ba0b904689}{\index{ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}!ewk\+\_\+js\+\_\+object\+\_\+view\+\_\+get@{ewk\+\_\+js\+\_\+object\+\_\+view\+\_\+get}}
+\index{ewk\+\_\+js\+\_\+object\+\_\+view\+\_\+get@{ewk\+\_\+js\+\_\+object\+\_\+view\+\_\+get}!ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}}
+\subsubsection[{ewk\+\_\+js\+\_\+object\+\_\+view\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Evas\+\_\+\+Object$\ast$ ewk\+\_\+js\+\_\+object\+\_\+view\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const Ewk\+\_\+\+J\+S\+\_\+\+Object $\ast$}]{obj}
+\end{DoxyParamCaption}
+)}}\label{ewk__js_8h_aaff3a7583ddf9c3d6d9e54ba0b904689}
+Returns the view associated with an Ewk\+\_\+\+J\+S\+\_\+\+Object.
+
+The returned view is the one passed to ewk\+\_\+view\+\_\+js\+\_\+object\+\_\+add. Right now, the object is always added to the view's main frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object to be queried.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The view whose main frame the object has been inserted into, or {\ttfamily N\+U\+L\+L} if the object has not been added to a view yet.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__view_8h_acefdcad7fbdbec84ed07a48281073bf7}{ewk\+\_\+view\+\_\+js\+\_\+object\+\_\+add}, \hyperlink{ewk__view_8h_af21210605d1aea14d06a507854b10e3b}{ewk\+\_\+view\+\_\+frame\+\_\+main\+\_\+get} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__js_8h_a33dde25e879a5b7194710b2a71fc2549}{\index{ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}!ewk\+\_\+js\+\_\+variant\+\_\+array\+\_\+free@{ewk\+\_\+js\+\_\+variant\+\_\+array\+\_\+free}}
+\index{ewk\+\_\+js\+\_\+variant\+\_\+array\+\_\+free@{ewk\+\_\+js\+\_\+variant\+\_\+array\+\_\+free}!ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}}
+\subsubsection[{ewk\+\_\+js\+\_\+variant\+\_\+array\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+js\+\_\+variant\+\_\+array\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+J\+S\+\_\+\+Variant} $\ast$}]{var, }
+\item[{int}]{count}
+\end{DoxyParamCaption}
+)}}\label{ewk__js_8h_a33dde25e879a5b7194710b2a71fc2549}
+Release resources allocated by {\itshape var}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em var} & {\itshape Ewk\+\_\+\+J\+S\+\_\+\+Variant} to be release \\
+\hline
+{\em count} & {\itshape size} of array \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__js_8h_afa45d81b6e0babc607c61053002dcfaf}{\index{ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}!ewk\+\_\+js\+\_\+variant\+\_\+free@{ewk\+\_\+js\+\_\+variant\+\_\+free}}
+\index{ewk\+\_\+js\+\_\+variant\+\_\+free@{ewk\+\_\+js\+\_\+variant\+\_\+free}!ewk\+\_\+js.\+h@{ewk\+\_\+js.\+h}}
+\subsubsection[{ewk\+\_\+js\+\_\+variant\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+js\+\_\+variant\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+J\+S\+\_\+\+Variant} $\ast$}]{var}
+\end{DoxyParamCaption}
+)}}\label{ewk__js_8h_afa45d81b6e0babc607c61053002dcfaf}
+Release resources allocated by {\itshape var}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em var} & {\itshape Ewk\+\_\+\+J\+S\+\_\+\+Variant} to be release \\
+\hline
+\end{DoxyParams}

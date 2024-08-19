@@ -1,0 +1,58 @@
+\hypertarget{struct__Ewk__View__Navigation__Data}{\section{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data Struct Reference}
+\label{struct__Ewk__View__Navigation__Data}\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data}}
+}
+
+
+Structure containing details about a view navigation.  
+
+
+
+
+{\ttfamily \#include $<$ewk\+\_\+view.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{struct__Ewk__View__Navigation__Data_a92f35de2b87fda899ae4df41fdc0b61c}{url}
+\item 
+const char $\ast$ \hyperlink{struct__Ewk__View__Navigation__Data_ad357114e7c98066aa62f552be9759c78}{title}
+\item 
+\hyperlink{ewk__frame_8h_acddf624050dec184d7071e77847d1d94}{Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request} $\ast$ \hyperlink{struct__Ewk__View__Navigation__Data_af564e2362c466b045d90e36bc113213d}{request}
+\item 
+\hyperlink{ewk__frame_8h_a738f355baff59c9821ee7d962a2d4492}{Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Response} $\ast$ \hyperlink{struct__Ewk__View__Navigation__Data_aa05f408543da80e01d489f31aeb5f9d5}{response}
+\item 
+Eina\+\_\+\+Bool \hyperlink{struct__Ewk__View__Navigation__Data_a72ea978c47e1917d238fca470d6be736}{has\+\_\+substitute\+\_\+data}
+\item 
+const char $\ast$ \hyperlink{struct__Ewk__View__Navigation__Data_a3987d4ff73c8405ab9b8dd4fa04ee2d8}{client\+\_\+redirect\+\_\+source}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure containing details about a view navigation. 
+
+Details of a view navigation. It is used in \char`\"{}navigate,with,data\char`\"{} signal. 
+
+\subsection{Member Data Documentation}
+\hypertarget{struct__Ewk__View__Navigation__Data_a3987d4ff73c8405ab9b8dd4fa04ee2d8}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data}!client\+\_\+redirect\+\_\+source@{client\+\_\+redirect\+\_\+source}}
+\index{client\+\_\+redirect\+\_\+source@{client\+\_\+redirect\+\_\+source}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data}}
+\subsubsection[{client\+\_\+redirect\+\_\+source}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data\+::client\+\_\+redirect\+\_\+source}}\label{struct__Ewk__View__Navigation__Data_a3987d4ff73c8405ab9b8dd4fa04ee2d8}
+Client redirect source U\+R\+L. \hypertarget{struct__Ewk__View__Navigation__Data_a72ea978c47e1917d238fca470d6be736}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data}!has\+\_\+substitute\+\_\+data@{has\+\_\+substitute\+\_\+data}}
+\index{has\+\_\+substitute\+\_\+data@{has\+\_\+substitute\+\_\+data}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data}}
+\subsubsection[{has\+\_\+substitute\+\_\+data}]{\setlength{\rightskip}{0pt plus 5cm}Eina\+\_\+\+Bool \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data\+::has\+\_\+substitute\+\_\+data}}\label{struct__Ewk__View__Navigation__Data_a72ea978c47e1917d238fca470d6be736}
+Data substitution flag. \hypertarget{struct__Ewk__View__Navigation__Data_af564e2362c466b045d90e36bc113213d}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data}!request@{request}}
+\index{request@{request}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data}}
+\subsubsection[{request}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request}$\ast$ \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data\+::request}}\label{struct__Ewk__View__Navigation__Data_af564e2362c466b045d90e36bc113213d}
+Navigation request. \hypertarget{struct__Ewk__View__Navigation__Data_aa05f408543da80e01d489f31aeb5f9d5}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data}!response@{response}}
+\index{response@{response}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data}}
+\subsubsection[{response}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Response}$\ast$ \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data\+::response}}\label{struct__Ewk__View__Navigation__Data_aa05f408543da80e01d489f31aeb5f9d5}
+Navigation response. \hypertarget{struct__Ewk__View__Navigation__Data_ad357114e7c98066aa62f552be9759c78}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data}!title@{title}}
+\index{title@{title}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data}}
+\subsubsection[{title}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data\+::title}}\label{struct__Ewk__View__Navigation__Data_ad357114e7c98066aa62f552be9759c78}
+Title of the navigated page. \hypertarget{struct__Ewk__View__Navigation__Data_a92f35de2b87fda899ae4df41fdc0b61c}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data}!url@{url}}
+\index{url@{url}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data}}
+\subsubsection[{url}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Navigation\+\_\+\+Data\+::url}}\label{struct__Ewk__View__Navigation__Data_a92f35de2b87fda899ae4df41fdc0b61c}
+U\+R\+L for the history. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ewk__view_8h}{ewk\+\_\+view.\+h}\end{DoxyCompactItemize}

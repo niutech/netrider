@@ -1,0 +1,39 @@
+; FLTK preferences file format 1.0
+; vendor: 
+; application: settings/netrider
+
+[.]
+
+
+[./settings]
+
+language:
+startpage:www.google.com
+
+[./history]
+
+historyitemcount:0
+
+[./bookmarks]
+
+bookmarksitemcount:30
+0:Fast Light Toolkit - Fast Light Toolkit (FLTK)
+1:http://www.fltk.org/index.php
+2:Nanolinux | SourceForge.net
+3:http://sourceforge.net/projects/nanolinux/
+4:BBC - Homepage
+5:http://www.bbc.com/
+6:Breaking News, U.S., World, Weather, Entertainment & Video N
++ews - CNN.com
+7:http://edition.cnn.com/
+8:Formula 1\302\256 - The Official F1\302\256 Website
+9:http://www.formula1.com/
+10:DISTASIS
+11:http://www.distasis.com/
+12:Aktuelle Nachrichten - Inland Ausland Wirtschaft Kultur Spor
++t - ARD Tagesschau | tagesschau.de
+13:http://www.tagesschau.de/
+14:Wikipedia
+15:http://www.wikipedia.org/
+16:
+17:\001

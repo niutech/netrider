@@ -1,0 +1,601 @@
+\hypertarget{ewk__contextmenu_8h}{\section{ewk\+\_\+contextmenu.\+h File Reference}
+\label{ewk__contextmenu_8h}\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+}
+
+
+Describes the context menu A\+P\+I.  
+
+
+{\ttfamily \#include $<$Eina.\+h$>$}\\*
+{\ttfamily \#include $<$Evas.\+h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \\*
+\hyperlink{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007}{\+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action} \hyperlink{ewk__contextmenu_8h_aff1d945e92dd408188afc9bac4bd4344}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action}
+\item 
+typedef enum \\*
+\hyperlink{ewk__contextmenu_8h_abcf0240a9689a6f8f6370798cd01c78c}{\+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type} \hyperlink{ewk__contextmenu_8h_ab8711abd6a20d021f8b47a5a8cdd3026}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type}
+\item 
+typedef struct \hyperlink{struct__Ewk__Context__Menu}{\+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu} \hyperlink{ewk__contextmenu_8h_a1ebc92afff582d4daf4dfe8d628528ae}{Ewk\+\_\+\+Context\+\_\+\+Menu}
+\item 
+typedef struct \\*
+\hyperlink{struct__Ewk__Context__Menu__Item}{\+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} \hyperlink{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007}{\+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action} \{ \\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+N\+O\+\_\+\+A\+C\+T\+I\+O\+N} = 0, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+O\+P\+E\+N\+\_\+\+L\+I\+N\+K\+\_\+\+I\+N\+\_\+\+N\+E\+W\+\_\+\+W\+I\+N\+D\+O\+W} = 1, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+L\+I\+N\+K\+\_\+\+T\+O\+\_\+\+D\+I\+S\+K}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+C\+O\+P\+Y\+\_\+\+L\+I\+N\+K\+\_\+\+T\+O\+\_\+\+C\+L\+I\+P\+B\+O\+A\+R\+D}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+O\+P\+E\+N\+\_\+\+I\+M\+A\+G\+E\+\_\+\+I\+N\+\_\+\+N\+E\+W\+\_\+\+W\+I\+N\+D\+O\+W}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+O\+\_\+\+D\+I\+S\+K}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+C\+O\+P\+Y\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+O\+\_\+\+C\+L\+I\+P\+B\+O\+A\+R\+D}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+C\+O\+P\+Y\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U\+R\+L\+\_\+\+T\+O\+\_\+\+C\+L\+I\+P\+B\+O\+A\+R\+D}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+O\+P\+E\+N\+\_\+\+F\+R\+A\+M\+E\+\_\+\+I\+N\+\_\+\+N\+E\+W\+\_\+\+W\+I\+N\+D\+O\+W}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+C\+O\+P\+Y}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+G\+O\+\_\+\+B\+A\+C\+K}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+G\+O\+\_\+\+F\+O\+R\+W\+A\+R\+D}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+T\+O\+P}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+R\+E\+L\+O\+A\+D}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+C\+U\+T}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+P\+A\+S\+T\+E}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+A\+L\+L}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+P\+E\+L\+L\+I\+N\+G\+\_\+\+G\+U\+E\+S\+S}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+N\+O\+\_\+\+G\+U\+E\+S\+S\+E\+S\+\_\+\+F\+O\+U\+N\+D}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+S\+P\+E\+L\+L\+I\+N\+G}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+L\+E\+A\+R\+N\+\_\+\+S\+P\+E\+L\+L\+I\+N\+G}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+O\+T\+H\+E\+R}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+E\+A\+R\+C\+H\+\_\+\+I\+N\+\_\+\+S\+P\+O\+T\+L\+I\+G\+H\+T}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+E\+A\+R\+C\+H\+\_\+\+W\+E\+B}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+L\+O\+O\+K\+\_\+\+U\+P\+\_\+\+I\+N\+\_\+\+D\+I\+C\+T\+I\+O\+N\+A\+R\+Y}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+O\+P\+E\+N\+\_\+\+W\+I\+T\+H\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+P\+D\+F\+A\+C\+T\+U\+A\+L\+\_\+\+S\+I\+Z\+E}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+P\+D\+F\+Z\+O\+O\+M\+\_\+\+I\+N}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+P\+D\+F\+Z\+O\+O\+M\+\_\+\+O\+U\+T}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+P\+D\+F\+A\+U\+T\+O\+\_\+\+S\+I\+Z\+E}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+P\+D\+F\+S\+I\+N\+G\+L\+E\+\_\+\+P\+A\+G\+E}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+P\+D\+F\+F\+A\+C\+I\+N\+G\+\_\+\+P\+A\+G\+E\+S}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+P\+D\+F\+C\+O\+N\+T\+I\+N\+U\+O\+U\+S}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+P\+D\+F\+N\+E\+X\+T\+\_\+\+P\+A\+G\+E}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+P\+D\+F\+P\+R\+E\+V\+I\+O\+U\+S\+\_\+\+P\+A\+G\+E}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+O\+P\+E\+N\+\_\+\+L\+I\+N\+K} = 2000, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+G\+R\+A\+M\+M\+A\+R}, 
+\hyperlink{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007ababee93c144f5d820b2b4c7b5ad561f6}{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+P\+E\+L\+L\+I\+N\+G\+\_\+\+M\+E\+N\+U}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+H\+O\+W\+\_\+\+S\+P\+E\+L\+L\+I\+N\+G\+\_\+\+P\+A\+N\+E\+L}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+C\+H\+E\+C\+K\+\_\+\+S\+P\+E\+L\+L\+I\+N\+G}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+C\+H\+E\+C\+K\+\_\+\+S\+P\+E\+L\+L\+I\+N\+G\+\_\+\+W\+H\+I\+L\+E\+\_\+\+T\+Y\+P\+I\+N\+G}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+C\+H\+E\+C\+K\+\_\+\+G\+R\+A\+M\+M\+A\+R\+\_\+\+W\+I\+T\+H\+\_\+\+S\+P\+E\+L\+L\+I\+N\+G}, 
+\hyperlink{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007a272464cf641d0e0c7835e4aafb31d5e2}{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+F\+O\+N\+T\+\_\+\+M\+E\+N\+U}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+H\+O\+W\+\_\+\+F\+O\+N\+T\+S}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+B\+O\+L\+D}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+I\+T\+A\+L\+I\+C}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+U\+N\+D\+E\+R\+L\+I\+N\+E}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+O\+U\+T\+L\+I\+N\+E}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+T\+Y\+L\+E\+S}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+H\+O\+W\+\_\+\+C\+O\+L\+O\+R\+S}, 
+\hyperlink{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007a8fd1628e764bb629b58922f6bd699400}{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+P\+E\+E\+C\+H\+\_\+\+M\+E\+N\+U}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+T\+A\+R\+T\+\_\+\+S\+P\+E\+A\+K\+I\+N\+G}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+T\+O\+P\+\_\+\+S\+P\+E\+A\+K\+I\+N\+G}, 
+\hyperlink{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007a63d8e0d5241f9599c272d985e36c9c80}{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+W\+R\+I\+T\+I\+N\+G\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+E\+N\+U}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+L\+E\+F\+T\+\_\+\+T\+O\+\_\+\+R\+I\+G\+H\+T}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+R\+I\+G\+H\+T\+\_\+\+T\+O\+\_\+\+L\+E\+F\+T}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+P\+D\+F\+S\+I\+N\+G\+L\+E\+\_\+\+P\+A\+G\+E\+\_\+\+S\+C\+R\+O\+L\+L\+I\+N\+G}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+P\+D\+F\+F\+A\+C\+I\+N\+G\+\_\+\+P\+A\+G\+E\+S\+\_\+\+S\+C\+R\+O\+L\+L\+I\+N\+G}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+I\+N\+S\+P\+E\+C\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T}, 
+\\*
+\hyperlink{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007a227fb249cca6758718c6f23c13c821ba}{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+E\+N\+U}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+L\+E\+F\+T\+\_\+\+T\+O\+\_\+\+R\+I\+G\+H\+T}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+R\+I\+G\+H\+T\+\_\+\+T\+O\+\_\+\+L\+E\+F\+T}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+O\+P\+E\+N\+\_\+\+M\+E\+D\+I\+A\+\_\+\+I\+N\+\_\+\+N\+E\+W\+\_\+\+W\+I\+N\+D\+O\+W}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+O\+\_\+\+D\+I\+S\+K}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+C\+O\+P\+Y\+\_\+\+M\+E\+D\+I\+A\+\_\+\+L\+I\+N\+K\+\_\+\+T\+O\+\_\+\+C\+L\+I\+P\+B\+O\+A\+R\+D}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+T\+O\+G\+G\+L\+E\+\_\+\+M\+E\+D\+I\+A\+\_\+\+C\+O\+N\+T\+R\+O\+L\+S}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+T\+O\+G\+G\+L\+E\+\_\+\+M\+E\+D\+I\+A\+\_\+\+L\+O\+O\+P}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+E\+N\+T\+E\+R\+\_\+\+V\+I\+D\+E\+O\+\_\+\+F\+U\+L\+L\+S\+C\+R\+E\+E\+N}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+\_\+\+P\+A\+U\+S\+E}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+M\+E\+D\+I\+A\+\_\+\+M\+U\+T\+E}, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+D\+I\+C\+T\+A\+T\+I\+O\+N\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+O\+P\+E\+N\+\_\+\+L\+I\+N\+K\+\_\+\+I\+N\+\_\+\+T\+H\+I\+S\+\_\+\+W\+I\+N\+D\+O\+W}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+T\+O\+G\+G\+L\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+F\+U\+L\+L\+\_\+\+S\+C\+R\+E\+E\+N}, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+B\+A\+S\+E\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+T\+A\+G} = 5000, 
+\\*
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+T\+A\+G\+\_\+\+N\+O\+\_\+\+A\+C\+T\+I\+O\+N} = 5998, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+L\+A\+S\+T\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+T\+A\+G} = 5999, 
+{\bfseries E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+B\+A\+S\+E\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+A\+G} = 10000
+ \}
+\begin{DoxyCompactList}\small\item\em Provides the actions of items for the context menu.  Keep this in sync with Context\+Menu\+Item.\+h. \end{DoxyCompactList}\item 
+\hypertarget{ewk__contextmenu_8h_abcf0240a9689a6f8f6370798cd01c78c}{enum \hyperlink{ewk__contextmenu_8h_abcf0240a9689a6f8f6370798cd01c78c}{\+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type} \{ {\bfseries E\+W\+K\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+E}, 
+{\bfseries E\+W\+K\+\_\+\+C\+H\+E\+C\+K\+A\+B\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+E}, 
+{\bfseries E\+W\+K\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+T\+Y\+P\+E}, 
+{\bfseries E\+W\+K\+\_\+\+S\+U\+B\+M\+E\+N\+U\+\_\+\+T\+Y\+P\+E}
+ \}}\label{ewk__contextmenu_8h_abcf0240a9689a6f8f6370798cd01c78c}
+
+\begin{DoxyCompactList}\small\item\em Defines the types of the items for the context menu.  Keep this in sync with Context\+Menu\+Item.\+h. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\+A\+P\+I void \hyperlink{ewk__contextmenu_8h_a2136299661ea5e6246bcc086ebe5a22f}{ewk\+\_\+context\+\_\+menu\+\_\+ref} (\hyperlink{ewk__contextmenu_8h_a1ebc92afff582d4daf4dfe8d628528ae}{Ewk\+\_\+\+Context\+\_\+\+Menu} $\ast$menu)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__contextmenu_8h_a592140e14306b9198bb203493dbc87f2}{ewk\+\_\+context\+\_\+menu\+\_\+unref} (\hyperlink{ewk__contextmenu_8h_a1ebc92afff582d4daf4dfe8d628528ae}{Ewk\+\_\+\+Context\+\_\+\+Menu} $\ast$menu)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__contextmenu_8h_ad3fa4c35d71cd42335c58603c97fc281}{ewk\+\_\+context\+\_\+menu\+\_\+destroy} (\hyperlink{ewk__contextmenu_8h_a1ebc92afff582d4daf4dfe8d628528ae}{Ewk\+\_\+\+Context\+\_\+\+Menu} $\ast$menu)
+\item 
+E\+A\+P\+I const Eina\+\_\+\+List $\ast$ \hyperlink{ewk__contextmenu_8h_a0298d9aee48d38f5c539a34a5decd99c}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+list\+\_\+get} (const \hyperlink{ewk__contextmenu_8h_a1ebc92afff582d4daf4dfe8d628528ae}{Ewk\+\_\+\+Context\+\_\+\+Menu} $\ast$o)
+\item 
+E\+A\+P\+I \hyperlink{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$ \hyperlink{ewk__contextmenu_8h_a166be9b9d6949989b4e4c50624e52dad}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+new} (\hyperlink{ewk__contextmenu_8h_ab8711abd6a20d021f8b47a5a8cdd3026}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type} type, \hyperlink{ewk__contextmenu_8h_aff1d945e92dd408188afc9bac4bd4344}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action} action, \hyperlink{ewk__contextmenu_8h_a1ebc92afff582d4daf4dfe8d628528ae}{Ewk\+\_\+\+Context\+\_\+\+Menu} $\ast$parent\+\_\+menu, \hyperlink{ewk__contextmenu_8h_a1ebc92afff582d4daf4dfe8d628528ae}{Ewk\+\_\+\+Context\+\_\+\+Menu} $\ast$submenu, const char $\ast$title, Eina\+\_\+\+Bool checked, Eina\+\_\+\+Bool enabled)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__contextmenu_8h_ab8f6f6bcc7fe652c5aef7b465db8357f}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+free} (\hyperlink{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$item)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__contextmenu_8h_ab0fc67a1eedf9f3991136be7b2a7e95a}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+select} (\hyperlink{ewk__contextmenu_8h_a1ebc92afff582d4daf4dfe8d628528ae}{Ewk\+\_\+\+Context\+\_\+\+Menu} $\ast$menu, \hyperlink{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$item)
+\item 
+E\+A\+P\+I \hyperlink{ewk__contextmenu_8h_ab8711abd6a20d021f8b47a5a8cdd3026}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type} \hyperlink{ewk__contextmenu_8h_a6339c5a3981b3f6dda13e33b0b762bdb}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+type\+\_\+get} (const \hyperlink{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__contextmenu_8h_af62e3de34980b89314cbe76297bcab72}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+type\+\_\+set} (\hyperlink{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$o, \hyperlink{ewk__contextmenu_8h_ab8711abd6a20d021f8b47a5a8cdd3026}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type} type)
+\item 
+E\+A\+P\+I \hyperlink{ewk__contextmenu_8h_aff1d945e92dd408188afc9bac4bd4344}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action} \hyperlink{ewk__contextmenu_8h_a8cc0ebe970c172365fc9978c10124530}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+action\+\_\+get} (const \hyperlink{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__contextmenu_8h_a1162ff3f6d8fb75879d87108aa360e67}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+action\+\_\+set} (\hyperlink{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$o, \hyperlink{ewk__contextmenu_8h_aff1d945e92dd408188afc9bac4bd4344}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action} action)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__contextmenu_8h_aeb13ace21771736d04bbc68eba67cf03}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+title\+\_\+get} (const \hyperlink{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$o)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__contextmenu_8h_a3809ba4c09ff50dffa2754a010ccbe36}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+title\+\_\+set} (\hyperlink{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$o, const char $\ast$title)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__contextmenu_8h_a1f24f00f24566a54c5336bee0b1b49bb}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+checked\+\_\+get} (const \hyperlink{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__contextmenu_8h_a8da9fa17a18f9ca702dfc0cc592d1a43}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+checked\+\_\+set} (\hyperlink{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$o, Eina\+\_\+\+Bool checked)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__contextmenu_8h_af34039f066f6f8a8307830495610240f}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+enabled\+\_\+get} (const \hyperlink{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$o)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__contextmenu_8h_a6e4a6fba2da48016a84da65e328fd2d8}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+enabled\+\_\+set} (\hyperlink{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$o, Eina\+\_\+\+Bool enabled)
+\item 
+E\+A\+P\+I \hyperlink{ewk__contextmenu_8h_a1ebc92afff582d4daf4dfe8d628528ae}{Ewk\+\_\+\+Context\+\_\+\+Menu} $\ast$ \hyperlink{ewk__contextmenu_8h_a234c8eb93f02087c80f4286d0b5831a9}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+parent\+\_\+get} (const \hyperlink{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$o)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Describes the context menu A\+P\+I. 
+
+The following signals (see evas\+\_\+object\+\_\+smart\+\_\+callback\+\_\+add()) are emitted\+:
+
+
+\begin{DoxyItemize}
+\item \char`\"{}contextmenu,customize\char`\"{}, Eina\+\_\+\+List $\ast$\+: customize context menu is taken and it gives a list with items of context menu as an argument.
+\item \char`\"{}contextmenu,free\char`\"{}, Ewk\+\_\+\+Context\+\_\+\+Menu $\ast$\+: a context menu is freed.
+\item \char`\"{}contextmenu,item,appended\char`\"{}, Ewk\+\_\+\+Context\+\_\+\+Menu $\ast$\+: a new item was added to the context menu.
+\item \char`\"{}contextmenu,new\char`\"{}, Ewk\+\_\+\+Context\+\_\+\+Menu $\ast$\+: a new context menu was created and it gives the context menu as an argument.
+\item \char`\"{}contextmenu,show\char`\"{}, Ewk\+\_\+\+Context\+\_\+\+Menu $\ast$\+: a context menu is shown. 
+\end{DoxyItemize}
+
+\subsection{Typedef Documentation}
+\hypertarget{ewk__contextmenu_8h_a1ebc92afff582d4daf4dfe8d628528ae}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!Ewk\+\_\+\+Context\+\_\+\+Menu@{Ewk\+\_\+\+Context\+\_\+\+Menu}}
+\index{Ewk\+\_\+\+Context\+\_\+\+Menu@{Ewk\+\_\+\+Context\+\_\+\+Menu}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{Ewk\+\_\+\+Context\+\_\+\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu} {\bf Ewk\+\_\+\+Context\+\_\+\+Menu}}}\label{ewk__contextmenu_8h_a1ebc92afff582d4daf4dfe8d628528ae}
+Creates a type name for \hyperlink{struct__Ewk__Context__Menu}{\+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu} \hypertarget{ewk__contextmenu_8h_aff1d945e92dd408188afc9bac4bd4344}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action@{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action}}
+\index{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action@{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf \+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action} {\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action}}}\label{ewk__contextmenu_8h_aff1d945e92dd408188afc9bac4bd4344}
+Creates a type name for \+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action \hypertarget{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item@{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item}}
+\index{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item@{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} {\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item}}}\label{ewk__contextmenu_8h_aa5f7a2535fedd13e96ab632308eac3d2}
+Creates a type name for \hyperlink{struct__Ewk__Context__Menu__Item}{\+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} \hypertarget{ewk__contextmenu_8h_ab8711abd6a20d021f8b47a5a8cdd3026}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type@{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type}}
+\index{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type@{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf \+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type} {\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type}}}\label{ewk__contextmenu_8h_ab8711abd6a20d021f8b47a5a8cdd3026}
+Creates a type name for \+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!\+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action@{\+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action}}
+\index{\+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action@{\+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{\+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+\+Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action}}}\label{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007}
+
+
+Provides the actions of items for the context menu.  Keep this in sync with Context\+Menu\+Item.\+h. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+P\+E\+L\+L\+I\+N\+G\+\_\+\+M\+E\+N\+U@{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+P\+E\+L\+L\+I\+N\+G\+\_\+\+M\+E\+N\+U}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+P\+E\+L\+L\+I\+N\+G\+\_\+\+M\+E\+N\+U@{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+P\+E\+L\+L\+I\+N\+G\+\_\+\+M\+E\+N\+U}}\item[{\em 
+\hypertarget{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007ababee93c144f5d820b2b4c7b5ad561f6}{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+P\+E\+L\+L\+I\+N\+G\+\_\+\+M\+E\+N\+U}\label{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007ababee93c144f5d820b2b4c7b5ad561f6}
+}]spelling or spelling/grammar sub-\/menu \index{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+F\+O\+N\+T\+\_\+\+M\+E\+N\+U@{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+F\+O\+N\+T\+\_\+\+M\+E\+N\+U}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+F\+O\+N\+T\+\_\+\+M\+E\+N\+U@{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+F\+O\+N\+T\+\_\+\+M\+E\+N\+U}}\item[{\em 
+\hypertarget{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007a272464cf641d0e0c7835e4aafb31d5e2}{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+F\+O\+N\+T\+\_\+\+M\+E\+N\+U}\label{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007a272464cf641d0e0c7835e4aafb31d5e2}
+}]font sub-\/menu \index{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+P\+E\+E\+C\+H\+\_\+\+M\+E\+N\+U@{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+P\+E\+E\+C\+H\+\_\+\+M\+E\+N\+U}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+P\+E\+E\+C\+H\+\_\+\+M\+E\+N\+U@{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+P\+E\+E\+C\+H\+\_\+\+M\+E\+N\+U}}\item[{\em 
+\hypertarget{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007a8fd1628e764bb629b58922f6bd699400}{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+S\+P\+E\+E\+C\+H\+\_\+\+M\+E\+N\+U}\label{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007a8fd1628e764bb629b58922f6bd699400}
+}]speech sub-\/menu \index{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+W\+R\+I\+T\+I\+N\+G\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+E\+N\+U@{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+W\+R\+I\+T\+I\+N\+G\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+E\+N\+U}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+W\+R\+I\+T\+I\+N\+G\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+E\+N\+U@{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+W\+R\+I\+T\+I\+N\+G\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+E\+N\+U}}\item[{\em 
+\hypertarget{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007a63d8e0d5241f9599c272d985e36c9c80}{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+W\+R\+I\+T\+I\+N\+G\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+E\+N\+U}\label{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007a63d8e0d5241f9599c272d985e36c9c80}
+}]writing direction sub-\/menu \index{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+E\+N\+U@{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+E\+N\+U}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+E\+N\+U@{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+E\+N\+U}}\item[{\em 
+\hypertarget{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007a227fb249cca6758718c6f23c13c821ba}{E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+T\+E\+X\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+E\+N\+U}\label{ewk__contextmenu_8h_a48789563b90ce5d3f08b374056a9d007a227fb249cca6758718c6f23c13c821ba}
+}]text direction sub-\/menu \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{ewk__contextmenu_8h_ad3fa4c35d71cd42335c58603c97fc281}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+destroy@{ewk\+\_\+context\+\_\+menu\+\_\+destroy}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+destroy@{ewk\+\_\+context\+\_\+menu\+\_\+destroy}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+destroy}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+context\+\_\+menu\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu} $\ast$}]{menu}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_ad3fa4c35d71cd42335c58603c97fc281}
+Destroys the context menu object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & the context menu object to destroy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__contextmenu_8h_ab8f6f6bcc7fe652c5aef7b465db8357f}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+free} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__contextmenu_8h_a8cc0ebe970c172365fc9978c10124530}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+action\+\_\+get@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+action\+\_\+get}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+action\+\_\+get@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+action\+\_\+get}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+action\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I {\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action} ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+action\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_a8cc0ebe970c172365fc9978c10124530}
+Gets an action of the item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the item to get the action \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an action of the item on success or {\ttfamily E\+W\+K\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+T\+A\+G\+\_\+\+N\+O\+\_\+\+A\+C\+T\+I\+O\+N} on failure
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__contextmenu_8h_a1162ff3f6d8fb75879d87108aa360e67}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+action\+\_\+set} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__contextmenu_8h_a1162ff3f6d8fb75879d87108aa360e67}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+action\+\_\+set@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+action\+\_\+set}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+action\+\_\+set@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+action\+\_\+set}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+action\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+action\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$}]{o, }
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action}}]{action}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_a1162ff3f6d8fb75879d87108aa360e67}
+Sets an action of the item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the item to set the action \\
+\hline
+{\em action} & a new action for the item object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__contextmenu_8h_a8cc0ebe970c172365fc9978c10124530}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+action\+\_\+get} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__contextmenu_8h_a1f24f00f24566a54c5336bee0b1b49bb}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+checked\+\_\+get@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+checked\+\_\+get}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+checked\+\_\+get@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+checked\+\_\+get}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+checked\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+checked\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_a1f24f00f24566a54c5336bee0b1b49bb}
+Queries if the item is toggled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the item to query if the item is toggled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the item is toggled or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} if not or on failure 
+\end{DoxyReturn}
+\hypertarget{ewk__contextmenu_8h_a8da9fa17a18f9ca702dfc0cc592d1a43}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+checked\+\_\+set@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+checked\+\_\+set}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+checked\+\_\+set@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+checked\+\_\+set}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+checked\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+checked\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$}]{o, }
+\item[{Eina\+\_\+\+Bool}]{checked}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_a8da9fa17a18f9ca702dfc0cc592d1a43}
+Sets if the item should be toggled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the item to be toggled \\
+\hline
+{\em checked} & {\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the item should be toggled or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} if not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure 
+\end{DoxyReturn}
+\hypertarget{ewk__contextmenu_8h_af34039f066f6f8a8307830495610240f}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+enabled\+\_\+get@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+enabled\+\_\+get}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+enabled\+\_\+get@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+enabled\+\_\+get}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+enabled\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+enabled\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_af34039f066f6f8a8307830495610240f}
+Gets if the item is enabled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the item to get enabled state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if it's enabled, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} if not or on failure
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__contextmenu_8h_a6e4a6fba2da48016a84da65e328fd2d8}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+enabled\+\_\+set} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__contextmenu_8h_a6e4a6fba2da48016a84da65e328fd2d8}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+enabled\+\_\+set@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+enabled\+\_\+set}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+enabled\+\_\+set@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+enabled\+\_\+set}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+enabled\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+enabled\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$}]{o, }
+\item[{Eina\+\_\+\+Bool}]{enabled}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_a6e4a6fba2da48016a84da65e328fd2d8}
+Enables/disables the item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the item to enable/disable \\
+\hline
+{\em enabled} & {\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} to enable the item or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} to disable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__contextmenu_8h_af34039f066f6f8a8307830495610240f}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+enabled\+\_\+get} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__contextmenu_8h_ab8f6f6bcc7fe652c5aef7b465db8357f}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+free@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+free}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+free@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+free}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_ab8f6f6bcc7fe652c5aef7b465db8357f}
+Destroys the item of the context menu object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & the item to destroy\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__contextmenu_8h_ad3fa4c35d71cd42335c58603c97fc281}{ewk\+\_\+context\+\_\+menu\+\_\+destroy} 
+
+\hyperlink{ewk__contextmenu_8h_a592140e14306b9198bb203493dbc87f2}{ewk\+\_\+context\+\_\+menu\+\_\+unref} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__contextmenu_8h_a0298d9aee48d38f5c539a34a5decd99c}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+list\+\_\+get@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+list\+\_\+get}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+list\+\_\+get@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+list\+\_\+get}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+list\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const Eina\+\_\+\+List$\ast$ ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+list\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Context\+\_\+\+Menu} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_a0298d9aee48d38f5c539a34a5decd99c}
+Gets the list of items.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the context menu object to get list of the items \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the list of the items on success or {\ttfamily N\+U\+L\+L} on failure 
+\end{DoxyReturn}
+\hypertarget{ewk__contextmenu_8h_a166be9b9d6949989b4e4c50624e52dad}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+new@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+new}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+new@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+new}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+new}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I {\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item}$\ast$ ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+new (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type}}]{type, }
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Action}}]{action, }
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu} $\ast$}]{parent\+\_\+menu, }
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu} $\ast$}]{submenu, }
+\item[{const char $\ast$}]{title, }
+\item[{Eina\+\_\+\+Bool}]{checked, }
+\item[{Eina\+\_\+\+Bool}]{enabled}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_a166be9b9d6949989b4e4c50624e52dad}
+Creates a new item of the context menu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & specifies a type of the item \\
+\hline
+{\em action} & specifies a action of the item \\
+\hline
+{\em parent\+\_\+menu} & specifies a parent menu of the item \\
+\hline
+{\em submenu} & specifies a submenu of the item \\
+\hline
+{\em title} & specifies a title of the item \\
+\hline
+{\em checked} & {\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the item should be toggled or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} if not \\
+\hline
+{\em enabled} & {\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} to enable the item or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} to disable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the pointer to the new item on success or {\ttfamily N\+U\+L\+L} on failure
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The return value {\bfseries should} {\bfseries be} freed after use. 
+\end{DoxyNote}
+\hypertarget{ewk__contextmenu_8h_a234c8eb93f02087c80f4286d0b5831a9}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+parent\+\_\+get@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+parent\+\_\+get}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+parent\+\_\+get@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+parent\+\_\+get}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+parent\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I {\bf Ewk\+\_\+\+Context\+\_\+\+Menu}$\ast$ ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+parent\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_a234c8eb93f02087c80f4286d0b5831a9}
+Gets the parent menu for context menu item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the context menu item object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a context menu object on success or {\ttfamily N\+U\+L\+L} on failure 
+\end{DoxyReturn}
+\hypertarget{ewk__contextmenu_8h_ab0fc67a1eedf9f3991136be7b2a7e95a}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+select@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+select}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+select@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+select}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+select}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+select (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu} $\ast$}]{menu, }
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_ab0fc67a1eedf9f3991136be7b2a7e95a}
+Selects the item from the context menu object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & the context menu object \\
+\hline
+{\em item} & the item is selected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure 
+\end{DoxyReturn}
+\hypertarget{ewk__contextmenu_8h_aeb13ace21771736d04bbc68eba67cf03}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+title\+\_\+get@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+title\+\_\+get}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+title\+\_\+get@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+title\+\_\+get}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+title\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+title\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_aeb13ace21771736d04bbc68eba67cf03}
+Gets a title of the item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the item to get the title \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a title of the item on success, or {\ttfamily N\+U\+L\+L} on failure
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__contextmenu_8h_a3809ba4c09ff50dffa2754a010ccbe36}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+title\+\_\+set} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__contextmenu_8h_a3809ba4c09ff50dffa2754a010ccbe36}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+title\+\_\+set@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+title\+\_\+set}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+title\+\_\+set@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+title\+\_\+set}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+title\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+title\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$}]{o, }
+\item[{const char $\ast$}]{title}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_a3809ba4c09ff50dffa2754a010ccbe36}
+Sets a title of the item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the item to set the title \\
+\hline
+{\em title} & a new title for the item object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new title of the item on success or {\ttfamily N\+U\+L\+L} on failure
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__contextmenu_8h_aeb13ace21771736d04bbc68eba67cf03}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+title\+\_\+get} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__contextmenu_8h_a6339c5a3981b3f6dda13e33b0b762bdb}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+type\+\_\+get@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+type\+\_\+get}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+type\+\_\+get@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+type\+\_\+get}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+type\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I {\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type} ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+type\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_a6339c5a3981b3f6dda13e33b0b762bdb}
+Gets type of the item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the item to get the type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type of the item on success or {\ttfamily E\+W\+K\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+E} on failure
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__contextmenu_8h_af62e3de34980b89314cbe76297bcab72}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+type\+\_\+set} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__contextmenu_8h_af62e3de34980b89314cbe76297bcab72}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+type\+\_\+set@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+type\+\_\+set}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+type\+\_\+set@{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+type\+\_\+set}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+type\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+type\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item} $\ast$}]{o, }
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu\+\_\+\+Item\+\_\+\+Type}}]{type}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_af62e3de34980b89314cbe76297bcab72}
+Sets the type of item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the item to set the type \\
+\hline
+{\em type} & a new type for the item object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__contextmenu_8h_a6339c5a3981b3f6dda13e33b0b762bdb}{ewk\+\_\+context\+\_\+menu\+\_\+item\+\_\+type\+\_\+get} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__contextmenu_8h_a2136299661ea5e6246bcc086ebe5a22f}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+ref@{ewk\+\_\+context\+\_\+menu\+\_\+ref}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+ref@{ewk\+\_\+context\+\_\+menu\+\_\+ref}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+ref}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+context\+\_\+menu\+\_\+ref (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu} $\ast$}]{menu}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_a2136299661ea5e6246bcc086ebe5a22f}
+Increases the reference count of the given object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & the context menu object to increase the reference count \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__contextmenu_8h_a592140e14306b9198bb203493dbc87f2}{\index{ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}!ewk\+\_\+context\+\_\+menu\+\_\+unref@{ewk\+\_\+context\+\_\+menu\+\_\+unref}}
+\index{ewk\+\_\+context\+\_\+menu\+\_\+unref@{ewk\+\_\+context\+\_\+menu\+\_\+unref}!ewk\+\_\+contextmenu.\+h@{ewk\+\_\+contextmenu.\+h}}
+\subsubsection[{ewk\+\_\+context\+\_\+menu\+\_\+unref}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+context\+\_\+menu\+\_\+unref (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Context\+\_\+\+Menu} $\ast$}]{menu}
+\end{DoxyParamCaption}
+)}}\label{ewk__contextmenu_8h_a592140e14306b9198bb203493dbc87f2}
+Decreases the reference count of the given object, possibly freeing it.
+
+When the reference count reaches 0, the menu with all its items are freed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & the context menu object to decrease the reference count \\
+\hline
+\end{DoxyParams}

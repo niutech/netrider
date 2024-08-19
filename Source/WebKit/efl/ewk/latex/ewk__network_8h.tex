@@ -1,0 +1,134 @@
+\hypertarget{ewk__network_8h}{\section{ewk\+\_\+network.\+h File Reference}
+\label{ewk__network_8h}\index{ewk\+\_\+network.\+h@{ewk\+\_\+network.\+h}}
+}
+
+
+Describes the network A\+P\+I.  
+
+
+{\ttfamily \#include $<$Eina.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\+A\+P\+I void \hyperlink{ewk__network_8h_a30a93aa24664a0be96f6ce30149cc680}{ewk\+\_\+network\+\_\+proxy\+\_\+uri\+\_\+set} (const char $\ast$proxy)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__network_8h_ad5afedf9690c1b5836ee2da59a2963a8}{ewk\+\_\+network\+\_\+proxy\+\_\+uri\+\_\+get} (void)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__network_8h_a49fe87247a36c3a61d6ab60b306a508e}{ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+get} (void)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__network_8h_ab3b548968a317b56afed916aae19b13b}{ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+set} (Eina\+\_\+\+Bool enable)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__network_8h_a54587f0d148ea8154fdea324d2f7a758}{ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+get} (void)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__network_8h_a5865aebf88acb3cb1b8ac53a431c447f}{ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+set} (const char $\ast$path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Describes the network A\+P\+I. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{ewk__network_8h_ad5afedf9690c1b5836ee2da59a2963a8}{\index{ewk\+\_\+network.\+h@{ewk\+\_\+network.\+h}!ewk\+\_\+network\+\_\+proxy\+\_\+uri\+\_\+get@{ewk\+\_\+network\+\_\+proxy\+\_\+uri\+\_\+get}}
+\index{ewk\+\_\+network\+\_\+proxy\+\_\+uri\+\_\+get@{ewk\+\_\+network\+\_\+proxy\+\_\+uri\+\_\+get}!ewk\+\_\+network.\+h@{ewk\+\_\+network.\+h}}
+\subsubsection[{ewk\+\_\+network\+\_\+proxy\+\_\+uri\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+network\+\_\+proxy\+\_\+uri\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__network_8h_ad5afedf9690c1b5836ee2da59a2963a8}
+Gets the proxy U\+R\+I from the network backend.
+
+The returned string should be freed by eina\+\_\+stringshare\+\_\+del() after use.
+
+\begin{DoxyReturn}{Returns}
+current proxy U\+R\+I or {\ttfamily N\+U\+L\+L} if it's not set 
+\end{DoxyReturn}
+\hypertarget{ewk__network_8h_a30a93aa24664a0be96f6ce30149cc680}{\index{ewk\+\_\+network.\+h@{ewk\+\_\+network.\+h}!ewk\+\_\+network\+\_\+proxy\+\_\+uri\+\_\+set@{ewk\+\_\+network\+\_\+proxy\+\_\+uri\+\_\+set}}
+\index{ewk\+\_\+network\+\_\+proxy\+\_\+uri\+\_\+set@{ewk\+\_\+network\+\_\+proxy\+\_\+uri\+\_\+set}!ewk\+\_\+network.\+h@{ewk\+\_\+network.\+h}}
+\subsubsection[{ewk\+\_\+network\+\_\+proxy\+\_\+uri\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+network\+\_\+proxy\+\_\+uri\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{proxy}
+\end{DoxyParamCaption}
+)}}\label{ewk__network_8h_a30a93aa24664a0be96f6ce30149cc680}
+Sets the given proxy U\+R\+I to network backend.
+
+
+\begin{DoxyParams}{Parameters}
+{\em proxy} & U\+R\+I to set \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__network_8h_a54587f0d148ea8154fdea324d2f7a758}{\index{ewk\+\_\+network.\+h@{ewk\+\_\+network.\+h}!ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+get@{ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+get}}
+\index{ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+get@{ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+get}!ewk\+\_\+network.\+h@{ewk\+\_\+network.\+h}}
+\subsubsection[{ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__network_8h_a54587f0d148ea8154fdea324d2f7a758}
+Returns the path to a file containing the platform's root X.\+509 C\+A certificates.
+
+The file is a list of concatenated P\+E\+M-\/format X.\+509 certificates used as root C\+A certificates. They are used to validate all the certificates received when a T\+L\+S connection (such as an H\+T\+T\+P\+S one) is made.
+
+If {\ttfamily \hyperlink{ewk__network_8h_a49fe87247a36c3a61d6ab60b306a508e}{ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+get()}} returns {\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E}, the certificates set by this function will be used to decide whether a certificate provided by a web site is invalid and the request should then be cancelled.
+
+By default, the path is not set, so all certificates are considered as not signed by a trusted root C\+A.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__network_8h_ab3b548968a317b56afed916aae19b13b}{ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+set} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__network_8h_a5865aebf88acb3cb1b8ac53a431c447f}{\index{ewk\+\_\+network.\+h@{ewk\+\_\+network.\+h}!ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+set@{ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+set}}
+\index{ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+set@{ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+set}!ewk\+\_\+network.\+h@{ewk\+\_\+network.\+h}}
+\subsubsection[{ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}}\label{ewk__network_8h_a5865aebf88acb3cb1b8ac53a431c447f}
+Sets the path to a file containing the platform's root X.\+509 C\+A certificates.
+
+The file is a list of concatenated P\+E\+M-\/format X.\+509 certificates used as root C\+A certificates. They are used to validate all the certificates received when a T\+L\+S connection (such as an H\+T\+T\+P\+S one) is made.
+
+If {\ttfamily \hyperlink{ewk__network_8h_a49fe87247a36c3a61d6ab60b306a508e}{ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+get()}} returns {\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E}, the certificates set by this function will be used to decide whether a certificate provided by a web site is invalid and the request should then be cancelled.
+
+By default, the path is not set, so all certificates are considered as not signed by a trusted root C\+A.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to the certificate bundle.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__network_8h_ab3b548968a317b56afed916aae19b13b}{ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+set} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__network_8h_a49fe87247a36c3a61d6ab60b306a508e}{\index{ewk\+\_\+network.\+h@{ewk\+\_\+network.\+h}!ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+get@{ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+get}}
+\index{ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+get@{ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+get}!ewk\+\_\+network.\+h@{ewk\+\_\+network.\+h}}
+\subsubsection[{ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__network_8h_a49fe87247a36c3a61d6ab60b306a508e}
+Returns whether H\+T\+T\+P\+S connections should check the received certificate and error out if it is invalid.
+
+By default, H\+T\+T\+P\+S connections are performed regardless of the validity of the certificate provided.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__network_8h_a5865aebf88acb3cb1b8ac53a431c447f}{ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+set} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__network_8h_ab3b548968a317b56afed916aae19b13b}{\index{ewk\+\_\+network.\+h@{ewk\+\_\+network.\+h}!ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+set@{ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+set}}
+\index{ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+set@{ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+set}!ewk\+\_\+network.\+h@{ewk\+\_\+network.\+h}}
+\subsubsection[{ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+network\+\_\+tls\+\_\+certificate\+\_\+check\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{Eina\+\_\+\+Bool}]{enable}
+\end{DoxyParamCaption}
+)}}\label{ewk__network_8h_ab3b548968a317b56afed916aae19b13b}
+Sets whether H\+T\+T\+P\+S connections should check the received certificate and error out if it is invalid.
+
+By default, H\+T\+T\+P\+S connections are performed regardless of the validity of the certificate provided.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & Whether to check the provided certificates or not.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__network_8h_a5865aebf88acb3cb1b8ac53a431c447f}{ewk\+\_\+network\+\_\+tls\+\_\+ca\+\_\+certificates\+\_\+path\+\_\+set} 
+\end{DoxySeeAlso}

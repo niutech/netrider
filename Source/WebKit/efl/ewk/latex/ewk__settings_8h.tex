@@ -1,0 +1,586 @@
+\hypertarget{ewk__settings_8h}{\section{ewk\+\_\+settings.\+h File Reference}
+\label{ewk__settings_8h}\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+}
+
+
+General purpose settings, not tied to any view object.  
+
+
+{\ttfamily \#include $<$Eina.\+h$>$}\\*
+{\ttfamily \#include $<$Evas.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\+A\+P\+I uint64\+\_\+t \hyperlink{ewk__settings_8h_aeff70f5e80e522a8df0150452cfc320a}{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+default\+\_\+quota\+\_\+get} (void)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__settings_8h_afe5635b1843c7e96dbdd23cae878d4b4}{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+default\+\_\+quota\+\_\+set} (uint64\+\_\+t maximum\+\_\+size)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__settings_8h_a782386717a4e5f9d470d19d6da48d083}{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+path\+\_\+set} (const char $\ast$path)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__settings_8h_a60c264ede05650144ccf093882848596}{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+path\+\_\+set} (const char $\ast$path)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__settings_8h_a6344a29e0fcfbcecf7ed7045bdbdc1d7}{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+path\+\_\+get} (void)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__settings_8h_aa6e33e51ef714cc7350c93d0d82f2b0d}{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+database\+\_\+clear} ()
+\item 
+E\+A\+P\+I void \hyperlink{ewk__settings_8h_a5f1a20dafaef59b280d42275ed355f62}{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+database\+\_\+origin\+\_\+clear} (const char $\ast$url)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__settings_8h_a409b83cbf754d206de6c2dbcb6a731be}{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+path\+\_\+get} (void)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__settings_8h_a07151b1bf42d85033b3aceb35acb177a}{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+set} (const char $\ast$path)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__settings_8h_a22f8974efaaef02de296cd1573061333}{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+get} (void)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__settings_8h_a1491a98789d4809c30b4918f41478a77}{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+clear} (void)
+\item 
+E\+A\+P\+I Evas\+\_\+\+Object $\ast$ \hyperlink{ewk__settings_8h_ae1ed61d1653694359dbe93144be06f59}{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+icon\+\_\+object\+\_\+get} (const char $\ast$url, Evas $\ast$canvas)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__settings_8h_ae132b1ee3d13ab88c855da3f65478f22}{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+path\+\_\+set} (const char $\ast$path)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__settings_8h_aa75c5f0dd64ed72036cf730629ad1a8b}{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+path\+\_\+get} (void)
+\item 
+E\+A\+P\+I int64\+\_\+t \hyperlink{ewk__settings_8h_a558be5164563e6ce90afb62eca9baa1a}{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+max\+\_\+quota\+\_\+get} (void)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__settings_8h_aac0b075cd78b77f6e99ac45c6bc9abd7}{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+max\+\_\+quota\+\_\+set} (int64\+\_\+t maximum\+\_\+size)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__settings_8h_ae0be5fab0893bcf19f242b4df7edce96}{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+clear} (void)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__settings_8h_adc0f09f74458b598cba69f7c53315456}{ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+enable\+\_\+get} (void)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__settings_8h_a14d8f6667863d7b9dc5c456f60747e21}{ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+enable\+\_\+set} (Eina\+\_\+\+Bool set)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__settings_8h_a5615c3cb47e4fbda081d0ce078cd4034}{ewk\+\_\+settings\+\_\+shadow\+\_\+dom\+\_\+enable\+\_\+get} (void)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__settings_8h_a08834bd00b1d063a0178bc68ad4af66c}{ewk\+\_\+settings\+\_\+shadow\+\_\+dom\+\_\+enable\+\_\+set} (Eina\+\_\+\+Bool enable)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__settings_8h_a7b07e03102286a8e074bb0a03b684b80}{ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+capacity\+\_\+set} (unsigned min\+\_\+dead\+\_\+bytes, unsigned max\+\_\+dead\+\_\+bytes, unsigned total\+\_\+bytes)
+\item 
+E\+A\+P\+I unsigned \hyperlink{ewk__settings_8h_a1b9634da25fa67aeec4794b1560e83df}{ewk\+\_\+settings\+\_\+page\+\_\+cache\+\_\+capacity\+\_\+get} (void)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__settings_8h_ac7746c0d931da639a57f6fe98cfd69bb}{ewk\+\_\+settings\+\_\+page\+\_\+cache\+\_\+capacity\+\_\+set} (unsigned pages)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__settings_8h_a0c9bc2a1081239ff16532a3351436da0}{ewk\+\_\+settings\+\_\+memory\+\_\+cache\+\_\+clear} (void)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__settings_8h_a3807a9938738adbe21664483538c1f50}{ewk\+\_\+settings\+\_\+repaint\+\_\+throttling\+\_\+set} (double deferred\+\_\+repaint\+\_\+delay, double initial\+\_\+deferred\+\_\+repaint\+\_\+delay\+\_\+during\+\_\+loading, double max\+\_\+deferred\+\_\+repaint\+\_\+delay\+\_\+during\+\_\+loading, double deferred\+\_\+repaint\+\_\+delay\+\_\+increment\+\_\+during\+\_\+loading)
+\item 
+E\+A\+P\+I double \hyperlink{ewk__settings_8h_adadc212b4317c9bf7199a57eb1e17e51}{ewk\+\_\+settings\+\_\+default\+\_\+timer\+\_\+interval\+\_\+get} (void)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__settings_8h_ac32feef708a09b113dcd4a0bc36638db}{ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+set} (const char $\ast$type)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__settings_8h_a838b7753ebae0c8ec0535a421d22c555}{ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+get} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+General purpose settings, not tied to any view object. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{ewk__settings_8h_ae0be5fab0893bcf19f242b4df7edce96}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+clear@{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+clear}}
+\index{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+clear@{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+clear}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+clear}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_ae0be5fab0893bcf19f242b4df7edce96}
+Removes all entries from the H\+T\+M\+L5 application cache.
+
+\begin{DoxySeeAlso}{See also}
+ewk\+\_\+view\+\_\+setting\+\_\+application\+\_\+cache\+\_\+enabled\+\_\+set, \hyperlink{ewk__settings_8h_ae132b1ee3d13ab88c855da3f65478f22}{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+path\+\_\+set} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__settings_8h_a558be5164563e6ce90afb62eca9baa1a}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+max\+\_\+quota\+\_\+get@{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+max\+\_\+quota\+\_\+get}}
+\index{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+max\+\_\+quota\+\_\+get@{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+max\+\_\+quota\+\_\+get}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+max\+\_\+quota\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I int64\+\_\+t ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+max\+\_\+quota\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a558be5164563e6ce90afb62eca9baa1a}
+Returns the maximum size, in bytes, of the application cache for H\+T\+M\+L5 Offline Web Applications.
+
+By default, applications are allowed unlimited storage space.
+
+\begin{DoxySeeAlso}{See also}
+ewk\+\_\+view\+\_\+setting\+\_\+offine\+\_\+app\+\_\+cache\+\_\+set 
+\end{DoxySeeAlso}
+\hypertarget{ewk__settings_8h_aac0b075cd78b77f6e99ac45c6bc9abd7}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+max\+\_\+quota\+\_\+set@{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+max\+\_\+quota\+\_\+set}}
+\index{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+max\+\_\+quota\+\_\+set@{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+max\+\_\+quota\+\_\+set}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+max\+\_\+quota\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+max\+\_\+quota\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{int64\+\_\+t}]{maximum\+\_\+size}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_aac0b075cd78b77f6e99ac45c6bc9abd7}
+Sets the maximum size, in bytes, of the application cache for H\+T\+M\+L5 Offline Web Applications.
+
+By default, applications are allowed unlimited storage space.
+
+Note that calling this function will delete all the entries currently in the app cache.
+
+
+\begin{DoxyParams}{Parameters}
+{\em maximum\+\_\+size} & the new maximum size, in bytes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+ewk\+\_\+view\+\_\+setting\+\_\+application\+\_\+cache\+\_\+enabled\+\_\+set 
+\end{DoxySeeAlso}
+\hypertarget{ewk__settings_8h_aa75c5f0dd64ed72036cf730629ad1a8b}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+path\+\_\+get@{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+path\+\_\+get}}
+\index{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+path\+\_\+get@{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+path\+\_\+get}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+path\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+path\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_aa75c5f0dd64ed72036cf730629ad1a8b}
+Returns the path where the H\+T\+M\+L5 application cache is stored.
+
+The Offline Application Caching A\+P\+Is are part of H\+T\+M\+L5 and allow applications to store data locally that is accessed when the network cannot be reached.
+
+By default, the path is {\ttfamily $\sim$/}.cache/\+Web\+Kit\+Efl/\+Applications
+
+\begin{DoxyReturn}{Returns}
+eina\+\_\+stringshare'd path value.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__view_8h_a96e9179afff7740b8497a1b31ad6bdbe}{ewk\+\_\+view\+\_\+setting\+\_\+application\+\_\+cache\+\_\+set} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__settings_8h_ae132b1ee3d13ab88c855da3f65478f22}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+path\+\_\+set@{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+path\+\_\+set}}
+\index{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+path\+\_\+set@{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+path\+\_\+set}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+path\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+settings\+\_\+application\+\_\+cache\+\_\+path\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_ae132b1ee3d13ab88c855da3f65478f22}
+Sets the path where the application cache will be stored.
+
+The Offline Application Caching A\+P\+Is are part of H\+T\+M\+L5 and allow applications to store data locally that is accessed when the network cannot be reached.
+
+By default, the path is {\ttfamily $\sim$/}.cache/\+Web\+Kit\+Efl/\+Applications Once the path is set, the feature is enabled and the path cannot be changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & where to store cache, must be write-\/able.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__view_8h_a96e9179afff7740b8497a1b31ad6bdbe}{ewk\+\_\+view\+\_\+setting\+\_\+application\+\_\+cache\+\_\+set} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__settings_8h_a838b7753ebae0c8ec0535a421d22c555}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+get@{ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+get}}
+\index{ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+get@{ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+get}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a838b7753ebae0c8ec0535a421d22c555}
+Returns the current C\+S\+S media type.
+
+It will only return the value set through ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+set and not the one used internally.
+
+This is guaranteed to be eina\+\_\+stringshare, so whenever possible save yourself some cpu cycles and use eina\+\_\+stringshare\+\_\+ref() instead of eina\+\_\+stringshare\+\_\+add() or strdup().
+
+\begin{DoxyReturn}{Returns}
+css media type set by user or {\ttfamily N\+U\+L\+L} if none is set
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__settings_8h_ac32feef708a09b113dcd4a0bc36638db}{ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+set} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__settings_8h_ac32feef708a09b113dcd4a0bc36638db}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+set@{ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+set}}
+\index{ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+set@{ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+set}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{type}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_ac32feef708a09b113dcd4a0bc36638db}
+Sets the C\+S\+S media type.
+
+Setting this will override the normal value of the C\+S\+S media property.
+
+Setting the value to {\ttfamily N\+U\+L\+L} will restore the internal default value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & css media type to be set, must be write-\/able\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__settings_8h_a838b7753ebae0c8ec0535a421d22c555}{ewk\+\_\+settings\+\_\+css\+\_\+media\+\_\+type\+\_\+get} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__settings_8h_adadc212b4317c9bf7199a57eb1e17e51}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+default\+\_\+timer\+\_\+interval\+\_\+get@{ewk\+\_\+settings\+\_\+default\+\_\+timer\+\_\+interval\+\_\+get}}
+\index{ewk\+\_\+settings\+\_\+default\+\_\+timer\+\_\+interval\+\_\+get@{ewk\+\_\+settings\+\_\+default\+\_\+timer\+\_\+interval\+\_\+get}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+default\+\_\+timer\+\_\+interval\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I double ewk\+\_\+settings\+\_\+default\+\_\+timer\+\_\+interval\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_adadc212b4317c9bf7199a57eb1e17e51}
+Gets the default interval for D\+O\+M\+Timers on all pages.
+
+D\+O\+M\+Timer processes javascript function registered by set\+Interval() based on interval value.
+
+\begin{DoxyReturn}{Returns}
+default minimum interval for D\+O\+M\+Timers 
+\end{DoxyReturn}
+\hypertarget{ewk__settings_8h_a1491a98789d4809c30b4918f41478a77}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+clear@{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+clear}}
+\index{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+clear@{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+clear}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+clear}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a1491a98789d4809c30b4918f41478a77}
+Removes all known icons from database.
+
+Database must be opened with \hyperlink{ewk__settings_8h_a07151b1bf42d85033b3aceb35acb177a}{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+set()} in order to work.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise, like closed database. 
+\end{DoxyReturn}
+\hypertarget{ewk__settings_8h_ae1ed61d1653694359dbe93144be06f59}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+icon\+\_\+object\+\_\+get@{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+icon\+\_\+object\+\_\+get}}
+\index{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+icon\+\_\+object\+\_\+get@{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+icon\+\_\+object\+\_\+get}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+icon\+\_\+object\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Evas\+\_\+\+Object$\ast$ ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+icon\+\_\+object\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{url, }
+\item[{Evas $\ast$}]{canvas}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_ae1ed61d1653694359dbe93144be06f59}
+Gets image representing the given U\+R\+L.
+
+This is an utility function that creates an Evas\+\_\+\+Object of type image set to have fill always match object size (evas\+\_\+object\+\_\+image\+\_\+filled\+\_\+add()), saving some code to use it from Evas.
+
+\begin{DoxyNote}{Note}
+In order to have this working, one must open icon database with \hyperlink{ewk__settings_8h_a07151b1bf42d85033b3aceb35acb177a}{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+set()}.
+
+The \char`\"{}load,finished\char`\"{} signal doesn't guarantee that icons are completely loaded and saved to database. Icon can be taken after the \char`\"{}icon,received\char`\"{} signal.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em url} & which url to query icon \\
+\hline
+{\em canvas} & evas instance where to add resulting object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+newly allocated Evas\+\_\+\+Object instance or {\ttfamily N\+U\+L\+L} on errors. Delete the object with evas\+\_\+object\+\_\+del(). 
+\end{DoxyReturn}
+\hypertarget{ewk__settings_8h_a22f8974efaaef02de296cd1573061333}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+get@{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+get}}
+\index{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+get@{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+get}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a22f8974efaaef02de296cd1573061333}
+Returns directory path where icon database is stored.
+
+This is guaranteed to be eina\+\_\+stringshare, so whenever possible save yourself some cpu cycles and use eina\+\_\+stringshare\+\_\+ref() instead of eina\+\_\+stringshare\+\_\+add() or strdup().
+
+\begin{DoxyReturn}{Returns}
+database path or {\ttfamily N\+U\+L\+L} if none is set 
+\end{DoxyReturn}
+\hypertarget{ewk__settings_8h_a07151b1bf42d85033b3aceb35acb177a}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+set@{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+set}}
+\index{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+set@{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+set}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a07151b1bf42d85033b3aceb35acb177a}
+Sets directory where to store icon database, opening or closing database.
+
+Icon database must be opened only once. If you try to set a path when the icon database is already open, this function returns {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em directory} & where to store icon database, must be write-\/able, if {\ttfamily N\+U\+L\+L} is given, then database is closed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on errors 
+\end{DoxyReturn}
+\hypertarget{ewk__settings_8h_aa6e33e51ef714cc7350c93d0d82f2b0d}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+database\+\_\+clear@{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+database\+\_\+clear}}
+\index{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+database\+\_\+clear@{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+database\+\_\+clear}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+database\+\_\+clear}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+database\+\_\+clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_aa6e33e51ef714cc7350c93d0d82f2b0d}
+Removes {\bfseries all} H\+T\+M\+L 5 local storage databases. \hypertarget{ewk__settings_8h_a5f1a20dafaef59b280d42275ed355f62}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+database\+\_\+origin\+\_\+clear@{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+database\+\_\+origin\+\_\+clear}}
+\index{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+database\+\_\+origin\+\_\+clear@{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+database\+\_\+origin\+\_\+clear}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+database\+\_\+origin\+\_\+clear}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+database\+\_\+origin\+\_\+clear (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{url}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a5f1a20dafaef59b280d42275ed355f62}
+Clears the H\+T\+M\+L 5 local storage database for the given U\+R\+L (origin).
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & which U\+R\+L to clear local storage to.\\
+\hline
+\end{DoxyParams}
+After this call, the file holding the local storage database for that origin will be deleted, along with its entry on the local storage files database (a file stored under the path returned by \hyperlink{ewk__settings_8h_a6344a29e0fcfbcecf7ed7045bdbdc1d7}{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+path\+\_\+get()}). \hypertarget{ewk__settings_8h_a6344a29e0fcfbcecf7ed7045bdbdc1d7}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+path\+\_\+get@{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+path\+\_\+get}}
+\index{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+path\+\_\+get@{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+path\+\_\+get}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+path\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+path\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a6344a29e0fcfbcecf7ed7045bdbdc1d7}
+Returns directory's path where the H\+T\+M\+L5 local storage indexing database is stored.
+
+This is guaranteed to be eina-\/stringshared, so whenever possible save yourself some cpu cycles and use eina\+\_\+stringshare\+\_\+ref() instead of eina\+\_\+stringshare\+\_\+add() or strdup().
+
+By default, the value is {\ttfamily $\sim$/}.local/share/\+Web\+Kit\+Efl/\+Local\+Storage
+
+\begin{DoxyReturn}{Returns}
+database path or {\ttfamily N\+U\+L\+L}, on errors.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__settings_8h_a60c264ede05650144ccf093882848596}{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+path\+\_\+set()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__settings_8h_a60c264ede05650144ccf093882848596}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+path\+\_\+set@{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+path\+\_\+set}}
+\index{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+path\+\_\+set@{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+path\+\_\+set}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+path\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+settings\+\_\+local\+\_\+storage\+\_\+path\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a60c264ede05650144ccf093882848596}
+Sets the current path to the directory where Web\+Kit will write the H\+T\+M\+L5 local storage indexing database (the one keeping track of individual views' local storage databases).
+
+By default, the value is {\ttfamily $\sim$/}.local/share/\+Web\+Kit\+Efl/\+Local\+Storage
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & the new local storage database directory path\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+You may want to call \hyperlink{ewk__view_8h_afa1789f036952e102f9e280d782d17b9}{ewk\+\_\+view\+\_\+setting\+\_\+local\+\_\+storage\+\_\+database\+\_\+path\+\_\+set()} on the same {\ttfamily path}, here, for your views. 
+\end{DoxyNote}
+\hypertarget{ewk__settings_8h_a0c9bc2a1081239ff16532a3351436da0}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+memory\+\_\+cache\+\_\+clear@{ewk\+\_\+settings\+\_\+memory\+\_\+cache\+\_\+clear}}
+\index{ewk\+\_\+settings\+\_\+memory\+\_\+cache\+\_\+clear@{ewk\+\_\+settings\+\_\+memory\+\_\+cache\+\_\+clear}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+memory\+\_\+cache\+\_\+clear}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+settings\+\_\+memory\+\_\+cache\+\_\+clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a0c9bc2a1081239ff16532a3351436da0}
+Clears all memory caches.
+
+This function clears all memory caches, which include the object cache (for resources such as images, scripts and stylesheets), the page cache, the font cache and the Cross-\/\+Origin Preflight cache. \hypertarget{ewk__settings_8h_a7b07e03102286a8e074bb0a03b684b80}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+capacity\+\_\+set@{ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+capacity\+\_\+set}}
+\index{ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+capacity\+\_\+set@{ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+capacity\+\_\+set}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+capacity\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+capacity\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{min\+\_\+dead\+\_\+bytes, }
+\item[{unsigned}]{max\+\_\+dead\+\_\+bytes, }
+\item[{unsigned}]{total\+\_\+bytes}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a7b07e03102286a8e074bb0a03b684b80}
+Defines the capacities for the in-\/memory object cache.
+
+The object cache is responsible for holding resources such as scripts, stylesheets and images in memory.
+
+By default, {\ttfamily min\+\_\+dead\+\_\+bytes} is 0 and both {\ttfamily max\+\_\+dead\+\_\+bytes} and {\ttfamily total\+\_\+bytes} are 8\+M\+B.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+\_\+dead\+\_\+bytes} & The maximum number of bytes that dead resources should consume when the cache is under pressure. \\
+\hline
+{\em max\+\_\+dead\+\_\+bytes} & The maximum number of bytes that dead resources should consume when the cache is not under pressure. \\
+\hline
+{\em total\+\_\+bytes} & The maximum number of bytes that the cache should consume overall.\\
+\hline
+{\em capacity} & the maximum number of bytes that the cache should consume overall \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__settings_8h_adc0f09f74458b598cba69f7c53315456}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+enable\+\_\+get@{ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+enable\+\_\+get}}
+\index{ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+enable\+\_\+get@{ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+enable\+\_\+get}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+enable\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+enable\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_adc0f09f74458b598cba69f7c53315456}
+Returns whether the in-\/memory object cache is enabled.
+
+The object cache is responsible for holding resources such as scripts, stylesheets and images in memory.
+
+By default, the cache is enabled.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the cache is enabled or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} if not
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__settings_8h_a7b07e03102286a8e074bb0a03b684b80}{ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+capacity\+\_\+set} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__settings_8h_a14d8f6667863d7b9dc5c456f60747e21}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+enable\+\_\+set@{ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+enable\+\_\+set}}
+\index{ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+enable\+\_\+set@{ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+enable\+\_\+set}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+enable\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+settings\+\_\+object\+\_\+cache\+\_\+enable\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{Eina\+\_\+\+Bool}]{set}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a14d8f6667863d7b9dc5c456f60747e21}
+Enables/disables the in-\/memory object cache of Web\+Core, possibly clearing it.
+
+The object cache is responsible for holding resources such as scripts, stylesheets and images in memory.
+
+By default, the cache is enabled.
+
+Disabling the cache will remove all resources from the cache. They may still live on if they are referenced by some Web page though.
+
+
+\begin{DoxyParams}{Parameters}
+{\em set} & {\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} to enable memory cache, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} to disable \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__settings_8h_a1b9634da25fa67aeec4794b1560e83df}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+page\+\_\+cache\+\_\+capacity\+\_\+get@{ewk\+\_\+settings\+\_\+page\+\_\+cache\+\_\+capacity\+\_\+get}}
+\index{ewk\+\_\+settings\+\_\+page\+\_\+cache\+\_\+capacity\+\_\+get@{ewk\+\_\+settings\+\_\+page\+\_\+cache\+\_\+capacity\+\_\+get}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+page\+\_\+cache\+\_\+capacity\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I unsigned ewk\+\_\+settings\+\_\+page\+\_\+cache\+\_\+capacity\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a1b9634da25fa67aeec4794b1560e83df}
+Returns the maximum number of pages in the memory page cache.
+
+By default, maximum number of pages is 3.
+
+\begin{DoxyReturn}{Returns}
+The maximum number of pages in the memory page cache.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__settings_8h_ac7746c0d931da639a57f6fe98cfd69bb}{ewk\+\_\+settings\+\_\+page\+\_\+cache\+\_\+capacity\+\_\+set} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__settings_8h_ac7746c0d931da639a57f6fe98cfd69bb}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+page\+\_\+cache\+\_\+capacity\+\_\+set@{ewk\+\_\+settings\+\_\+page\+\_\+cache\+\_\+capacity\+\_\+set}}
+\index{ewk\+\_\+settings\+\_\+page\+\_\+cache\+\_\+capacity\+\_\+set@{ewk\+\_\+settings\+\_\+page\+\_\+cache\+\_\+capacity\+\_\+set}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+page\+\_\+cache\+\_\+capacity\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+settings\+\_\+page\+\_\+cache\+\_\+capacity\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{pages}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_ac7746c0d931da639a57f6fe98cfd69bb}
+Defines the capacity for the memory page cache.
+
+The page cache is responsible for holding visited web pages in memory. So it improves user experience when navigating forth or back to pages in the forward/back history as the cached pages do not require to be loaded from server.
+
+By default, {\ttfamily pages} is 3.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pages} & The maximum number of pages to keep in the memory page cache. \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__settings_8h_a3807a9938738adbe21664483538c1f50}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+repaint\+\_\+throttling\+\_\+set@{ewk\+\_\+settings\+\_\+repaint\+\_\+throttling\+\_\+set}}
+\index{ewk\+\_\+settings\+\_\+repaint\+\_\+throttling\+\_\+set@{ewk\+\_\+settings\+\_\+repaint\+\_\+throttling\+\_\+set}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+repaint\+\_\+throttling\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+settings\+\_\+repaint\+\_\+throttling\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{double}]{deferred\+\_\+repaint\+\_\+delay, }
+\item[{double}]{initial\+\_\+deferred\+\_\+repaint\+\_\+delay\+\_\+during\+\_\+loading, }
+\item[{double}]{max\+\_\+deferred\+\_\+repaint\+\_\+delay\+\_\+during\+\_\+loading, }
+\item[{double}]{deferred\+\_\+repaint\+\_\+delay\+\_\+increment\+\_\+during\+\_\+loading}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a3807a9938738adbe21664483538c1f50}
+Sets values for repaint throttling.
+
+It allows to slow down page loading and should ensure displaying a content with many css/gif animations.
+
+These values can be used as a example for repaints throttling. 0, 0, 0, 0 -\/ default Web\+Core's values, these do not delay any repaints 0.\+025, 0, 2.\+5, 0.\+5 -\/ recommended values for dynamic content 0.\+01, 0, 1, 0.\+2 -\/ minimal level 0.\+025, 1, 5, 0.\+5 -\/ medium level 0.\+1, 2, 10, 1 -\/ heavy level
+
+
+\begin{DoxyParams}{Parameters}
+{\em deferred\+\_\+repaint\+\_\+delay} & a normal delay \\
+\hline
+{\em initial\+\_\+deferred\+\_\+repaint\+\_\+delay\+\_\+during\+\_\+loading} & negative value would mean that first few repaints happen without a delay \\
+\hline
+{\em max\+\_\+deferred\+\_\+repaint\+\_\+delay\+\_\+during\+\_\+loading} & the delay grows on each repaint to this maximum value \\
+\hline
+{\em deferred\+\_\+repaint\+\_\+delay\+\_\+increment\+\_\+during\+\_\+loading} & on each repaint the delay increses by this amount \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__settings_8h_a5615c3cb47e4fbda081d0ce078cd4034}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+shadow\+\_\+dom\+\_\+enable\+\_\+get@{ewk\+\_\+settings\+\_\+shadow\+\_\+dom\+\_\+enable\+\_\+get}}
+\index{ewk\+\_\+settings\+\_\+shadow\+\_\+dom\+\_\+enable\+\_\+get@{ewk\+\_\+settings\+\_\+shadow\+\_\+dom\+\_\+enable\+\_\+get}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+shadow\+\_\+dom\+\_\+enable\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+settings\+\_\+shadow\+\_\+dom\+\_\+enable\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a5615c3cb47e4fbda081d0ce078cd4034}
+Returns whether Shadow D\+O\+M is enabled.
+
+Shadow D\+O\+M is a method of establishing and maintaining functional boundaries between D\+O\+M subtrees and how these subtrees interact with each other within a document tree, thus enabling better functional encapsulation within D\+O\+M.
+
+By default, Shadow D\+O\+M is disabled.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if Shadow D\+O\+M is enabled or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} if not
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__settings_8h_a08834bd00b1d063a0178bc68ad4af66c}{ewk\+\_\+settings\+\_\+shadow\+\_\+dom\+\_\+enable\+\_\+set} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__settings_8h_a08834bd00b1d063a0178bc68ad4af66c}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+shadow\+\_\+dom\+\_\+enable\+\_\+set@{ewk\+\_\+settings\+\_\+shadow\+\_\+dom\+\_\+enable\+\_\+set}}
+\index{ewk\+\_\+settings\+\_\+shadow\+\_\+dom\+\_\+enable\+\_\+set@{ewk\+\_\+settings\+\_\+shadow\+\_\+dom\+\_\+enable\+\_\+set}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+shadow\+\_\+dom\+\_\+enable\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+settings\+\_\+shadow\+\_\+dom\+\_\+enable\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{Eina\+\_\+\+Bool}]{enable}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a08834bd00b1d063a0178bc68ad4af66c}
+Enables/disables Shadow D\+O\+M functionality.
+
+Shadow D\+O\+M is a method of establishing and maintaining functional boundaries between D\+O\+M subtrees and how these subtrees interact with each other within a document tree, thus enabling better functional encapsulation within D\+O\+M.
+
+By default, Shadow D\+O\+M is disabled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em set} & {\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} to enable Shadow D\+O\+M, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} to disable \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__settings_8h_aeff70f5e80e522a8df0150452cfc320a}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+default\+\_\+quota\+\_\+get@{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+default\+\_\+quota\+\_\+get}}
+\index{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+default\+\_\+quota\+\_\+get@{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+default\+\_\+quota\+\_\+get}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+default\+\_\+quota\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I uint64\+\_\+t ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+default\+\_\+quota\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_aeff70f5e80e522a8df0150452cfc320a}
+Returns the default quota for Web Database databases. By default this value is 1\+M\+B.
+
+\begin{DoxyReturn}{Returns}
+the current default database quota in bytes 
+\end{DoxyReturn}
+\hypertarget{ewk__settings_8h_afe5635b1843c7e96dbdd23cae878d4b4}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+default\+\_\+quota\+\_\+set@{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+default\+\_\+quota\+\_\+set}}
+\index{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+default\+\_\+quota\+\_\+set@{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+default\+\_\+quota\+\_\+set}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+default\+\_\+quota\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+default\+\_\+quota\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t}]{maximum\+\_\+size}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_afe5635b1843c7e96dbdd23cae878d4b4}
+Sets the default maximum size (in bytes) an H\+T\+M\+L5 Web Database database can have.
+
+By default, this value is 1\+M\+B.
+
+
+\begin{DoxyParams}{Parameters}
+{\em maximum\+\_\+size} & the new maximum size a database is allowed \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__settings_8h_a409b83cbf754d206de6c2dbcb6a731be}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+path\+\_\+get@{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+path\+\_\+get}}
+\index{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+path\+\_\+get@{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+path\+\_\+get}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+path\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+path\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a409b83cbf754d206de6c2dbcb6a731be}
+Returns directory path where web database is stored.
+
+By default, the value is {\ttfamily $\sim$/}.cache/\+Web\+Kit\+Efl/\+Databases
+
+This is guaranteed to be eina\+\_\+stringshare, so whenever possible save yourself some cpu cycles and use eina\+\_\+stringshare\+\_\+ref() instead of eina\+\_\+stringshare\+\_\+add() or strdup().
+
+\begin{DoxyReturn}{Returns}
+database path or {\ttfamily N\+U\+L\+L} if none or web database is not supported 
+\end{DoxyReturn}
+\hypertarget{ewk__settings_8h_a782386717a4e5f9d470d19d6da48d083}{\index{ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}!ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+path\+\_\+set@{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+path\+\_\+set}}
+\index{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+path\+\_\+set@{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+path\+\_\+set}!ewk\+\_\+settings.\+h@{ewk\+\_\+settings.\+h}}
+\subsubsection[{ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+path\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+settings\+\_\+web\+\_\+database\+\_\+path\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}}\label{ewk__settings_8h_a782386717a4e5f9d470d19d6da48d083}
+Sets the current path to the directory Web\+Kit will write Web Database databases.
+
+By default, the value is {\ttfamily $\sim$/}.cache/\+Web\+Kit\+Efl/\+Databases
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & the new database directory path \\
+\hline
+\end{DoxyParams}

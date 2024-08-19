@@ -1,0 +1,58 @@
+\hypertarget{ewk__main_8h}{\section{ewk\+\_\+main.\+h File Reference}
+\label{ewk__main_8h}\index{ewk\+\_\+main.\+h@{ewk\+\_\+main.\+h}}
+}
+
+
+The main file of Web\+Kit-\/\+E\+F\+L, not tied to any view object.  
+
+
+{\ttfamily \#include $<$Eina.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\+A\+P\+I int \hyperlink{ewk__main_8h_a24c00081b522e15b3c379a0ceffaba66}{ewk\+\_\+init} (void)
+\item 
+E\+A\+P\+I int \hyperlink{ewk__main_8h_a80f9c8ecdd85f0081e9a424a79947fb0}{ewk\+\_\+shutdown} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The main file of Web\+Kit-\/\+E\+F\+L, not tied to any view object. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{ewk__main_8h_a24c00081b522e15b3c379a0ceffaba66}{\index{ewk\+\_\+main.\+h@{ewk\+\_\+main.\+h}!ewk\+\_\+init@{ewk\+\_\+init}}
+\index{ewk\+\_\+init@{ewk\+\_\+init}!ewk\+\_\+main.\+h@{ewk\+\_\+main.\+h}}
+\subsubsection[{ewk\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I int ewk\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__main_8h_a24c00081b522e15b3c379a0ceffaba66}
+Initializes webkit's instance.
+
+
+\begin{DoxyItemize}
+\item initializes components needed by Efl,
+\item sets web database location,
+\item sets page cache capacity,
+\item increases a reference count of webkit's instance.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+a reference count of webkit's instance on success or 0 on failure 
+\end{DoxyReturn}
+\hypertarget{ewk__main_8h_a80f9c8ecdd85f0081e9a424a79947fb0}{\index{ewk\+\_\+main.\+h@{ewk\+\_\+main.\+h}!ewk\+\_\+shutdown@{ewk\+\_\+shutdown}}
+\index{ewk\+\_\+shutdown@{ewk\+\_\+shutdown}!ewk\+\_\+main.\+h@{ewk\+\_\+main.\+h}}
+\subsubsection[{ewk\+\_\+shutdown}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I int ewk\+\_\+shutdown (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__main_8h_a80f9c8ecdd85f0081e9a424a79947fb0}
+Decreases a reference count of webkit's instance, possibly destroying it.
+
+If the reference count reaches 0 webkit's instance is destroyed.
+
+\begin{DoxyReturn}{Returns}
+a reference count of webkit's instance 
+\end{DoxyReturn}

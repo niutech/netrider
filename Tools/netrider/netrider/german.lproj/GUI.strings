@@ -1,0 +1,77 @@
+"Open menu" = "Menü öffnen";
+"Move back one page" = "Eine Seite zurück";
+"Move forward one page" = "Eine Seite vorwärts";
+"Stop loading page" = "Laden abbrechen";
+"Reload page" = "Seite neu laden";
+"Start loading URL" = "Link laden";
+"Search with Google" = "Mit Google suchen";
+"Show bookmarks" = "Lesezeichen anzeigen";
+
+" &File " = " Datei ";
+" Open " = " Datei öffnen ";
+" Save " = " Seite speichern ";
+" Add bookmark " = " Lesezeichen hinzufügen ";
+" Set as startpage " = " Als Startseite setzen ";
+" Language " = " Sprache einstellen ";
+" Stop file transfer " = " Dateitransfer stoppen ";
+" E&xit " = " Beenden ";
+" Edit " = " Bearbeiten ";
+" Copy selected " = " Auswahl kopieren ";
+" Find text " = " Suchen ";
+" Show source " = " Seitenquelltext anzeigen ";
+" &History " = " Verlauf ";
+" &Bookmarks " = " Lesezeichen ";
+" Help " = " Hilfe ";
+" About " = " Über NetRider ";
+" Online Help " = " Befehlsübersicht ";
+
+" Open link in new tab " = " Link in neuem Tab laden ";
+" Add link to bookmarks " = " Link als Lesezeichen speichern ";
+" Save target as... " = " Link speichern als ...";
+" Copy link to clipboard " = " Link in Zwischenspeicher kopieren ";
+" Copy link text " = "Link text kopieren";
+  
+" Back " = " Eine Seite zurück ";
+" Forward " = " Eine Seite vorwärts ";
+" Reload " = " Seite neu laden ";
+" Stop " = " Laden abbrechen ";
+" Add bookmark " = " Lesezeichen hinzufügen ";
+" Save page as.. " = " Seite speichern ";
+" Select all " = " Alles markieren ";
+
+
+"Do you want to run/open the file %s?" = "Möchten Sie die Datei %s ausführen?";
+"Do you want to close the '%s' Tab?" = "Möchten Sie das '%s' Tab schließen?";
+
+"New Tab     " = "Neuer Tab   ";
+"Loading...  " = "Lädt...  ";
+"Open ..." = "Öffnen ...";
+"Save as ..." = "Speichern unter ...";
+"Save %s as file..." = "Speichern von %s als Datei...";
+
+"Zoom set to: %.2f" = "Zoomfaktor ist: %.2f"
+"Contacting server       " = "Kontaktiere Server      "
+
+"History" = "Verlauf";
+"Save" = "Speichern";
+"Close" = "Schließen";
+"Bookmarks" = "Lesezeichen";
+
+"Load" = "Aufrufen";
+"Edit" = "Bearbeiten";
+"Sort" = "Sortieren";
+"Delete" = "Löschen";
+
+"next" = "Abwärts";
+"back" = "Aufwärts";
+"close" = "Schließen";
+
+"Yes" = " Ja ";
+"No" = "Nein";
+"Close" = "Schließen";
+"Cancel" = "Abbruch";
+
+"Couldn't resolve host name " = "Konnte IP Adresse nicht erfragen ";
+"Canceled " = "Abgebrochen ";
+
+

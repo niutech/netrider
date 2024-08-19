@@ -1,0 +1,157 @@
+\hypertarget{ewk__file__chooser_8h}{\section{ewk\+\_\+file\+\_\+chooser.\+h File Reference}
+\label{ewk__file__chooser_8h}\index{ewk\+\_\+file\+\_\+chooser.\+h@{ewk\+\_\+file\+\_\+chooser.\+h}}
+}
+
+
+File Chooser A\+P\+I.  
+
+
+{\ttfamily \#include $<$Eina.\+h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ewk__file__chooser_8h_adeda6f122e9abea88e9b58bfd82aa3ca}{typedef struct \hyperlink{struct__Ewk__File__Chooser}{\+\_\+\+Ewk\+\_\+\+File\+\_\+\+Chooser} {\bfseries Ewk\+\_\+\+File\+\_\+\+Chooser}}\label{ewk__file__chooser_8h_adeda6f122e9abea88e9b58bfd82aa3ca}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__file__chooser_8h_a745fe67bbaeb05ad98e615bfdff7c1ed}{ewk\+\_\+file\+\_\+chooser\+\_\+allows\+\_\+multiple\+\_\+files\+\_\+get} (const \hyperlink{struct__Ewk__File__Chooser}{Ewk\+\_\+\+File\+\_\+\+Chooser} $\ast$f)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__file__chooser_8h_a881559ea1d613d558d72951b3d309bce}{ewk\+\_\+file\+\_\+chooser\+\_\+allows\+\_\+directory\+\_\+upload\+\_\+get} (const \hyperlink{struct__Ewk__File__Chooser}{Ewk\+\_\+\+File\+\_\+\+Chooser} $\ast$f)
+\item 
+E\+A\+P\+I Eina\+\_\+\+List $\ast$ \hyperlink{ewk__file__chooser_8h_a65cf096480261514ebabf461c60c8999}{ewk\+\_\+file\+\_\+chooser\+\_\+accept\+\_\+mimetypes\+\_\+get} (const \hyperlink{struct__Ewk__File__Chooser}{Ewk\+\_\+\+File\+\_\+\+Chooser} $\ast$f)
+\item 
+E\+A\+P\+I Eina\+\_\+\+List $\ast$ \hyperlink{ewk__file__chooser_8h_adeb31ce897001c2329472bcd94f516e8}{ewk\+\_\+file\+\_\+chooser\+\_\+accept\+\_\+file\+\_\+extentions\+\_\+get} (const \hyperlink{struct__Ewk__File__Chooser}{Ewk\+\_\+\+File\+\_\+\+Chooser} $\ast$f)
+\item 
+E\+A\+P\+I Eina\+\_\+\+List $\ast$ \hyperlink{ewk__file__chooser_8h_ac3e729262d4065f87a2f3fbb988443c1}{ewk\+\_\+file\+\_\+chooser\+\_\+selected\+\_\+files\+\_\+get} (const \hyperlink{struct__Ewk__File__Chooser}{Ewk\+\_\+\+File\+\_\+\+Chooser} $\ast$f)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__file__chooser_8h_a7858d8c85871c103f200a7fb31b6eebd}{ewk\+\_\+file\+\_\+chooser\+\_\+capture\+\_\+get} (const \hyperlink{struct__Ewk__File__Chooser}{Ewk\+\_\+\+File\+\_\+\+Chooser} $\ast$f)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File Chooser A\+P\+I. 
+
+File Chooser supports A\+P\+Is for file selection dialog. This support attributes of file chooser regarding\+:
+\begin{DoxyItemize}
+\item allowance of multiple files selection
+\item allowance of upload directory
+\item list of accepted mime types
+\item list of accepted file extensions
+\item list of initial selected file names
+\item capture attribute for H\+T\+M\+L media capture 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\hypertarget{ewk__file__chooser_8h_adeb31ce897001c2329472bcd94f516e8}{\index{ewk\+\_\+file\+\_\+chooser.\+h@{ewk\+\_\+file\+\_\+chooser.\+h}!ewk\+\_\+file\+\_\+chooser\+\_\+accept\+\_\+file\+\_\+extentions\+\_\+get@{ewk\+\_\+file\+\_\+chooser\+\_\+accept\+\_\+file\+\_\+extentions\+\_\+get}}
+\index{ewk\+\_\+file\+\_\+chooser\+\_\+accept\+\_\+file\+\_\+extentions\+\_\+get@{ewk\+\_\+file\+\_\+chooser\+\_\+accept\+\_\+file\+\_\+extentions\+\_\+get}!ewk\+\_\+file\+\_\+chooser.\+h@{ewk\+\_\+file\+\_\+chooser.\+h}}
+\subsubsection[{ewk\+\_\+file\+\_\+chooser\+\_\+accept\+\_\+file\+\_\+extentions\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+List$\ast$ ewk\+\_\+file\+\_\+chooser\+\_\+accept\+\_\+file\+\_\+extentions\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+File\+\_\+\+Chooser} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{ewk__file__chooser_8h_adeb31ce897001c2329472bcd94f516e8}
+Returns the list of accepted file extensions of the file chooser.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & file chooser object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Eina\+\_\+\+List} of accepted file extensions on success, or {\ttfamily N\+U\+L\+L} on failure, the Eina\+\_\+\+List and its items should be freed after use. Use eina\+\_\+stringshare\+\_\+del() to free the items. 
+\end{DoxyReturn}
+\hypertarget{ewk__file__chooser_8h_a65cf096480261514ebabf461c60c8999}{\index{ewk\+\_\+file\+\_\+chooser.\+h@{ewk\+\_\+file\+\_\+chooser.\+h}!ewk\+\_\+file\+\_\+chooser\+\_\+accept\+\_\+mimetypes\+\_\+get@{ewk\+\_\+file\+\_\+chooser\+\_\+accept\+\_\+mimetypes\+\_\+get}}
+\index{ewk\+\_\+file\+\_\+chooser\+\_\+accept\+\_\+mimetypes\+\_\+get@{ewk\+\_\+file\+\_\+chooser\+\_\+accept\+\_\+mimetypes\+\_\+get}!ewk\+\_\+file\+\_\+chooser.\+h@{ewk\+\_\+file\+\_\+chooser.\+h}}
+\subsubsection[{ewk\+\_\+file\+\_\+chooser\+\_\+accept\+\_\+mimetypes\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+List$\ast$ ewk\+\_\+file\+\_\+chooser\+\_\+accept\+\_\+mimetypes\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+File\+\_\+\+Chooser} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{ewk__file__chooser_8h_a65cf096480261514ebabf461c60c8999}
+Returns the list of accepted mimetypes of the file chooser.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & file chooser object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Eina\+\_\+\+List of accepted mimetypes on success, or {\ttfamily N\+U\+L\+L} on failure, the Eina\+\_\+\+List and its items should be freed after use. Use eina\+\_\+stringshare\+\_\+del() to free the items. 
+\end{DoxyReturn}
+\hypertarget{ewk__file__chooser_8h_a881559ea1d613d558d72951b3d309bce}{\index{ewk\+\_\+file\+\_\+chooser.\+h@{ewk\+\_\+file\+\_\+chooser.\+h}!ewk\+\_\+file\+\_\+chooser\+\_\+allows\+\_\+directory\+\_\+upload\+\_\+get@{ewk\+\_\+file\+\_\+chooser\+\_\+allows\+\_\+directory\+\_\+upload\+\_\+get}}
+\index{ewk\+\_\+file\+\_\+chooser\+\_\+allows\+\_\+directory\+\_\+upload\+\_\+get@{ewk\+\_\+file\+\_\+chooser\+\_\+allows\+\_\+directory\+\_\+upload\+\_\+get}!ewk\+\_\+file\+\_\+chooser.\+h@{ewk\+\_\+file\+\_\+chooser.\+h}}
+\subsubsection[{ewk\+\_\+file\+\_\+chooser\+\_\+allows\+\_\+directory\+\_\+upload\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+file\+\_\+chooser\+\_\+allows\+\_\+directory\+\_\+upload\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+File\+\_\+\+Chooser} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{ewk__file__chooser_8h_a881559ea1d613d558d72951b3d309bce}
+Query if directory upload is supported by file chooser.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & file chooser object.\\
+\hline
+\end{DoxyParams}
+It returns a boolean value which indicates if directory upload is supported or not.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on support directory upload or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise. 
+\end{DoxyReturn}
+\hypertarget{ewk__file__chooser_8h_a745fe67bbaeb05ad98e615bfdff7c1ed}{\index{ewk\+\_\+file\+\_\+chooser.\+h@{ewk\+\_\+file\+\_\+chooser.\+h}!ewk\+\_\+file\+\_\+chooser\+\_\+allows\+\_\+multiple\+\_\+files\+\_\+get@{ewk\+\_\+file\+\_\+chooser\+\_\+allows\+\_\+multiple\+\_\+files\+\_\+get}}
+\index{ewk\+\_\+file\+\_\+chooser\+\_\+allows\+\_\+multiple\+\_\+files\+\_\+get@{ewk\+\_\+file\+\_\+chooser\+\_\+allows\+\_\+multiple\+\_\+files\+\_\+get}!ewk\+\_\+file\+\_\+chooser.\+h@{ewk\+\_\+file\+\_\+chooser.\+h}}
+\subsubsection[{ewk\+\_\+file\+\_\+chooser\+\_\+allows\+\_\+multiple\+\_\+files\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+file\+\_\+chooser\+\_\+allows\+\_\+multiple\+\_\+files\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+File\+\_\+\+Chooser} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{ewk__file__chooser_8h_a745fe67bbaeb05ad98e615bfdff7c1ed}
+Query if multiple files are supported by file chooser.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & file chooser object.\\
+\hline
+\end{DoxyParams}
+It returns a boolean value which indicates if multiple file is supported or not.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on support multiple files or {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise. 
+\end{DoxyReturn}
+\hypertarget{ewk__file__chooser_8h_a7858d8c85871c103f200a7fb31b6eebd}{\index{ewk\+\_\+file\+\_\+chooser.\+h@{ewk\+\_\+file\+\_\+chooser.\+h}!ewk\+\_\+file\+\_\+chooser\+\_\+capture\+\_\+get@{ewk\+\_\+file\+\_\+chooser\+\_\+capture\+\_\+get}}
+\index{ewk\+\_\+file\+\_\+chooser\+\_\+capture\+\_\+get@{ewk\+\_\+file\+\_\+chooser\+\_\+capture\+\_\+get}!ewk\+\_\+file\+\_\+chooser.\+h@{ewk\+\_\+file\+\_\+chooser.\+h}}
+\subsubsection[{ewk\+\_\+file\+\_\+chooser\+\_\+capture\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+file\+\_\+chooser\+\_\+capture\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+File\+\_\+\+Chooser} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{ewk__file__chooser_8h_a7858d8c85871c103f200a7fb31b6eebd}
+Returns whether the device's media capture capabilities should be used in the file chooser.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://www.w3.org/TR/html-media-capture/}{\tt http\+://www.\+w3.\+org/\+T\+R/html-\/media-\/capture/} for the semantics of the capture attribute.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & file chooser object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the device's capabilities should be used, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise. 
+\end{DoxyReturn}
+\hypertarget{ewk__file__chooser_8h_ac3e729262d4065f87a2f3fbb988443c1}{\index{ewk\+\_\+file\+\_\+chooser.\+h@{ewk\+\_\+file\+\_\+chooser.\+h}!ewk\+\_\+file\+\_\+chooser\+\_\+selected\+\_\+files\+\_\+get@{ewk\+\_\+file\+\_\+chooser\+\_\+selected\+\_\+files\+\_\+get}}
+\index{ewk\+\_\+file\+\_\+chooser\+\_\+selected\+\_\+files\+\_\+get@{ewk\+\_\+file\+\_\+chooser\+\_\+selected\+\_\+files\+\_\+get}!ewk\+\_\+file\+\_\+chooser.\+h@{ewk\+\_\+file\+\_\+chooser.\+h}}
+\subsubsection[{ewk\+\_\+file\+\_\+chooser\+\_\+selected\+\_\+files\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+List$\ast$ ewk\+\_\+file\+\_\+chooser\+\_\+selected\+\_\+files\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+File\+\_\+\+Chooser} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{ewk__file__chooser_8h_ac3e729262d4065f87a2f3fbb988443c1}
+Returns the list of selected file names of the file chooser.
+
+This list indicates previously selected file names of the file chooser. These can be used by initial values of the file dialog.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & file chooser object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Eina\+\_\+\+List} of selected file names on success, or {\ttfamily N\+U\+L\+L} on failure, the Eina\+\_\+\+List and its items should be freed after use. Use eina\+\_\+stringshare\+\_\+del() to free the items. 
+\end{DoxyReturn}

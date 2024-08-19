@@ -1,0 +1,46 @@
+\hypertarget{struct__Ewk__Cookie}{\section{\+\_\+\+Ewk\+\_\+\+Cookie Struct Reference}
+\label{struct__Ewk__Cookie}\index{\+\_\+\+Ewk\+\_\+\+Cookie@{\+\_\+\+Ewk\+\_\+\+Cookie}}
+}
+
+
+Describes properties of an H\+T\+T\+P cookie.  
+
+
+
+
+{\ttfamily \#include $<$ewk\+\_\+cookies.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct__Ewk__Cookie_a46b5b5893da21d5344767ae6a935feb4}{const char $\ast$ \hyperlink{struct__Ewk__Cookie_a46b5b5893da21d5344767ae6a935feb4}{name}}\label{struct__Ewk__Cookie_a46b5b5893da21d5344767ae6a935feb4}
+
+\begin{DoxyCompactList}\small\item\em the cookie name \end{DoxyCompactList}\item 
+\hypertarget{struct__Ewk__Cookie_ab958319f695de53f8e77a28e38a05612}{const char $\ast$ \hyperlink{struct__Ewk__Cookie_ab958319f695de53f8e77a28e38a05612}{value}}\label{struct__Ewk__Cookie_ab958319f695de53f8e77a28e38a05612}
+
+\begin{DoxyCompactList}\small\item\em the cookie value \end{DoxyCompactList}\item 
+\hypertarget{struct__Ewk__Cookie_a5fffdb74a212d6d00c3f3a71e2514dac}{const char $\ast$ \hyperlink{struct__Ewk__Cookie_a5fffdb74a212d6d00c3f3a71e2514dac}{domain}}\label{struct__Ewk__Cookie_a5fffdb74a212d6d00c3f3a71e2514dac}
+
+\begin{DoxyCompactList}\small\item\em the \char`\"{}domain\char`\"{} attribute, or else the hostname that the cookie came from \end{DoxyCompactList}\item 
+\hypertarget{struct__Ewk__Cookie_a428f0f479647c40204cfde7c1ab595a9}{const char $\ast$ \hyperlink{struct__Ewk__Cookie_a428f0f479647c40204cfde7c1ab595a9}{path}}\label{struct__Ewk__Cookie_a428f0f479647c40204cfde7c1ab595a9}
+
+\begin{DoxyCompactList}\small\item\em the \char`\"{}path\char`\"{} attribute, or {\ttfamily N\+U\+L\+L} \end{DoxyCompactList}\item 
+\hypertarget{struct__Ewk__Cookie_a1805499161a9d618ef2e2aad53096855}{time\+\_\+t \hyperlink{struct__Ewk__Cookie_a1805499161a9d618ef2e2aad53096855}{expires}}\label{struct__Ewk__Cookie_a1805499161a9d618ef2e2aad53096855}
+
+\begin{DoxyCompactList}\small\item\em the cookie expiration time, or {\ttfamily 0} for a session cookie \end{DoxyCompactList}\item 
+\hypertarget{struct__Ewk__Cookie_a34c163de94b60707fdb8ef942ab51c25}{Eina\+\_\+\+Bool \hyperlink{struct__Ewk__Cookie_a34c163de94b60707fdb8ef942ab51c25}{secure}}\label{struct__Ewk__Cookie_a34c163de94b60707fdb8ef942ab51c25}
+
+\begin{DoxyCompactList}\small\item\em {\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the cookie should only be tranferred over S\+S\+L \end{DoxyCompactList}\item 
+\hypertarget{struct__Ewk__Cookie_a3c81ed784e1a411a2da5038aea4c2c4a}{Eina\+\_\+\+Bool \hyperlink{struct__Ewk__Cookie_a3c81ed784e1a411a2da5038aea4c2c4a}{http\+\_\+only}}\label{struct__Ewk__Cookie_a3c81ed784e1a411a2da5038aea4c2c4a}
+
+\begin{DoxyCompactList}\small\item\em {\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if the cookie should not be exposed to scripts \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Describes properties of an H\+T\+T\+P cookie. 
+
+All the strings are guaranteed to be stringshared, so use eina\+\_\+stringshare\+\_\+ref() instead of eina\+\_\+stringshare\+\_\+add() or strdup(). 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ewk__cookies_8h}{ewk\+\_\+cookies.\+h}\end{DoxyCompactItemize}

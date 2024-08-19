@@ -1,0 +1,56 @@
+\hypertarget{struct__Ewk__Frame__Resource__Request}{\section{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request Struct Reference}
+\label{struct__Ewk__Frame__Resource__Request}\index{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request}}
+}
+
+
+Structure containing details about a resource request.  
+
+
+
+
+{\ttfamily \#include $<$ewk\+\_\+frame.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{struct__Ewk__Frame__Resource__Request_a88c8c0c0bc8dc3b052792a6d9d3cd074}{url}
+\item 
+const char $\ast$ \hyperlink{struct__Ewk__Frame__Resource__Request_aadd34ea642faad2fe02b490fc99685fa}{first\+\_\+party}
+\item 
+const char $\ast$ \hyperlink{struct__Ewk__Frame__Resource__Request_aa8fe1c1fa66619f6d779a34d83a93697}{http\+\_\+method}
+\item 
+const unsigned long \hyperlink{struct__Ewk__Frame__Resource__Request_a051c396f71ccbf8955aebc219c98375c}{identifier}
+\item 
+Evas\+\_\+\+Object $\ast$ \hyperlink{struct__Ewk__Frame__Resource__Request_a92ed91ff7edf6730f0328830d335b7cb}{frame}
+\item 
+\hypertarget{struct__Ewk__Frame__Resource__Request_a0e47d3f56816130a2dd64e140903abcc}{Eina\+\_\+\+Bool {\bfseries is\+\_\+main\+\_\+frame\+\_\+request}}\label{struct__Ewk__Frame__Resource__Request_a0e47d3f56816130a2dd64e140903abcc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure containing details about a resource request. 
+
+Details given before a resource is loaded on a given frame. It's used in Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Messages to inform about the details of a resource request. 
+
+\subsection{Member Data Documentation}
+\hypertarget{struct__Ewk__Frame__Resource__Request_aadd34ea642faad2fe02b490fc99685fa}{\index{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request}!first\+\_\+party@{first\+\_\+party}}
+\index{first\+\_\+party@{first\+\_\+party}!\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request}}
+\subsubsection[{first\+\_\+party}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ \+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request\+::first\+\_\+party}}\label{struct__Ewk__Frame__Resource__Request_aadd34ea642faad2fe02b490fc99685fa}
+first party for cookies, can not be changed \hypertarget{struct__Ewk__Frame__Resource__Request_a92ed91ff7edf6730f0328830d335b7cb}{\index{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request}!frame@{frame}}
+\index{frame@{frame}!\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request}}
+\subsubsection[{frame}]{\setlength{\rightskip}{0pt plus 5cm}Evas\+\_\+\+Object$\ast$ \+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request\+::frame}}\label{struct__Ewk__Frame__Resource__Request_a92ed91ff7edf6730f0328830d335b7cb}
+frame where the resource is requested \hypertarget{struct__Ewk__Frame__Resource__Request_aa8fe1c1fa66619f6d779a34d83a93697}{\index{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request}!http\+\_\+method@{http\+\_\+method}}
+\index{http\+\_\+method@{http\+\_\+method}!\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request}}
+\subsubsection[{http\+\_\+method}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ \+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request\+::http\+\_\+method}}\label{struct__Ewk__Frame__Resource__Request_aa8fe1c1fa66619f6d779a34d83a93697}
+http method, can not be changed \hypertarget{struct__Ewk__Frame__Resource__Request_a051c396f71ccbf8955aebc219c98375c}{\index{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request}!identifier@{identifier}}
+\index{identifier@{identifier}!\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request}}
+\subsubsection[{identifier}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned long \+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request\+::identifier}}\label{struct__Ewk__Frame__Resource__Request_a051c396f71ccbf8955aebc219c98375c}
+identifier of resource, can not be changed \hypertarget{struct__Ewk__Frame__Resource__Request_a88c8c0c0bc8dc3b052792a6d9d3cd074}{\index{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request}!url@{url}}
+\index{url@{url}!\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request@{\+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request}}
+\subsubsection[{url}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ \+\_\+\+Ewk\+\_\+\+Frame\+\_\+\+Resource\+\_\+\+Request\+::url}}\label{struct__Ewk__Frame__Resource__Request_a88c8c0c0bc8dc3b052792a6d9d3cd074}
+url of the resource 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ewk__frame_8h}{ewk\+\_\+frame.\+h}\end{DoxyCompactItemize}

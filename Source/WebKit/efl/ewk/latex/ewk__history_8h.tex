@@ -1,0 +1,650 @@
+\hypertarget{ewk__history_8h}{\section{ewk\+\_\+history.\+h File Reference}
+\label{ewk__history_8h}\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+}
+
+
+The history (back-\/forward list) associated with a given ewk\+\_\+view.  
+
+
+{\ttfamily \#include $<$Eina.\+h$>$}\\*
+{\ttfamily \#include $<$Evas.\+h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ewk__history_8h_ab7c8eb61bb19107cdc2af52a8888182a}{typedef struct \hyperlink{struct__Ewk__History}{\+\_\+\+Ewk\+\_\+\+History} {\bfseries Ewk\+\_\+\+History}}\label{ewk__history_8h_ab7c8eb61bb19107cdc2af52a8888182a}
+
+\item 
+typedef struct \hyperlink{struct__Ewk__History__Item}{\+\_\+\+Ewk\+\_\+\+History\+\_\+\+Item} \hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__history_8h_a622795556f939b86e302c308257870ef}{ewk\+\_\+history\+\_\+clear} (\hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__history_8h_a76e8f9009f88aa67853ca828e547db40}{ewk\+\_\+history\+\_\+forward} (\hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__history_8h_a5d6f553a5e95229160dbebb1367578c8}{ewk\+\_\+history\+\_\+back} (\hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__history_8h_aac5e348da3006950072c883887a0ea23}{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+add} (\hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history, const \hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$item)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__history_8h_a2df333ca12d938bca6f37e42040d0a7d}{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+set} (\hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history, const \hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$item)
+\item 
+E\+A\+P\+I \hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$ \hyperlink{ewk__history_8h_aefc728b141919839950612d53f69d0a9}{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+back\+\_\+get} (const \hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history)
+\item 
+E\+A\+P\+I \hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$ \hyperlink{ewk__history_8h_a54fb53cedf50d02a792a173d6f543164}{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+current\+\_\+get} (const \hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history)
+\item 
+E\+A\+P\+I \hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$ \hyperlink{ewk__history_8h_ae62be21b2ec07912407dce737ebb02e3}{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+forward\+\_\+get} (const \hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history)
+\item 
+E\+A\+P\+I \hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$ \hyperlink{ewk__history_8h_a26d1540d082b3672c3467ed850ba32a8}{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+nth\+\_\+get} (const \hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history, int index)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__history_8h_ab18162cec50bb662fdf37affddbace5f}{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+contains} (const \hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history, const \hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$item)
+\item 
+E\+A\+P\+I Eina\+\_\+\+List $\ast$ \hyperlink{ewk__history_8h_ad15dfb58969dd1b3637caf3542f6792c}{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get} (const \hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history)
+\item 
+E\+A\+P\+I Eina\+\_\+\+List $\ast$ \hyperlink{ewk__history_8h_a79d83c7ce1a000816e9a4c6ecf42332a}{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get\+\_\+with\+\_\+limit} (const \hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history, int limit)
+\item 
+E\+A\+P\+I int \hyperlink{ewk__history_8h_a492a030477f2306f21f9edac58abff83}{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+length} (const \hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history)
+\item 
+E\+A\+P\+I Eina\+\_\+\+List $\ast$ \hyperlink{ewk__history_8h_a1f2ebed3035f0cf43bf33acc1f5fa764}{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get} (const \hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history)
+\item 
+E\+A\+P\+I Eina\+\_\+\+List $\ast$ \hyperlink{ewk__history_8h_ae45d56d527b1877116815e2c39d6569a}{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get\+\_\+with\+\_\+limit} (const \hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history, int limit)
+\item 
+E\+A\+P\+I int \hyperlink{ewk__history_8h_a25b4107f87a74974a144f77610d8cff5}{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+length} (const \hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history)
+\item 
+E\+A\+P\+I int \hyperlink{ewk__history_8h_a64b6c14d34ddd93f0beb8f6dc1f70a92}{ewk\+\_\+history\+\_\+limit\+\_\+get} (\hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__history_8h_a8d58df428aada87621ee6532d7861a2c}{ewk\+\_\+history\+\_\+limit\+\_\+set} (const \hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$history, int limit)
+\item 
+E\+A\+P\+I \hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$ \hyperlink{ewk__history_8h_ab95c2aafc18ec27dc5946daffc11728b}{ewk\+\_\+history\+\_\+item\+\_\+new} (const char $\ast$uri, const char $\ast$title)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__history_8h_a9fcf2823c164f9d7858dbfc77468f226}{ewk\+\_\+history\+\_\+item\+\_\+free} (\hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$item)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__history_8h_aad6451ac300ebc11c098a959693c8cde}{ewk\+\_\+history\+\_\+item\+\_\+list\+\_\+free} (Eina\+\_\+\+List $\ast$history\+\_\+items)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__history_8h_a686b167d9cc5e9c37410842cb7461839}{ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+get} (const \hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$item)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__history_8h_abcf85edbcfbf9e0de42aa507f3a4c9f3}{ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+alternate\+\_\+get} (const \hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$item)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__history_8h_a8f721125dff983c177385a971b11e222}{ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+alternate\+\_\+set} (\hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$item, const char $\ast$title)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__history_8h_aefeeaea7357ddaa18c041b659a6e4ff1}{ewk\+\_\+history\+\_\+item\+\_\+uri\+\_\+get} (const \hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$item)
+\item 
+E\+A\+P\+I const char $\ast$ \hyperlink{ewk__history_8h_a19b2f6f9c3d457dcf49691899f32a66e}{ewk\+\_\+history\+\_\+item\+\_\+uri\+\_\+original\+\_\+get} (const \hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$item)
+\item 
+E\+A\+P\+I Evas\+\_\+\+Object $\ast$ \hyperlink{ewk__history_8h_a000ffc8f4c1111651d7376fb57a95f90}{ewk\+\_\+history\+\_\+item\+\_\+icon\+\_\+object\+\_\+add} (const \hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$item, Evas $\ast$canvas)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__history_8h_acc4b61231adfe8e55460aae7dfe6a32f}{ewk\+\_\+history\+\_\+item\+\_\+page\+\_\+cache\+\_\+exists} (const \hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$item)
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__history_8h_a7e53dce6cbf926b85fc385de1328aa4f}{ewk\+\_\+history\+\_\+item\+\_\+visit\+\_\+last\+\_\+failed} (const \hyperlink{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{Ewk\+\_\+\+History\+\_\+\+Item} $\ast$item)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The history (back-\/forward list) associated with a given ewk\+\_\+view. 
+
+Changing the history affects immediately the view, changing the current uri, for example.
+
+When ewk\+\_\+view is navigated or uris are set, history automatically updates. That's why no direct access to history structure is allowed. 
+
+\subsection{Typedef Documentation}
+\hypertarget{ewk__history_8h_a786b35a323d2e69589c6924a35211160}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!Ewk\+\_\+\+History\+\_\+\+Item@{Ewk\+\_\+\+History\+\_\+\+Item}}
+\index{Ewk\+\_\+\+History\+\_\+\+Item@{Ewk\+\_\+\+History\+\_\+\+Item}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{Ewk\+\_\+\+History\+\_\+\+Item}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \+\_\+\+Ewk\+\_\+\+History\+\_\+\+Item} {\bf Ewk\+\_\+\+History\+\_\+\+Item}}}\label{ewk__history_8h_a786b35a323d2e69589c6924a35211160}
+Represents one item from Ewk\+\_\+\+History. 
+
+\subsection{Function Documentation}
+\hypertarget{ewk__history_8h_a5d6f553a5e95229160dbebb1367578c8}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+back@{ewk\+\_\+history\+\_\+back}}
+\index{ewk\+\_\+history\+\_\+back@{ewk\+\_\+history\+\_\+back}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+back}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+history\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+History} $\ast$}]{history}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a5d6f553a5e95229160dbebb1367578c8}
+Go back in history one item, if possible.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to modify.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure. 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_a1f2ebed3035f0cf43bf33acc1f5fa764}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get@{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get}}
+\index{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get@{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+List$\ast$ ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History} $\ast$}]{history}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a1f2ebed3035f0cf43bf33acc1f5fa764}
+Get the whole back list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a newly allocated list of {\bfseries newly} allocated item instance. This memory of each item must be released with \hyperlink{ewk__history_8h_a9fcf2823c164f9d7858dbfc77468f226}{ewk\+\_\+history\+\_\+item\+\_\+free()} after use. use \hyperlink{ewk__history_8h_aad6451ac300ebc11c098a959693c8cde}{ewk\+\_\+history\+\_\+item\+\_\+list\+\_\+free()} for convenience.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__history_8h_aad6451ac300ebc11c098a959693c8cde}{ewk\+\_\+history\+\_\+item\+\_\+list\+\_\+free()} 
+
+\hyperlink{ewk__history_8h_ae45d56d527b1877116815e2c39d6569a}{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get\+\_\+with\+\_\+limit()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__history_8h_ae45d56d527b1877116815e2c39d6569a}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get\+\_\+with\+\_\+limit@{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get\+\_\+with\+\_\+limit}}
+\index{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get\+\_\+with\+\_\+limit@{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get\+\_\+with\+\_\+limit}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get\+\_\+with\+\_\+limit}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+List$\ast$ ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get\+\_\+with\+\_\+limit (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History} $\ast$}]{history, }
+\item[{int}]{limit}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_ae45d56d527b1877116815e2c39d6569a}
+Get the back list within the given limit.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to query. \\
+\hline
+{\em limit} & the maximum number of items to return.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a newly allocated list of {\bfseries newly} allocated item instance. This memory of each item must be released with \hyperlink{ewk__history_8h_a9fcf2823c164f9d7858dbfc77468f226}{ewk\+\_\+history\+\_\+item\+\_\+free()} after use. use \hyperlink{ewk__history_8h_aad6451ac300ebc11c098a959693c8cde}{ewk\+\_\+history\+\_\+item\+\_\+list\+\_\+free()} for convenience.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__history_8h_aad6451ac300ebc11c098a959693c8cde}{ewk\+\_\+history\+\_\+item\+\_\+list\+\_\+free()} 
+
+\hyperlink{ewk__history_8h_a25b4107f87a74974a144f77610d8cff5}{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+length()} 
+
+\hyperlink{ewk__history_8h_a1f2ebed3035f0cf43bf33acc1f5fa764}{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__history_8h_a25b4107f87a74974a144f77610d8cff5}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+length@{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+length}}
+\index{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+length@{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+length}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+length}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I int ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+length (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History} $\ast$}]{history}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a25b4107f87a74974a144f77610d8cff5}
+Get the whole size of back list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of elements in whole list.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__history_8h_ae45d56d527b1877116815e2c39d6569a}{ewk\+\_\+history\+\_\+back\+\_\+list\+\_\+get\+\_\+with\+\_\+limit()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__history_8h_a622795556f939b86e302c308257870ef}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+clear@{ewk\+\_\+history\+\_\+clear}}
+\index{ewk\+\_\+history\+\_\+clear@{ewk\+\_\+history\+\_\+clear}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+clear}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+history\+\_\+clear (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+History} $\ast$}]{history}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a622795556f939b86e302c308257870ef}
+Clear the current history, if there is any.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to modify.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure. 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_a76e8f9009f88aa67853ca828e547db40}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+forward@{ewk\+\_\+history\+\_\+forward}}
+\index{ewk\+\_\+history\+\_\+forward@{ewk\+\_\+history\+\_\+forward}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+forward}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+history\+\_\+forward (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+History} $\ast$}]{history}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a76e8f9009f88aa67853ca828e547db40}
+Go forward in history one item, if possible.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to modify.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure. 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_ad15dfb58969dd1b3637caf3542f6792c}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get@{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get}}
+\index{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get@{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+List$\ast$ ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History} $\ast$}]{history}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_ad15dfb58969dd1b3637caf3542f6792c}
+Get the whole forward list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a newly allocated list of {\bfseries newly} allocated item instance. This memory of each item must be released with \hyperlink{ewk__history_8h_a9fcf2823c164f9d7858dbfc77468f226}{ewk\+\_\+history\+\_\+item\+\_\+free()} after use. use \hyperlink{ewk__history_8h_aad6451ac300ebc11c098a959693c8cde}{ewk\+\_\+history\+\_\+item\+\_\+list\+\_\+free()} for convenience.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__history_8h_aad6451ac300ebc11c098a959693c8cde}{ewk\+\_\+history\+\_\+item\+\_\+list\+\_\+free()} 
+
+\hyperlink{ewk__history_8h_a79d83c7ce1a000816e9a4c6ecf42332a}{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get\+\_\+with\+\_\+limit()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__history_8h_a79d83c7ce1a000816e9a4c6ecf42332a}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get\+\_\+with\+\_\+limit@{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get\+\_\+with\+\_\+limit}}
+\index{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get\+\_\+with\+\_\+limit@{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get\+\_\+with\+\_\+limit}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get\+\_\+with\+\_\+limit}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+List$\ast$ ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get\+\_\+with\+\_\+limit (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History} $\ast$}]{history, }
+\item[{int}]{limit}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a79d83c7ce1a000816e9a4c6ecf42332a}
+Get the forward list within the given limit.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to query. \\
+\hline
+{\em limit} & the maximum number of items to return.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a newly allocated list of {\bfseries newly} allocated item instance. This memory of each item must be released with \hyperlink{ewk__history_8h_a9fcf2823c164f9d7858dbfc77468f226}{ewk\+\_\+history\+\_\+item\+\_\+free()} after use. use \hyperlink{ewk__history_8h_aad6451ac300ebc11c098a959693c8cde}{ewk\+\_\+history\+\_\+item\+\_\+list\+\_\+free()} for convenience.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__history_8h_aad6451ac300ebc11c098a959693c8cde}{ewk\+\_\+history\+\_\+item\+\_\+list\+\_\+free()} 
+
+\hyperlink{ewk__history_8h_a492a030477f2306f21f9edac58abff83}{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+length()} 
+
+\hyperlink{ewk__history_8h_ad15dfb58969dd1b3637caf3542f6792c}{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__history_8h_a492a030477f2306f21f9edac58abff83}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+length@{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+length}}
+\index{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+length@{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+length}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+length}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I int ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+length (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History} $\ast$}]{history}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a492a030477f2306f21f9edac58abff83}
+Get the whole size of forward list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of elements in whole list.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__history_8h_a79d83c7ce1a000816e9a4c6ecf42332a}{ewk\+\_\+history\+\_\+forward\+\_\+list\+\_\+get\+\_\+with\+\_\+limit()} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__history_8h_aac5e348da3006950072c883887a0ea23}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+add@{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+add}}
+\index{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+add@{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+add}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+add}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+History} $\ast$}]{history, }
+\item[{const {\bf Ewk\+\_\+\+History\+\_\+\+Item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_aac5e348da3006950072c883887a0ea23}
+Adds the given item to history.
+
+Memory handling\+: This will not modify or even take references to given item (Ewk\+\_\+\+History\+\_\+\+Item), so you should still handle it with \hyperlink{ewk__history_8h_a9fcf2823c164f9d7858dbfc77468f226}{ewk\+\_\+history\+\_\+item\+\_\+free()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to modify. \\
+\hline
+{\em item} & reference to add to history. Unmodified. Must {\bfseries not} be {\ttfamily N\+U\+L\+L}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure. 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_aefc728b141919839950612d53f69d0a9}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+back\+\_\+get@{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+back\+\_\+get}}
+\index{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+back\+\_\+get@{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+back\+\_\+get}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+back\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I {\bf Ewk\+\_\+\+History\+\_\+\+Item}$\ast$ ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+back\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History} $\ast$}]{history}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_aefc728b141919839950612d53f69d0a9}
+Get the first item from back list, if any.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the {\bfseries newly} allocated item instance. This memory must be released with \hyperlink{ewk__history_8h_a9fcf2823c164f9d7858dbfc77468f226}{ewk\+\_\+history\+\_\+item\+\_\+free()} after use. 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_ab18162cec50bb662fdf37affddbace5f}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+contains@{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+contains}}
+\index{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+contains@{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+contains}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+contains}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History} $\ast$}]{history, }
+\item[{const {\bf Ewk\+\_\+\+History\+\_\+\+Item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_ab18162cec50bb662fdf37affddbace5f}
+Queries if given item is in history.
+
+Memory handling\+: This will not modify or even take references to given item (Ewk\+\_\+\+History\+\_\+\+Item), so you should still handle it with \hyperlink{ewk__history_8h_a9fcf2823c164f9d7858dbfc77468f226}{ewk\+\_\+history\+\_\+item\+\_\+free()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to modify. \\
+\hline
+{\em item} & reference to check in history. Must {\bfseries not} be {\ttfamily N\+U\+L\+L}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if in history, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} if not or failure. 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_a54fb53cedf50d02a792a173d6f543164}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+current\+\_\+get@{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+current\+\_\+get}}
+\index{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+current\+\_\+get@{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+current\+\_\+get}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+current\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I {\bf Ewk\+\_\+\+History\+\_\+\+Item}$\ast$ ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+current\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History} $\ast$}]{history}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a54fb53cedf50d02a792a173d6f543164}
+Get the current item in history, if any.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the {\bfseries newly} allocated item instance or {\ttfamily N\+U\+L\+L} on error. This memory must be released with \hyperlink{ewk__history_8h_a9fcf2823c164f9d7858dbfc77468f226}{ewk\+\_\+history\+\_\+item\+\_\+free()} after use. 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_ae62be21b2ec07912407dce737ebb02e3}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+forward\+\_\+get@{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+forward\+\_\+get}}
+\index{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+forward\+\_\+get@{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+forward\+\_\+get}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+forward\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I {\bf Ewk\+\_\+\+History\+\_\+\+Item}$\ast$ ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+forward\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History} $\ast$}]{history}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_ae62be21b2ec07912407dce737ebb02e3}
+Get the first item from forward list, if any.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the {\bfseries newly} allocated item instance. This memory must be released with \hyperlink{ewk__history_8h_a9fcf2823c164f9d7858dbfc77468f226}{ewk\+\_\+history\+\_\+item\+\_\+free()} after use. 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_a26d1540d082b3672c3467ed850ba32a8}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+nth\+\_\+get@{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+nth\+\_\+get}}
+\index{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+nth\+\_\+get@{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+nth\+\_\+get}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+nth\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I {\bf Ewk\+\_\+\+History\+\_\+\+Item}$\ast$ ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+nth\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History} $\ast$}]{history, }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a26d1540d082b3672c3467ed850ba32a8}
+Get item at given position, if any at that index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to query. \\
+\hline
+{\em index} & position of item to get.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the {\bfseries newly} allocated item instance. This memory must be released with \hyperlink{ewk__history_8h_a9fcf2823c164f9d7858dbfc77468f226}{ewk\+\_\+history\+\_\+item\+\_\+free()} after use. 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_a2df333ca12d938bca6f37e42040d0a7d}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+set@{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+set}}
+\index{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+set@{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+set}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+history\+\_\+history\+\_\+item\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+History} $\ast$}]{history, }
+\item[{const {\bf Ewk\+\_\+\+History\+\_\+\+Item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a2df333ca12d938bca6f37e42040d0a7d}
+Sets the given item as current in history (go to item).
+
+Memory handling\+: This will not modify or even take references to given item (Ewk\+\_\+\+History\+\_\+\+Item), so you should still handle it with \hyperlink{ewk__history_8h_a9fcf2823c164f9d7858dbfc77468f226}{ewk\+\_\+history\+\_\+item\+\_\+free()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to modify. \\
+\hline
+{\em item} & reference to go to history. Unmodified. Must {\bfseries not} be {\ttfamily N\+U\+L\+L}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} on failure. 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_a9fcf2823c164f9d7858dbfc77468f226}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+item\+\_\+free@{ewk\+\_\+history\+\_\+item\+\_\+free}}
+\index{ewk\+\_\+history\+\_\+item\+\_\+free@{ewk\+\_\+history\+\_\+item\+\_\+free}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+item\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+history\+\_\+item\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+History\+\_\+\+Item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a9fcf2823c164f9d7858dbfc77468f226}
+Free given history item instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & what to free. \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__history_8h_a000ffc8f4c1111651d7376fb57a95f90}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+item\+\_\+icon\+\_\+object\+\_\+add@{ewk\+\_\+history\+\_\+item\+\_\+icon\+\_\+object\+\_\+add}}
+\index{ewk\+\_\+history\+\_\+item\+\_\+icon\+\_\+object\+\_\+add@{ewk\+\_\+history\+\_\+item\+\_\+icon\+\_\+object\+\_\+add}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+item\+\_\+icon\+\_\+object\+\_\+add}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Evas\+\_\+\+Object$\ast$ ewk\+\_\+history\+\_\+item\+\_\+icon\+\_\+object\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History\+\_\+\+Item} $\ast$}]{item, }
+\item[{Evas $\ast$}]{canvas}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a000ffc8f4c1111651d7376fb57a95f90}
+Add an Evas\+\_\+\+Object of type 'image' to given canvas with history item icon.
+
+This is an utility function that creates an Evas\+\_\+\+Object of type image set to have fill always match object size (evas\+\_\+object\+\_\+image\+\_\+filled\+\_\+add()), saving some code to use it from Evas.
+
+\begin{DoxyNote}{Note}
+in order to have this working, one must open icon database with \hyperlink{ewk__settings_8h_a07151b1bf42d85033b3aceb35acb177a}{ewk\+\_\+settings\+\_\+icon\+\_\+database\+\_\+path\+\_\+set()}.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em item} & history item to query. \\
+\hline
+{\em canvas} & evas instance where to add resulting object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+newly allocated Evas\+\_\+\+Object instance or {\ttfamily N\+U\+L\+L} on errors. Delete the object with evas\+\_\+object\+\_\+del(). 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_aad6451ac300ebc11c098a959693c8cde}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+item\+\_\+list\+\_\+free@{ewk\+\_\+history\+\_\+item\+\_\+list\+\_\+free}}
+\index{ewk\+\_\+history\+\_\+item\+\_\+list\+\_\+free@{ewk\+\_\+history\+\_\+item\+\_\+list\+\_\+free}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+item\+\_\+list\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+history\+\_\+item\+\_\+list\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{Eina\+\_\+\+List $\ast$}]{history\+\_\+items}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_aad6451ac300ebc11c098a959693c8cde}
+Free given list and associated history items instances.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history\+\_\+items} & list of items to free (both list nodes and item instances). \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__history_8h_ab95c2aafc18ec27dc5946daffc11728b}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+item\+\_\+new@{ewk\+\_\+history\+\_\+item\+\_\+new}}
+\index{ewk\+\_\+history\+\_\+item\+\_\+new@{ewk\+\_\+history\+\_\+item\+\_\+new}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+item\+\_\+new}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I {\bf Ewk\+\_\+\+History\+\_\+\+Item}$\ast$ ewk\+\_\+history\+\_\+item\+\_\+new (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{uri, }
+\item[{const char $\ast$}]{title}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_ab95c2aafc18ec27dc5946daffc11728b}
+Create a new history item with given U\+R\+I and title.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uri} & where this resource is located. \\
+\hline
+{\em title} & resource title.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+newly allocated history item or {\ttfamily N\+U\+L\+L} on errors. You must free this item with \hyperlink{ewk__history_8h_a9fcf2823c164f9d7858dbfc77468f226}{ewk\+\_\+history\+\_\+item\+\_\+free()}. 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_acc4b61231adfe8e55460aae7dfe6a32f}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+item\+\_\+page\+\_\+cache\+\_\+exists@{ewk\+\_\+history\+\_\+item\+\_\+page\+\_\+cache\+\_\+exists}}
+\index{ewk\+\_\+history\+\_\+item\+\_\+page\+\_\+cache\+\_\+exists@{ewk\+\_\+history\+\_\+item\+\_\+page\+\_\+cache\+\_\+exists}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+item\+\_\+page\+\_\+cache\+\_\+exists}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+history\+\_\+item\+\_\+page\+\_\+cache\+\_\+exists (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History\+\_\+\+Item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_acc4b61231adfe8e55460aae7dfe6a32f}
+Query if given item is still in page cache.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & history item to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if in cache, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise. 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_abcf85edbcfbf9e0de42aa507f3a4c9f3}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+alternate\+\_\+get@{ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+alternate\+\_\+get}}
+\index{ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+alternate\+\_\+get@{ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+alternate\+\_\+get}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+alternate\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+alternate\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History\+\_\+\+Item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_abcf85edbcfbf9e0de42aa507f3a4c9f3}
+Query alternate title for given history item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & history item to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the alternate title pointer, that may be {\ttfamily N\+U\+L\+L}. This pointer is guaranteed to be eina\+\_\+stringshare, so whenever possible save yourself some cpu cycles and use eina\+\_\+stringshare\+\_\+ref() instead of eina\+\_\+stringshare\+\_\+add() or strdup(). 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_a8f721125dff983c177385a971b11e222}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+alternate\+\_\+set@{ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+alternate\+\_\+set}}
+\index{ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+alternate\+\_\+set@{ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+alternate\+\_\+set}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+alternate\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+alternate\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+History\+\_\+\+Item} $\ast$}]{item, }
+\item[{const char $\ast$}]{title}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a8f721125dff983c177385a971b11e222}
+Set alternate title for given history item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & history item to query. \\
+\hline
+{\em title} & new alternate title to use for given item. No references are kept after this function returns. \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__history_8h_a686b167d9cc5e9c37410842cb7461839}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+get@{ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+get}}
+\index{ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+get@{ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+get}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+history\+\_\+item\+\_\+title\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History\+\_\+\+Item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a686b167d9cc5e9c37410842cb7461839}
+Query title for given history item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & history item to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the title pointer, that may be {\ttfamily N\+U\+L\+L}. This pointer is guaranteed to be eina\+\_\+stringshare, so whenever possible save yourself some cpu cycles and use eina\+\_\+stringshare\+\_\+ref() instead of eina\+\_\+stringshare\+\_\+add() or strdup(). 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_aefeeaea7357ddaa18c041b659a6e4ff1}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+item\+\_\+uri\+\_\+get@{ewk\+\_\+history\+\_\+item\+\_\+uri\+\_\+get}}
+\index{ewk\+\_\+history\+\_\+item\+\_\+uri\+\_\+get@{ewk\+\_\+history\+\_\+item\+\_\+uri\+\_\+get}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+item\+\_\+uri\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+history\+\_\+item\+\_\+uri\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History\+\_\+\+Item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_aefeeaea7357ddaa18c041b659a6e4ff1}
+Query U\+R\+I for given history item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & history item to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the U\+R\+I pointer, that may be {\ttfamily N\+U\+L\+L}. This pointer is guaranteed to be eina\+\_\+stringshare, so whenever possible save yourself some cpu cycles and use eina\+\_\+stringshare\+\_\+ref() instead of eina\+\_\+stringshare\+\_\+add() or strdup(). 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_a19b2f6f9c3d457dcf49691899f32a66e}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+item\+\_\+uri\+\_\+original\+\_\+get@{ewk\+\_\+history\+\_\+item\+\_\+uri\+\_\+original\+\_\+get}}
+\index{ewk\+\_\+history\+\_\+item\+\_\+uri\+\_\+original\+\_\+get@{ewk\+\_\+history\+\_\+item\+\_\+uri\+\_\+original\+\_\+get}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+item\+\_\+uri\+\_\+original\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I const char$\ast$ ewk\+\_\+history\+\_\+item\+\_\+uri\+\_\+original\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History\+\_\+\+Item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a19b2f6f9c3d457dcf49691899f32a66e}
+Query original U\+R\+I for given history item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & history item to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the original U\+R\+I pointer, that may be {\ttfamily N\+U\+L\+L}. This pointer is guaranteed to be eina\+\_\+stringshare, so whenever possible save yourself some cpu cycles and use eina\+\_\+stringshare\+\_\+ref() instead of eina\+\_\+stringshare\+\_\+add() or strdup(). 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_a7e53dce6cbf926b85fc385de1328aa4f}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+item\+\_\+visit\+\_\+last\+\_\+failed@{ewk\+\_\+history\+\_\+item\+\_\+visit\+\_\+last\+\_\+failed}}
+\index{ewk\+\_\+history\+\_\+item\+\_\+visit\+\_\+last\+\_\+failed@{ewk\+\_\+history\+\_\+item\+\_\+visit\+\_\+last\+\_\+failed}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+item\+\_\+visit\+\_\+last\+\_\+failed}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+history\+\_\+item\+\_\+visit\+\_\+last\+\_\+failed (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History\+\_\+\+Item} $\ast$}]{item}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a7e53dce6cbf926b85fc385de1328aa4f}
+Query if last visit to item was failure or not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & history item to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} if last visit was failure, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} if it was fine. 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_a64b6c14d34ddd93f0beb8f6dc1f70a92}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+limit\+\_\+get@{ewk\+\_\+history\+\_\+limit\+\_\+get}}
+\index{ewk\+\_\+history\+\_\+limit\+\_\+get@{ewk\+\_\+history\+\_\+limit\+\_\+get}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+limit\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I int ewk\+\_\+history\+\_\+limit\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+History} $\ast$}]{history}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a64b6c14d34ddd93f0beb8f6dc1f70a92}
+Get maximum capacity of given history.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to query.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+maximum number of entries this history will hold. 
+\end{DoxyReturn}
+\hypertarget{ewk__history_8h_a8d58df428aada87621ee6532d7861a2c}{\index{ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}!ewk\+\_\+history\+\_\+limit\+\_\+set@{ewk\+\_\+history\+\_\+limit\+\_\+set}}
+\index{ewk\+\_\+history\+\_\+limit\+\_\+set@{ewk\+\_\+history\+\_\+limit\+\_\+set}!ewk\+\_\+history.\+h@{ewk\+\_\+history.\+h}}
+\subsubsection[{ewk\+\_\+history\+\_\+limit\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+history\+\_\+limit\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ewk\+\_\+\+History} $\ast$}]{history, }
+\item[{int}]{limit}
+\end{DoxyParamCaption}
+)}}\label{ewk__history_8h_a8d58df428aada87621ee6532d7861a2c}
+Set maximum capacity of given history.
+
+
+\begin{DoxyParams}{Parameters}
+{\em history} & which history instance to modify. \\
+\hline
+{\em limit} & maximum size to allow.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} on success, {\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} otherwise. 
+\end{DoxyReturn}

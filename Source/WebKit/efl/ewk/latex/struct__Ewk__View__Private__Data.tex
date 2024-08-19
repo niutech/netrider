@@ -1,0 +1,163 @@
+\hypertarget{struct__Ewk__View__Private__Data}{\section{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Private\+\_\+\+Data Struct Reference}
+\label{struct__Ewk__View__Private__Data}\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Private\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Private\+\_\+\+Data}}
+}
+
+
+Private data that is used internally by E\+F\+L Web\+Kit and should never be modified from outside.  
+
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct__Ewk__View__Private__Data_a6ef9a6744442f18f8a313b198b62b87a}{Own\+Ptr$<$ Web\+Core\+::\+Page $>$ {\bfseries page}}\label{struct__Ewk__View__Private__Data_a6ef9a6744442f18f8a313b198b62b87a}
+
+\item 
+\hypertarget{struct__Ewk__View__Private__Data_a37ff13e12c21fccb4a74c0fa835377a0}{Web\+Core\+::\+Viewport\+Arguments {\bfseries viewport\+Arguments}}\label{struct__Ewk__View__Private__Data_a37ff13e12c21fccb4a74c0fa835377a0}
+
+\item 
+\hypertarget{struct__Ewk__View__Private__Data_aca902ed7f20d6f345c678a8185aab50a}{\hyperlink{struct__Ewk__History}{Ewk\+\_\+\+History} $\ast$ {\bfseries history}}\label{struct__Ewk__View__Private__Data_aca902ed7f20d6f345c678a8185aab50a}
+
+\item 
+\hypertarget{struct__Ewk__View__Private__Data_a03cd2f48fb2c5cbd57e8d4f556f6db67}{Own\+Ptr\\*
+$<$ Web\+Core\+::\+Accelerated\+Compositing\+Context $>$ {\bfseries accelerated\+Compositing\+Context}}\label{struct__Ewk__View__Private__Data_a03cd2f48fb2c5cbd57e8d4f556f6db67}
+
+\item 
+\hypertarget{struct__Ewk__View__Private__Data_a9224654fceb2e3aa0321aee1528368b8}{bool {\bfseries is\+Compositing\+Active}}\label{struct__Ewk__View__Private__Data_a9224654fceb2e3aa0321aee1528368b8}
+
+\item 
+\hypertarget{struct__Ewk__View__Private__Data_a706b6f5500f5a456cc1d9d686fc7e36c}{Ref\+Ptr$<$ Evas\+\_\+\+Object $>$ {\bfseries compositing\+Object}}\label{struct__Ewk__View__Private__Data_a706b6f5500f5a456cc1d9d686fc7e36c}
+
+\item 
+\hypertarget{struct__Ewk__View__Private__Data_a30308a515ea2a152429850c59d22d5cf}{\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\hyperlink{ewk__view_8h_a3526536926a7000db4324f59f8740356}{Ewk\_Menu} {\bfseries menu}\\
+\>WebCore::PopupMenuClient $\ast$ {\bfseries menuClient}\\
+\} {\bfseries popup}}\label{struct__Ewk__View__Private__Data_a30308a515ea2a152429850c59d22d5cf}
+\\
+
+\end{tabbing}\item 
+\hypertarget{struct__Ewk__View__Private__Data_af8f88570446795a6d547f4bf8d29f216}{\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>Eina\_Rectangle $\ast$ {\bfseries array}\\
+\>size\_t {\bfseries count}\\
+\>size\_t {\bfseries allocated}\\
+\} {\bfseries repaints}}\label{struct__Ewk__View__Private__Data_af8f88570446795a6d547f4bf8d29f216}
+\\
+
+\end{tabbing}\item 
+\hypertarget{struct__Ewk__View__Private__Data_a3728ba8119273d6e3dfede5b18f7b55f}{W\+T\+F\+::\+Vector$<$ Web\+Core\+::\+Int\+Rect $>$ {\bfseries m\+\_\+rects\+To\+Scroll}}\label{struct__Ewk__View__Private__Data_a3728ba8119273d6e3dfede5b18f7b55f}
+
+\item 
+\hypertarget{struct__Ewk__View__Private__Data_a616336b1179928be7992c87dad818044}{W\+T\+F\+::\+Vector$<$ Web\+Core\+::\+Int\+Size $>$ {\bfseries m\+\_\+scroll\+Offsets}}\label{struct__Ewk__View__Private__Data_a616336b1179928be7992c87dad818044}
+
+\item 
+unsigned int \hyperlink{struct__Ewk__View__Private__Data_a48bf2919bde08345300ba5d6792d3323}{imh}
+\item 
+\hypertarget{struct__Ewk__View__Private__Data_aeca5e55e9ba87054824b77f944683c7c}{\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>bool {\bfseries viewCleared}: 1\\
+\>bool {\bfseries needTouchEvents}: 1\\
+\>bool {\bfseries hasDisplayedMixedContent}: 1\\
+\>bool {\bfseries hasRunMixedContent}: 1\\
+\} {\bfseries flags}}\label{struct__Ewk__View__Private__Data_aeca5e55e9ba87054824b77f944683c7c}
+\\
+
+\end{tabbing}\item 
+\hypertarget{struct__Ewk__View__Private__Data_a7eb5b69b6a746352e2a2f25d56bdd995}{\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>const char $\ast$ {\bfseries userAgent}\\
+\>const char $\ast$ {\bfseries userStylesheet}\\
+\>const char $\ast$ {\bfseries encodingDefault}\\
+\>const char $\ast$ {\bfseries encodingCustom}\\
+\>const char $\ast$ {\bfseries theme}\\
+\>const char $\ast$ {\bfseries localStorageDatabasePath}\\
+\>int {\bfseries fontMinimumSize}\\
+\>int {\bfseries fontMinimumLogicalSize}\\
+\>int {\bfseries fontDefaultSize}\\
+\>int {\bfseries fontMonospaceSize}\\
+\>const char $\ast$ {\bfseries fontStandard}\\
+\>const char $\ast$ {\bfseries fontCursive}\\
+\>const char $\ast$ {\bfseries fontMonospace}\\
+\>const char $\ast$ {\bfseries fontFantasy}\\
+\>const char $\ast$ {\bfseries fontSerif}\\
+\>const char $\ast$ {\bfseries fontSansSerif}\\
+\>bool {\bfseries autoLoadImages}: 1\\
+\>bool {\bfseries autoShrinkImages}: 1\\
+\>bool {\bfseries enableAutoResizeWindow}: 1\\
+\>bool {\bfseries enableDeveloperExtras}: 1\\
+\>bool {\bfseries enableScripts}: 1\\
+\>bool {\bfseries enablePlugins}: 1\\
+\>bool {\bfseries enableFrameFlattening}: 1\\
+\>bool {\bfseries encodingDetector}: 1\\
+\>bool {\bfseries hyperlinkAuditingEnabled}: 1\\
+\>bool {\bfseries scriptsCanOpenWindows}: 1\\
+\>bool {\bfseries scriptsCanCloseWindows}: 1\\
+\>bool {\bfseries scriptsCanAccessClipboard}: 1\\
+\>bool {\bfseries resizableTextareas}: 1\\
+\>bool {\bfseries privateBrowsing}: 1\\
+\>bool {\bfseries caretBrowsing}: 1\\
+\>bool {\bfseries spatialNavigation}: 1\\
+\>bool {\bfseries localStorage}: 1\\
+\>bool {\bfseries offlineAppCache}: 1\\
+\>bool {\bfseries pageCache}: 1\\
+\>bool {\bfseries enableXSSAuditor}: 1\\
+\>bool {\bfseries webGLEnabled}: 1\\
+\>bool {\bfseries tabsToLinks}: 1\\
+\>struct \{\\
+\>\>float {\bfseries minScale}\\
+\>\>float {\bfseries maxScale}\\
+\>\>Eina\_Bool {\bfseries userScalable}: 1\\
+\>\} {\bfseries zoomRange}\\
+\>double {\bfseries domTimerInterval}\\
+\>bool {\bfseries allowUniversalAccessFromFileURLs}: 1\\
+\>bool {\bfseries allowFileAccessFromFileURLs}: 1\\
+\} {\bfseries settings}}\label{struct__Ewk__View__Private__Data_a7eb5b69b6a746352e2a2f25d56bdd995}
+\\
+
+\end{tabbing}\item 
+\hypertarget{struct__Ewk__View__Private__Data_ae05eb37e5ca5e565ccddcdc0982bd657}{\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \{\\
+\>\>double {\bfseries start}\\
+\>\>double {\bfseries end}\\
+\>\>double {\bfseries duration}\\
+\>\} {\bfseries time}\\
+\>struct \{\\
+\>\>float {\bfseries start}\\
+\>\>float {\bfseries end}\\
+\>\>float {\bfseries range}\\
+\>\} {\bfseries zoom}\\
+\>struct \{\\
+\>\>Evas\_Coord {\bfseries x}\\
+\>\>Evas\_Coord {\bfseries y}\\
+\>\} {\bfseries center}\\
+\>Ecore\_Animator $\ast$ {\bfseries animator}\\
+\} {\bfseries animatedZoom}}\label{struct__Ewk__View__Private__Data_ae05eb37e5ca5e565ccddcdc0982bd657}
+\\
+
+\end{tabbing}\item 
+\hypertarget{struct__Ewk__View__Private__Data_a8ea37085f2c4298985c52feb12b61b9a}{const char $\ast$ {\bfseries cursor\+Group}}\label{struct__Ewk__View__Private__Data_a8ea37085f2c4298985c52feb12b61b9a}
+
+\item 
+\hypertarget{struct__Ewk__View__Private__Data_a222ae0757f791cc98b3cf544426b4fa1}{Evas\+\_\+\+Object $\ast$ {\bfseries cursor\+Object}}\label{struct__Ewk__View__Private__Data_a222ae0757f791cc98b3cf544426b4fa1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Private data that is used internally by E\+F\+L Web\+Kit and should never be modified from outside. 
+
+\subsection{Member Data Documentation}
+\hypertarget{struct__Ewk__View__Private__Data_a48bf2919bde08345300ba5d6792d3323}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Private\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Private\+\_\+\+Data}!imh@{imh}}
+\index{imh@{imh}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Private\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Private\+\_\+\+Data}}
+\subsubsection[{imh}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Private\+\_\+\+Data\+::imh}}\label{struct__Ewk__View__Private__Data_a48bf2919bde08345300ba5d6792d3323}
+input method hints 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ewk\+\_\+view.\+cpp\end{DoxyCompactItemize}

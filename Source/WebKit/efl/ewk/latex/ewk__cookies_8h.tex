@@ -1,0 +1,178 @@
+\hypertarget{ewk__cookies_8h}{\section{ewk\+\_\+cookies.\+h File Reference}
+\label{ewk__cookies_8h}\index{ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}}
+}
+
+
+The Ewk cookies A\+P\+I.  
+
+
+{\ttfamily \#include $<$Eina.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__Ewk__Cookie}{\+\_\+\+Ewk\+\_\+\+Cookie}
+\begin{DoxyCompactList}\small\item\em Describes properties of an H\+T\+T\+P cookie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ewk__cookies_8h_a1498f0f416cb1b9e2ba17c071ebc2f9a}{typedef struct \hyperlink{struct__Ewk__Cookie}{\+\_\+\+Ewk\+\_\+\+Cookie} \hyperlink{ewk__cookies_8h_a1498f0f416cb1b9e2ba17c071ebc2f9a}{Ewk\+\_\+\+Cookie}}\label{ewk__cookies_8h_a1498f0f416cb1b9e2ba17c071ebc2f9a}
+
+\begin{DoxyCompactList}\small\item\em Creates a type name for the \hyperlink{struct__Ewk__Cookie}{\+\_\+\+Ewk\+\_\+\+Cookie}. \end{DoxyCompactList}\item 
+\hypertarget{ewk__cookies_8h_af33edb918e43293732f75cffd6039472}{typedef enum \hyperlink{ewk__cookies_8h_a002ad7e80ed3c6ccae415cc7d9e6fd47}{\+\_\+\+Ewk\+\_\+\+Cookie\+\_\+\+Policy} \hyperlink{ewk__cookies_8h_af33edb918e43293732f75cffd6039472}{Ewk\+\_\+\+Cookie\+\_\+\+Policy}}\label{ewk__cookies_8h_af33edb918e43293732f75cffd6039472}
+
+\begin{DoxyCompactList}\small\item\em Creates a type name for the \+\_\+\+Ewk\+\_\+\+Cookie\+\_\+\+Policy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{ewk__cookies_8h_a002ad7e80ed3c6ccae415cc7d9e6fd47}{\+\_\+\+Ewk\+\_\+\+Cookie\+\_\+\+Policy} \{ \hyperlink{ewk__cookies_8h_a002ad7e80ed3c6ccae415cc7d9e6fd47afd4d3b6fc1ea3790aadbcb23a1f31e5c}{E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+N\+E\+V\+E\+R}, 
+\hyperlink{ewk__cookies_8h_a002ad7e80ed3c6ccae415cc7d9e6fd47af5cb491c180f7699d4760df4ea0da3a1}{E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+A\+L\+W\+A\+Y\+S}, 
+\hyperlink{ewk__cookies_8h_a002ad7e80ed3c6ccae415cc7d9e6fd47a6f3a2443e32c958fdeaacef6ca8ebffc}{E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+N\+O\+\_\+\+T\+H\+I\+R\+D\+\_\+\+P\+A\+R\+T\+Y}
+ \}
+\begin{DoxyCompactList}\small\item\em Contains a policy for the cookies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\+A\+P\+I Eina\+\_\+\+Bool \hyperlink{ewk__cookies_8h_a0403f2093f44207a618b0fc054ca3500}{ewk\+\_\+cookies\+\_\+file\+\_\+set} (const char $\ast$filename)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__cookies_8h_a6a4150443799b643b86d0c9014116864}{ewk\+\_\+cookies\+\_\+clear} (void)
+\item 
+E\+A\+P\+I Eina\+\_\+\+List $\ast$ \hyperlink{ewk__cookies_8h_ac66ede0c802e3e1dcb7d266cb5ea0930}{ewk\+\_\+cookies\+\_\+get\+\_\+all} (void)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__cookies_8h_ad110d20e4e9a4c2b00e6037a2a9cca77}{ewk\+\_\+cookies\+\_\+cookie\+\_\+del} (\hyperlink{ewk__cookies_8h_a1498f0f416cb1b9e2ba17c071ebc2f9a}{Ewk\+\_\+\+Cookie} $\ast$cookie)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__cookies_8h_aef4e0ea05fe8debb5d09fc2c965d1c3b}{ewk\+\_\+cookies\+\_\+cookie\+\_\+free} (\hyperlink{ewk__cookies_8h_a1498f0f416cb1b9e2ba17c071ebc2f9a}{Ewk\+\_\+\+Cookie} $\ast$cookie)
+\item 
+E\+A\+P\+I void \hyperlink{ewk__cookies_8h_ad78a955dc6c3ee496c29ff81e085058e}{ewk\+\_\+cookies\+\_\+policy\+\_\+set} (\hyperlink{ewk__cookies_8h_af33edb918e43293732f75cffd6039472}{Ewk\+\_\+\+Cookie\+\_\+\+Policy} p)
+\item 
+E\+A\+P\+I \hyperlink{ewk__cookies_8h_af33edb918e43293732f75cffd6039472}{Ewk\+\_\+\+Cookie\+\_\+\+Policy} \hyperlink{ewk__cookies_8h_aff85be55bc4e3b667cfe12abf771cbe9}{ewk\+\_\+cookies\+\_\+policy\+\_\+get} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Ewk cookies A\+P\+I. 
+
+\begin{DoxyNote}{Note}
+If the libsoup network backend is being used the functions here will only work with the {\bfseries default} Soup\+Session, which can be retrieved with ewk\+\_\+network\+\_\+defaul\+\_\+soup\+\_\+session\+\_\+get(). If a different Soup\+Session is used and associated with a view with ewk\+\_\+view\+\_\+soup\+\_\+session\+\_\+set(), all cookie management will have to be done manually. 
+\end{DoxyNote}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{ewk__cookies_8h_a002ad7e80ed3c6ccae415cc7d9e6fd47}{\index{ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}!\+\_\+\+Ewk\+\_\+\+Cookie\+\_\+\+Policy@{\+\_\+\+Ewk\+\_\+\+Cookie\+\_\+\+Policy}}
+\index{\+\_\+\+Ewk\+\_\+\+Cookie\+\_\+\+Policy@{\+\_\+\+Ewk\+\_\+\+Cookie\+\_\+\+Policy}!ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}}
+\subsubsection[{\+\_\+\+Ewk\+\_\+\+Cookie\+\_\+\+Policy}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \+\_\+\+Ewk\+\_\+\+Cookie\+\_\+\+Policy}}}\label{ewk__cookies_8h_a002ad7e80ed3c6ccae415cc7d9e6fd47}
+
+
+Contains a policy for the cookies. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+N\+E\+V\+E\+R@{E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+N\+E\+V\+E\+R}!ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}}\index{ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}!E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+N\+E\+V\+E\+R@{E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+N\+E\+V\+E\+R}}\item[{\em 
+\hypertarget{ewk__cookies_8h_a002ad7e80ed3c6ccae415cc7d9e6fd47afd4d3b6fc1ea3790aadbcb23a1f31e5c}{E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+N\+E\+V\+E\+R}\label{ewk__cookies_8h_a002ad7e80ed3c6ccae415cc7d9e6fd47afd4d3b6fc1ea3790aadbcb23a1f31e5c}
+}]Rejects all cookies. \index{E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+A\+L\+W\+A\+Y\+S@{E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+A\+L\+W\+A\+Y\+S}!ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}}\index{ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}!E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+A\+L\+W\+A\+Y\+S@{E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+A\+L\+W\+A\+Y\+S}}\item[{\em 
+\hypertarget{ewk__cookies_8h_a002ad7e80ed3c6ccae415cc7d9e6fd47af5cb491c180f7699d4760df4ea0da3a1}{E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+A\+L\+W\+A\+Y\+S}\label{ewk__cookies_8h_a002ad7e80ed3c6ccae415cc7d9e6fd47af5cb491c180f7699d4760df4ea0da3a1}
+}]Accepts every cookie sent from any page. \index{E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+N\+O\+\_\+\+T\+H\+I\+R\+D\+\_\+\+P\+A\+R\+T\+Y@{E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+N\+O\+\_\+\+T\+H\+I\+R\+D\+\_\+\+P\+A\+R\+T\+Y}!ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}}\index{ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}!E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+N\+O\+\_\+\+T\+H\+I\+R\+D\+\_\+\+P\+A\+R\+T\+Y@{E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+N\+O\+\_\+\+T\+H\+I\+R\+D\+\_\+\+P\+A\+R\+T\+Y}}\item[{\em 
+\hypertarget{ewk__cookies_8h_a002ad7e80ed3c6ccae415cc7d9e6fd47a6f3a2443e32c958fdeaacef6ca8ebffc}{E\+W\+K\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+J\+A\+R\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+N\+O\+\_\+\+T\+H\+I\+R\+D\+\_\+\+P\+A\+R\+T\+Y}\label{ewk__cookies_8h_a002ad7e80ed3c6ccae415cc7d9e6fd47a6f3a2443e32c958fdeaacef6ca8ebffc}
+}]Accepts cookies only from the main page. \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{ewk__cookies_8h_a6a4150443799b643b86d0c9014116864}{\index{ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}!ewk\+\_\+cookies\+\_\+clear@{ewk\+\_\+cookies\+\_\+clear}}
+\index{ewk\+\_\+cookies\+\_\+clear@{ewk\+\_\+cookies\+\_\+clear}!ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}}
+\subsubsection[{ewk\+\_\+cookies\+\_\+clear}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+cookies\+\_\+clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__cookies_8h_a6a4150443799b643b86d0c9014116864}
+Clears all the cookies from the cookie jar. \hypertarget{ewk__cookies_8h_ad110d20e4e9a4c2b00e6037a2a9cca77}{\index{ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}!ewk\+\_\+cookies\+\_\+cookie\+\_\+del@{ewk\+\_\+cookies\+\_\+cookie\+\_\+del}}
+\index{ewk\+\_\+cookies\+\_\+cookie\+\_\+del@{ewk\+\_\+cookies\+\_\+cookie\+\_\+del}!ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}}
+\subsubsection[{ewk\+\_\+cookies\+\_\+cookie\+\_\+del}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+cookies\+\_\+cookie\+\_\+del (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Cookie} $\ast$}]{cookie}
+\end{DoxyParamCaption}
+)}}\label{ewk__cookies_8h_ad110d20e4e9a4c2b00e6037a2a9cca77}
+Deletes a cookie from the cookie jar.
+
+Note that the fields name, value, domain and path are used to match this cookie in the cookie jar.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cookie} & an {\ttfamily Ewk\+\_\+\+Cookie} that has the info relative to that cookie \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__cookies_8h_aef4e0ea05fe8debb5d09fc2c965d1c3b}{\index{ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}!ewk\+\_\+cookies\+\_\+cookie\+\_\+free@{ewk\+\_\+cookies\+\_\+cookie\+\_\+free}}
+\index{ewk\+\_\+cookies\+\_\+cookie\+\_\+free@{ewk\+\_\+cookies\+\_\+cookie\+\_\+free}!ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}}
+\subsubsection[{ewk\+\_\+cookies\+\_\+cookie\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+cookies\+\_\+cookie\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Cookie} $\ast$}]{cookie}
+\end{DoxyParamCaption}
+)}}\label{ewk__cookies_8h_aef4e0ea05fe8debb5d09fc2c965d1c3b}
+Frees the memory used by a cookie.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cookie} & the Ewk\+\_\+\+Cookie struct that will be freed \\
+\hline
+\end{DoxyParams}
+\hypertarget{ewk__cookies_8h_a0403f2093f44207a618b0fc054ca3500}{\index{ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}!ewk\+\_\+cookies\+\_\+file\+\_\+set@{ewk\+\_\+cookies\+\_\+file\+\_\+set}}
+\index{ewk\+\_\+cookies\+\_\+file\+\_\+set@{ewk\+\_\+cookies\+\_\+file\+\_\+set}!ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}}
+\subsubsection[{ewk\+\_\+cookies\+\_\+file\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+Bool ewk\+\_\+cookies\+\_\+file\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}\label{ewk__cookies_8h_a0403f2093f44207a618b0fc054ca3500}
+Sets the path where the cookies are going to be stored.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & path to the cookies.\+txt file, use {\ttfamily N\+U\+L\+L} for keep cookies just in memory.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily E\+I\+N\+A\+\_\+\+F\+A\+L\+S\+E} if it wasn't possible to create the cookie jar, {\ttfamily E\+I\+N\+A\+\_\+\+T\+R\+U\+E} otherwise. 
+\end{DoxyReturn}
+\hypertarget{ewk__cookies_8h_ac66ede0c802e3e1dcb7d266cb5ea0930}{\index{ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}!ewk\+\_\+cookies\+\_\+get\+\_\+all@{ewk\+\_\+cookies\+\_\+get\+\_\+all}}
+\index{ewk\+\_\+cookies\+\_\+get\+\_\+all@{ewk\+\_\+cookies\+\_\+get\+\_\+all}!ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}}
+\subsubsection[{ewk\+\_\+cookies\+\_\+get\+\_\+all}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I Eina\+\_\+\+List$\ast$ ewk\+\_\+cookies\+\_\+get\+\_\+all (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__cookies_8h_ac66ede0c802e3e1dcb7d266cb5ea0930}
+Returns a list of cookies in the cookie jar.
+
+\begin{DoxyReturn}{Returns}
+an {\ttfamily Eina\+\_\+\+List} with all the cookies in the cookie jar 
+\end{DoxyReturn}
+\hypertarget{ewk__cookies_8h_aff85be55bc4e3b667cfe12abf771cbe9}{\index{ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}!ewk\+\_\+cookies\+\_\+policy\+\_\+get@{ewk\+\_\+cookies\+\_\+policy\+\_\+get}}
+\index{ewk\+\_\+cookies\+\_\+policy\+\_\+get@{ewk\+\_\+cookies\+\_\+policy\+\_\+get}!ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}}
+\subsubsection[{ewk\+\_\+cookies\+\_\+policy\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I {\bf Ewk\+\_\+\+Cookie\+\_\+\+Policy} ewk\+\_\+cookies\+\_\+policy\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ewk__cookies_8h_aff85be55bc4e3b667cfe12abf771cbe9}
+Gets the acceptance policy used in the current cookie jar.
+
+\begin{DoxyReturn}{Returns}
+the current acceptance policy 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__cookies_8h_af33edb918e43293732f75cffd6039472}{Ewk\+\_\+\+Cookie\+\_\+\+Policy} 
+\end{DoxySeeAlso}
+\hypertarget{ewk__cookies_8h_ad78a955dc6c3ee496c29ff81e085058e}{\index{ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}!ewk\+\_\+cookies\+\_\+policy\+\_\+set@{ewk\+\_\+cookies\+\_\+policy\+\_\+set}}
+\index{ewk\+\_\+cookies\+\_\+policy\+\_\+set@{ewk\+\_\+cookies\+\_\+policy\+\_\+set}!ewk\+\_\+cookies.\+h@{ewk\+\_\+cookies.\+h}}
+\subsubsection[{ewk\+\_\+cookies\+\_\+policy\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}E\+A\+P\+I void ewk\+\_\+cookies\+\_\+policy\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{{\bf Ewk\+\_\+\+Cookie\+\_\+\+Policy}}]{p}
+\end{DoxyParamCaption}
+)}}\label{ewk__cookies_8h_ad78a955dc6c3ee496c29ff81e085058e}
+Sets accept policy for the cookies.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the acceptance policy\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ewk__cookies_8h_af33edb918e43293732f75cffd6039472}{Ewk\+\_\+\+Cookie\+\_\+\+Policy} 
+\end{DoxySeeAlso}

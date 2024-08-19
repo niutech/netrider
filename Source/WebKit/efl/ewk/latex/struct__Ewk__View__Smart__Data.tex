@@ -1,0 +1,128 @@
+\hypertarget{struct__Ewk__View__Smart__Data}{\section{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data Struct Reference}
+\label{struct__Ewk__View__Smart__Data}\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}}
+}
+
+
+Contains an internal View data.  
+
+
+
+
+{\ttfamily \#include $<$ewk\+\_\+view.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct__Ewk__View__Smart__Data_adbf63dae9cf1fa123a47a21af4c91c3a}{Evas\+\_\+\+Object\+\_\+\+Smart\+\_\+\+Clipped\+\_\+\+Data {\bfseries base}}\label{struct__Ewk__View__Smart__Data_adbf63dae9cf1fa123a47a21af4c91c3a}
+
+\item 
+const \hyperlink{ewk__view_8h_aa2628516037f8b0e6038ffa7ea040a07}{Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class} $\ast$ \hyperlink{struct__Ewk__View__Smart__Data_a60c8e68092c52eb68f33f4b5a534ba92}{api}
+\item 
+Evas\+\_\+\+Object $\ast$ \hyperlink{struct__Ewk__View__Smart__Data_a4b47860af65632ddd1b082f0636e64f7}{self}
+\item 
+Evas\+\_\+\+Object $\ast$ \hyperlink{struct__Ewk__View__Smart__Data_a357cddfcb98320392410bdbb6aa075ad}{main\+\_\+frame}
+\item 
+Evas\+\_\+\+Object $\ast$ \hyperlink{struct__Ewk__View__Smart__Data_a993f767b62290c572d6d1d1697d291fa}{backing\+\_\+store}
+\item 
+Evas\+\_\+\+Object $\ast$ \hyperlink{struct__Ewk__View__Smart__Data_a4a32abf5d0a7d0eb69a80cf089b8d374}{events\+\_\+rect}
+\item 
+\hyperlink{ewk__view_8h_a72ef4dc52af4fe71d60194da0ff4f2db}{Ewk\+\_\+\+View\+\_\+\+Private\+\_\+\+Data} $\ast$ \hyperlink{struct__Ewk__View__Smart__Data_a848199f9944deae3466cadc11e24b7bb}{\+\_\+priv}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>Evas\_Coord {\bfseries x}\\
+\>Evas\_Coord {\bfseries y}\\
+\>Evas\_Coord {\bfseries w}\\
+\>Evas\_Coord {\bfseries h}\\
+\} \hyperlink{struct__Ewk__View__Smart__Data_abed429c8c6df212ffd6fa0b1df87ab98}{view}\\
+
+\end{tabbing}\item 
+\hypertarget{struct__Ewk__View__Smart__Data_a9d838dd4a4a0d43c62427a580bdfce94}{\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \{\\
+\>\>float {\bfseries start}\\
+\>\>float {\bfseries end}\\
+\>\>float \hyperlink{struct__Ewk__View__Smart__Data_a6a5ebb717cfd05649bb863ae198af5b0}{current}\\
+\>\} {\bfseries zoom}\\
+\} {\bfseries animated\_zoom}}\label{struct__Ewk__View__Smart__Data_a9d838dd4a4a0d43c62427a580bdfce94}
+\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>unsigned char {\bfseries r}\\
+\>unsigned char {\bfseries g}\\
+\>unsigned char {\bfseries b}\\
+\>unsigned char {\bfseries a}\\
+\} \hyperlink{struct__Ewk__View__Smart__Data_a00227832f5b66cbda1eedca592e8f39b}{bg\_color}\\
+
+\end{tabbing}\item 
+\hypertarget{struct__Ewk__View__Smart__Data_a6cd9906340b1717f223a6e1ea2076e74}{Eina\+\_\+\+Bool {\bfseries zoom\+\_\+weak\+\_\+smooth\+\_\+scale}\+:1}\label{struct__Ewk__View__Smart__Data_a6cd9906340b1717f223a6e1ea2076e74}
+
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>Eina\_Bool {\bfseries any}:1\\
+\>Eina\_Bool {\bfseries size}:1\\
+\>Eina\_Bool {\bfseries position}:1\\
+\>Eina\_Bool {\bfseries frame\_rect}:1\\
+\} \hyperlink{struct__Ewk__View__Smart__Data_a7b726de0838fc39f50348edae9f3cbcc}{changed}\\
+
+\end{tabbing}\item 
+\hypertarget{struct__Ewk__View__Smart__Data_a918395ceaabc94333e83f2bf69af2098}{\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>Evas\_Coord {\bfseries x}\\
+\>Evas\_Coord {\bfseries y}\\
+\>float {\bfseries zoom}\\
+\} {\bfseries previousView}}\label{struct__Ewk__View__Smart__Data_a918395ceaabc94333e83f2bf69af2098}
+\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains an internal View data. 
+
+It is to be considered private by users, but may be extended or changed by sub-\/classes (that's why it's in the public header file). 
+
+\subsection{Member Data Documentation}
+\hypertarget{struct__Ewk__View__Smart__Data_a848199f9944deae3466cadc11e24b7bb}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}!\+\_\+priv@{\+\_\+priv}}
+\index{\+\_\+priv@{\+\_\+priv}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}}
+\subsubsection[{\+\_\+priv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ewk\+\_\+\+View\+\_\+\+Private\+\_\+\+Data}$\ast$ \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data\+::\+\_\+priv}}\label{struct__Ewk__View__Smart__Data_a848199f9944deae3466cadc11e24b7bb}
+Should {\bfseries never} be accessed, c++ stuff. \hypertarget{struct__Ewk__View__Smart__Data_a60c8e68092c52eb68f33f4b5a534ba92}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}!api@{api}}
+\index{api@{api}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}}
+\subsubsection[{api}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Class}$\ast$ \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data\+::api}}\label{struct__Ewk__View__Smart__Data_a60c8e68092c52eb68f33f4b5a534ba92}
+Reference to casted class instance. \hypertarget{struct__Ewk__View__Smart__Data_a993f767b62290c572d6d1d1697d291fa}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}!backing\+\_\+store@{backing\+\_\+store}}
+\index{backing\+\_\+store@{backing\+\_\+store}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}}
+\subsubsection[{backing\+\_\+store}]{\setlength{\rightskip}{0pt plus 5cm}Evas\+\_\+\+Object$\ast$ \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data\+::backing\+\_\+store}}\label{struct__Ewk__View__Smart__Data_a993f767b62290c572d6d1d1697d291fa}
+Reference to backing store. \hypertarget{struct__Ewk__View__Smart__Data_a00227832f5b66cbda1eedca592e8f39b}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}!bg\+\_\+color@{bg\+\_\+color}}
+\index{bg\+\_\+color@{bg\+\_\+color}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}}
+\subsubsection[{bg\+\_\+color}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data\+::bg\+\_\+color}}\label{struct__Ewk__View__Smart__Data_a00227832f5b66cbda1eedca592e8f39b}
+Keeps the background color. \hypertarget{struct__Ewk__View__Smart__Data_a7b726de0838fc39f50348edae9f3cbcc}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}!changed@{changed}}
+\index{changed@{changed}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}}
+\subsubsection[{changed}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data\+::changed}}\label{struct__Ewk__View__Smart__Data_a7b726de0838fc39f50348edae9f3cbcc}
+Keeps what changed since last smart\+\_\+calculate. \hypertarget{struct__Ewk__View__Smart__Data_a6a5ebb717cfd05649bb863ae198af5b0}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}!current@{current}}
+\index{current@{current}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}}
+\subsubsection[{current}]{\setlength{\rightskip}{0pt plus 5cm}float \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data\+::current}}\label{struct__Ewk__View__Smart__Data_a6a5ebb717cfd05649bb863ae198af5b0}
+if $>$ 0.\+0, then doing animated zoom. \hypertarget{struct__Ewk__View__Smart__Data_a4a32abf5d0a7d0eb69a80cf089b8d374}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}!events\+\_\+rect@{events\+\_\+rect}}
+\index{events\+\_\+rect@{events\+\_\+rect}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}}
+\subsubsection[{events\+\_\+rect}]{\setlength{\rightskip}{0pt plus 5cm}Evas\+\_\+\+Object$\ast$ \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data\+::events\+\_\+rect}}\label{struct__Ewk__View__Smart__Data_a4a32abf5d0a7d0eb69a80cf089b8d374}
+The rectangle that receives mouse events. \hypertarget{struct__Ewk__View__Smart__Data_a357cddfcb98320392410bdbb6aa075ad}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}!main\+\_\+frame@{main\+\_\+frame}}
+\index{main\+\_\+frame@{main\+\_\+frame}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}}
+\subsubsection[{main\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}Evas\+\_\+\+Object$\ast$ \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data\+::main\+\_\+frame}}\label{struct__Ewk__View__Smart__Data_a357cddfcb98320392410bdbb6aa075ad}
+Reference to main frame object. \hypertarget{struct__Ewk__View__Smart__Data_a4b47860af65632ddd1b082f0636e64f7}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}!self@{self}}
+\index{self@{self}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}}
+\subsubsection[{self}]{\setlength{\rightskip}{0pt plus 5cm}Evas\+\_\+\+Object$\ast$ \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data\+::self}}\label{struct__Ewk__View__Smart__Data_a4b47860af65632ddd1b082f0636e64f7}
+Reference to owner object. \hypertarget{struct__Ewk__View__Smart__Data_abed429c8c6df212ffd6fa0b1df87ab98}{\index{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}!view@{view}}
+\index{view@{view}!\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data@{\+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data}}
+\subsubsection[{view}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   \+\_\+\+Ewk\+\_\+\+View\+\_\+\+Smart\+\_\+\+Data\+::view}}\label{struct__Ewk__View__Smart__Data_abed429c8c6df212ffd6fa0b1df87ab98}
+Contains the position and size of last used viewport. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ewk__view_8h}{ewk\+\_\+view.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,13 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+datadir=${prefix}/share/@WebKit2_OUTPUT_NAME@-@PROJECT_VERSION_MAJOR@
+
+Name: @WebKit2_OUTPUT_NAME@
+Description: Nix Web content engine
+Version: @PROJECT_VERSION@
+Requires: cairo @REQUIRED_NETWORK@
+Libs: -L${libdir} -l@WebKit2_OUTPUT_NAME@
+Libs.private: @LIBS_PRIVATE@
+Cflags: -I${includedir}/@WebKit2_OUTPUT_NAME@-@PROJECT_VERSION_MAJOR@
